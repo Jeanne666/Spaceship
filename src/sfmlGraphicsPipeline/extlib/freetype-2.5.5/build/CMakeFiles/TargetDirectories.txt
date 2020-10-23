@@ -1,0 +1,10 @@
+/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/extlib/freetype-2.5.5/build/CMakeFiles/install/strip.dir
+/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/extlib/freetype-2.5.5/build/CMakeFiles/install/local.dir
+/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/extlib/freetype-2.5.5/build/CMakeFiles/edit_cache.dir
+/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/extlib/freetype-2.5.5/build/CMakeFiles/package_source.dir
+/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/extlib/freetype-2.5.5/build/CMakeFiles/install.dir
+/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/extlib/freetype-2.5.5/build/CMakeFiles/list_install_components.dir
+/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/extlib/freetype-2.5.5/build/CMakeFiles/rebuild_cache.dir
+/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/extlib/freetype-2.5.5/build/CMakeFiles/package.dir
+/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/extlib/freetype-2.5.5/build/CMakeFiles/dist.dir
+/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/extlib/freetype-2.5.5/build/CMakeFiles/freetype.dir
