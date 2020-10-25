@@ -27,6 +27,11 @@ static void initializeGL()
     glcheck(glDepthFunc(GL_LESS));
     glcheck(glEnable(GL_VERTEX_PROGRAM_POINT_SIZE));
     glcheck(glEnable(GL_TEXTURE_2D));
+    
+    //Enable transparency
+    glcheck(glEnable(GL_BLEND));
+	glcheck(glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA));
+	
 }
 
 Viewer::KeyboardState::KeyboardState()

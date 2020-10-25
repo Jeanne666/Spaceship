@@ -7,12 +7,13 @@
 //#include <lighting/SpotLightRenderable.hpp>
 
 #include <FrameRenderable.hpp>
+#include <CubeRenderable.hpp>
 #include <texturing/SkyBox.hpp>
 #include <lighting/LightedMeshRenderable.hpp>
 #include <texturing/KeyFramedTexturedLightedMeshRenderable.hpp>
 #include <texturing/AsteroidRenderable.hpp>
 
-int shuttleAnimation(KeyFramedTexturedLightedMeshRenderablePtr& shuttle);
+int shuttleAnimation(KeyFramedTexturedLightedMeshRenderablePtr& shuttle, Viewer& viewer);
 void asteroid1Animation(AsteroidRenderablePtr& asteroid);
 void asteroid2Animation(AsteroidRenderablePtr& asteroid);
 void asteroid3Animation(AsteroidRenderablePtr& asteroid);
@@ -131,7 +132,7 @@ void initialize_scene( Viewer& viewer )
     shuttle->setMaterial(Material::Pearl());
     viewer.addRenderable(shuttle);
     
-    int t=shuttleAnimation(shuttle);
+    int t=shuttleAnimation(shuttle, viewer);
     
     //FIXME
     //Fire
@@ -140,6 +141,11 @@ void initialize_scene( Viewer& viewer )
     fire->setMaterial(Material::Pearl());
     viewer.addRenderable(fire);*/
     
+    //Position the camera
+	viewer.getCamera().setAnimation(false);
+
+	CubeRenderablePtr cube = std::make_shared<CubeRenderable>(flatShader);
+	viewer.addRenderable(cube);
 
     viewer.startAnimation();
     viewer.setAnimationLoop(true, t);
@@ -161,12 +167,25 @@ int main()
 	return EXIT_SUCCESS;
 }
 
-int shuttleAnimation(KeyFramedTexturedLightedMeshRenderablePtr& shuttle){
+int shuttleAnimation(KeyFramedTexturedLightedMeshRenderablePtr& shuttle, Viewer& viewer){
 	//NOTE: To combine 2 rotations: (2nd rot quaternion) * (1st rot quaternion)
 	
     std::vector<GeometricTransformation> gtShuttle;
     float t=0.0;
     
+    //-3s
+    gtShuttle.push_back(GeometricTransformation(glm::vec3{-25,0,0},
+    											glm::quat{0,0,0,0},
+    											glm::vec3{1,1,1}));
+    gtShuttle.push_back(GeometricTransformation(glm::vec3{-20,0,0},
+    											glm::quat{0,0,0,0},
+    											glm::vec3{1,1,1}));
+    gtShuttle.push_back(GeometricTransformation(glm::vec3{-15,0,0},
+    											glm::quat{0,0,0,0},
+    											glm::vec3{1,1,1}));
+    gtShuttle.push_back(GeometricTransformation(glm::vec3{-10,0,0},
+    											glm::quat{0,0,0,0},
+    											glm::vec3{1,1,1}));
     //0s
     gtShuttle.push_back(GeometricTransformation(glm::vec3{-5,0,0},
     											glm::quat{0,0,0,0},
@@ -254,6 +273,7 @@ int shuttleAnimation(KeyFramedTexturedLightedMeshRenderablePtr& shuttle){
         
     for(auto it=gtShuttle.begin() ; it<gtShuttle.end() ; ++it){
     	shuttle->addParentTransformKeyframe(*it,t);
+    	viewer.getCamera().addKeyframe((*it).getTranslation()+glm::vec3(-3,3,1),(*it).getTranslation(),t);
     	t+=0.75;
     }
     gtShuttle.clear();
@@ -263,13 +283,13 @@ int shuttleAnimation(KeyFramedTexturedLightedMeshRenderablePtr& shuttle){
     gtShuttle.push_back(GeometricTransformation(glm::vec3{55,5,0},
     											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
     											glm::vec3{1,1,1}));
-    gtShuttle.push_back(GeometricTransformation(glm::vec3{66,5,0},
+    gtShuttle.push_back(GeometricTransformation(glm::vec3{66,3,0},
     											glm::angleAxis(glm::radians(2.f), glm::vec3(0, 0, 1)),
     											glm::vec3{1,1,1}));
-    gtShuttle.push_back(GeometricTransformation(glm::vec3{72.5,-3,0},
+    gtShuttle.push_back(GeometricTransformation(glm::vec3{72.5,-1,0},
     											glm::angleAxis(glm::radians(10.f), glm::vec3(1, 0, 0)),
     											glm::vec3{1,1,1}));
-    gtShuttle.push_back(GeometricTransformation(glm::vec3{80,-3,0},
+    gtShuttle.push_back(GeometricTransformation(glm::vec3{80,-1,0},
     											glm::angleAxis(glm::radians(0.f), glm::vec3(1, 0, 0)),
     											glm::vec3{1,1,1}));
     gtShuttle.push_back(GeometricTransformation(glm::vec3{87.5,0,0},
@@ -279,126 +299,153 @@ int shuttleAnimation(KeyFramedTexturedLightedMeshRenderablePtr& shuttle){
     gtShuttle.push_back(GeometricTransformation(glm::vec3{91,0,0},
     											glm::angleAxis(glm::radians(0.f), glm::vec3(1, 0, 0)),
     											glm::vec3{1,1,1}));
-	gtShuttle.push_back(GeometricTransformation(glm::vec3{95,5,0},
+
+	for(auto it=gtShuttle.begin() ; it<gtShuttle.end() ; ++it){
+    	shuttle->addParentTransformKeyframe(*it,t);
+    	viewer.getCamera().addKeyframe((*it).getTranslation()+glm::vec3(-12,-(*it).getTranslation()[1],5),(*it).getTranslation()+glm::vec3(0,-(*it).getTranslation()[1],0),t);
+    	t+=0.5;
+    }
+    gtShuttle.clear();
+
+	gtShuttle.push_back(GeometricTransformation(glm::vec3{92,0,0},
+    											glm::angleAxis(glm::radians(0.f), glm::vec3(1, 0, 0)),
+    											glm::vec3{1,1,1}));
+	gtShuttle.push_back(GeometricTransformation(glm::vec3{96,2,0},
     											glm::angleAxis(glm::radians(-120.f), glm::vec3(1, 0, 0)),
     											glm::vec3{1,1,1}));
-    gtShuttle.push_back(GeometricTransformation(glm::vec3{99,10,0},
+    gtShuttle.push_back(GeometricTransformation(glm::vec3{99,4,0},
     											glm::angleAxis(glm::radians(-240.f), glm::vec3(1, 0, 0)),
     											glm::vec3{1,1,1}));
-    gtShuttle.push_back(GeometricTransformation(glm::vec3{103,15,0},
+    gtShuttle.push_back(GeometricTransformation(glm::vec3{102,6,0},
     											glm::angleAxis(glm::radians(0.f), glm::vec3(1, 0, 0)),
     											glm::vec3{1,1,1}));
-    //24s
-    gtShuttle.push_back(GeometricTransformation(glm::vec3{107,15,0},
+    
+    for(auto it=gtShuttle.begin() ; it<gtShuttle.end() ; ++it){
+    	shuttle->addParentTransformKeyframe(*it,t);
+    	viewer.getCamera().addKeyframe((*it).getTranslation()+glm::vec3(-12,-(*it).getTranslation()[1],5),(*it).getTranslation()+glm::vec3(0,-(*it).getTranslation()[1],0),t);
+    	t+=0.3;
+    }
+    gtShuttle.clear();
+    
+    gtShuttle.push_back(GeometricTransformation(glm::vec3{107,6,0},
     											glm::angleAxis(glm::radians(0.f), glm::vec3(1, 0, 0)),
     											glm::vec3{1,1,1}));
-    gtShuttle.push_back(GeometricTransformation(glm::vec3{111,10,0},
+    
+    for(auto it=gtShuttle.begin() ; it<gtShuttle.end() ; ++it){
+    	shuttle->addParentTransformKeyframe(*it,t);
+    	viewer.getCamera().addKeyframe((*it).getTranslation()+glm::vec3(-12,-(*it).getTranslation()[1],5),(*it).getTranslation()+glm::vec3(0,-(*it).getTranslation()[1],0),t);
+    	t+=0.5;
+    }
+    gtShuttle.clear();
+    
+    gtShuttle.push_back(GeometricTransformation(glm::vec3{111,6,0},
+    											glm::angleAxis(glm::radians(0.f), glm::vec3(1, 0, 0)),
+    											glm::vec3{1,1,1}));
+    gtShuttle.push_back(GeometricTransformation(glm::vec3{115,4,0},
     											glm::angleAxis(glm::radians(-240.f), glm::vec3(1, 0, 0)),
     											glm::vec3{1,1,1}));
-    gtShuttle.push_back(GeometricTransformation(glm::vec3{115,5,0},
+    gtShuttle.push_back(GeometricTransformation(glm::vec3{119,2,0},
     											glm::angleAxis(glm::radians(-120.f), glm::vec3(1, 0, 0)),
     											glm::vec3{1,1,1}));
-    gtShuttle.push_back(GeometricTransformation(glm::vec3{119,0,0},
+    gtShuttle.push_back(GeometricTransformation(glm::vec3{123,0,0},
     											glm::angleAxis(glm::radians(0.f), glm::vec3(1, 0, 0)),
     											glm::vec3{1,1,1}));
-    gtShuttle.push_back(GeometricTransformation(glm::vec3{125,0,0},
+    gtShuttle.push_back(GeometricTransformation(glm::vec3{127,0,0},
     											glm::angleAxis(glm::radians(0.f), glm::vec3(1, 0, 0)),
     											glm::vec3{1,1,1}));
-    gtShuttle.push_back(GeometricTransformation(glm::vec3{131,0,0},
+    gtShuttle.push_back(GeometricTransformation(glm::vec3{130,0,0},
     											glm::angleAxis(glm::radians(0.f), glm::vec3(1, 0, 0)),
     											glm::vec3{1,1,1}));
     //27s
     
     for(auto it=gtShuttle.begin() ; it<gtShuttle.end() ; ++it){
     	shuttle->addParentTransformKeyframe(*it,t);
-    	t+=0.5;
+    	viewer.getCamera().addKeyframe((*it).getTranslation()+glm::vec3(-12,-(*it).getTranslation()[1],5),(*it).getTranslation()+glm::vec3(0,-(*it).getTranslation()[1],0),t);
+    	t+=0.3;
     }
     gtShuttle.clear();
     
-    return t;
+    return t+1;
         
 }
 
 void asteroid1Animation(AsteroidRenderablePtr& asteroid){
-    std::vector<GeometricTransformation> gtShuttle;
+    std::vector<GeometricTransformation> gt;
     float t=0.0;
     
-    gtShuttle.push_back(GeometricTransformation(glm::vec3{26,2,5},
+    gt.push_back(GeometricTransformation(glm::vec3{26,2,5},
     											glm::angleAxis(glm::radians(0.f), glm::vec3(0.7, 0, 0.7)),
     											glm::vec3{1,1,1}));
-    gtShuttle.push_back(GeometricTransformation(glm::vec3{26,2,5},
+    gt.push_back(GeometricTransformation(glm::vec3{26,2,5},
     											glm::angleAxis(glm::radians(72.f), glm::vec3(0.7, 0, 0.7)),
     											glm::vec3{1,1,1}));
-    gtShuttle.push_back(GeometricTransformation(glm::vec3{26,2,5},
+    gt.push_back(GeometricTransformation(glm::vec3{26,2,5},
     											glm::angleAxis(glm::radians(144.f), glm::vec3(0.7, 0, 0.7)),
     											glm::vec3{1,1,1}));
-    gtShuttle.push_back(GeometricTransformation(glm::vec3{26,2,5},
+    gt.push_back(GeometricTransformation(glm::vec3{26,2,5},
     											glm::angleAxis(glm::radians(216.f), glm::vec3(0.7, 0, 0.7)),
     											glm::vec3{1,1,1}));
-    gtShuttle.push_back(GeometricTransformation(glm::vec3{26,2,5},
+    gt.push_back(GeometricTransformation(glm::vec3{26,2,5},
     											glm::angleAxis(glm::radians(360.f), glm::vec3(0.7, 0, 0.7)),
     											glm::vec3{1,1,1}));
     
-    for(auto it=gtShuttle.begin() ; it<gtShuttle.end() ; ++it){
+    for(auto it=gt.begin() ; it<gt.end() ; ++it){
     	asteroid->addParentTransformKeyframe(*it,t);
     	t+=6;
     }
-    gtShuttle.clear(); 
 }
 
 void asteroid2Animation(AsteroidRenderablePtr& asteroid){
-    std::vector<GeometricTransformation> gtShuttle;
+    std::vector<GeometricTransformation> gt;
     float t=0.0;
     
-    gtShuttle.push_back(GeometricTransformation(glm::vec3{10,-5,-5},
+    gt.push_back(GeometricTransformation(glm::vec3{10,-5,-5},
     											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0.7, 0.7)),
     											glm::vec3{1,1,1}));
-    gtShuttle.push_back(GeometricTransformation(glm::vec3{10,-5,-5},
+    gt.push_back(GeometricTransformation(glm::vec3{10,-5,-5},
     											glm::angleAxis(glm::radians(72.f), glm::vec3(0, 0.7, 0.7)),
     											glm::vec3{1,1,1}));
-    gtShuttle.push_back(GeometricTransformation(glm::vec3{10,-5,-5},
+    gt.push_back(GeometricTransformation(glm::vec3{10,-5,-5},
     											glm::angleAxis(glm::radians(144.f), glm::vec3(0, 0.7, 0.7)),
     											glm::vec3{1,1,1}));
-    gtShuttle.push_back(GeometricTransformation(glm::vec3{10,-5,-5},
+    gt.push_back(GeometricTransformation(glm::vec3{10,-5,-5},
     											glm::angleAxis(glm::radians(216.f), glm::vec3(0, 0.7, 0.7)),
     											glm::vec3{1,1,1}));
-    gtShuttle.push_back(GeometricTransformation(glm::vec3{10,-5,-5},
+    gt.push_back(GeometricTransformation(glm::vec3{10,-5,-5},
     											glm::angleAxis(glm::radians(360.f), glm::vec3(0, 0.7, 0.7)),
     											glm::vec3{1,1,1}));
     
-    for(auto it=gtShuttle.begin() ; it<gtShuttle.end() ; ++it){
+    for(auto it=gt.begin() ; it<gt.end() ; ++it){
     	asteroid->addParentTransformKeyframe(*it,t);
     	t+=6;
     }
-    gtShuttle.clear(); 
 }
 
 
 void asteroid3Animation(AsteroidRenderablePtr& asteroid){
-    std::vector<GeometricTransformation> gtShuttle;
+    std::vector<GeometricTransformation> gt;
     float t=0.0;
     
-    gtShuttle.push_back(GeometricTransformation(glm::vec3{15,20,0},
+    gt.push_back(GeometricTransformation(glm::vec3{15,20,0},
     											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 1, 0)),
     											glm::vec3{1,1,1}));
-    gtShuttle.push_back(GeometricTransformation(glm::vec3{15,20,0},
+    gt.push_back(GeometricTransformation(glm::vec3{15,20,0},
     											glm::angleAxis(glm::radians(72.f), glm::vec3(0, 1, 0)),
     											glm::vec3{1,1,1}));
-    gtShuttle.push_back(GeometricTransformation(glm::vec3{15,20,0},
+    gt.push_back(GeometricTransformation(glm::vec3{15,20,0},
     											glm::angleAxis(glm::radians(144.f), glm::vec3(0, 1, 0)),
     											glm::vec3{1,1,1}));
-    gtShuttle.push_back(GeometricTransformation(glm::vec3{15,20,0},
+    gt.push_back(GeometricTransformation(glm::vec3{15,20,0},
     											glm::angleAxis(glm::radians(216.f), glm::vec3(0, 1, 0)),
     											glm::vec3{1,1,1}));
-    gtShuttle.push_back(GeometricTransformation(glm::vec3{15,20,0},
+    gt.push_back(GeometricTransformation(glm::vec3{15,20,0},
     											glm::angleAxis(glm::radians(360.f), glm::vec3(0, 1, 0)),
     											glm::vec3{1,1,1}));
     
-    for(auto it=gtShuttle.begin() ; it<gtShuttle.end() ; ++it){
+    for(auto it=gt.begin() ; it<gt.end() ; ++it){
     	asteroid->addParentTransformKeyframe(*it,t);
     	t+=6;
     }
-    gtShuttle.clear(); 
 }
 
 

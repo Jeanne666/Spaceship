@@ -4,13 +4,14 @@
 #include <glm/gtc/type_precision.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
+#include <glm/gtx/compatibility.hpp>
 
 using namespace std;
 
 Camera::Camera()
     : m_view{ glm::lookAt( glm::vec3{0, 0, -5}, glm::vec3{}, glm::vec3{0,1,0}) },
       m_fov{ 1.04f }, m_ratio{ 1.0f }, m_znear{ 1.0f }, m_zfar{ 100.0f },
-      m_mouseBehavior{ ARCBALL_BEHAVIOR }
+      m_mouseBehavior{ ARCBALL_BEHAVIOR }, is_animated{ false }
 {}
 
 Camera::~Camera()
@@ -20,6 +21,59 @@ Camera::~Camera()
 
 void Camera::animate(float time)
 {
+	if(is_animated){
+		glm::vec3 pos = glm::vec3(0,0,0);
+		glm::vec3 target = glm::vec3(10,0,0);	
+		
+		if( !m_keyframes.empty() )
+		{
+		    //Handle the case where the time parameter is outside the keyframes time scope.
+		    std::map< float, std::pair<glm::vec3, glm::vec3> >::const_iterator itFirstFrame = m_keyframes.begin();
+		    std::map< float, std::pair<glm::vec3, glm::vec3> >::const_reverse_iterator itLastFrame = m_keyframes.rbegin();
+		    if( time <= itFirstFrame->first ){
+		    	pos=itFirstFrame->second.first;
+		    	target=itFirstFrame->second.second;
+		    }else if( time >= itLastFrame->first ){
+		    	pos=itLastFrame->second.first;
+		    	target=itLastFrame->second.second;
+			}else{
+				//Get keyframes surrounding the time parameter
+				std::array< Keyframe, 2 > result = getBoundingKeyframes( time );
+
+				//Compute the interpolating factor based on the time parameter and the surrounding keyframes times.
+				float factor = (time-result[0].first)/(result[1].first-result[0].first);
+
+				pos = glm::lerp(result[0].second.first,result[1].second.first,factor);
+				target = glm::lerp(result[0].second.second,result[1].second.second,factor);
+
+		    }
+		}
+		
+		setViewMatrix(glm::lookAt(pos, target, glm::vec3(0,0,1)));
+    }
+}
+
+void Camera::setAnimation(bool isAnimated){
+	is_animated=isAnimated;
+}
+
+void Camera::addKeyframe( const glm::vec3& pos, const glm::vec3& target, float time )
+{
+	m_keyframes.insert( std::make_pair(time, std::make_pair(pos, target) ) );
+}
+
+std::array< Camera::Keyframe, 2 > Camera::getBoundingKeyframes( float time ) const
+{
+    std::array< Keyframe, 2 > result{ std::make_pair(0, std::make_pair(glm::vec3(0,0,0), glm::vec3(1,0,0))), std::make_pair(0, std::make_pair(glm::vec3(0,0,0), glm::vec3(1,0,0))) };
+    std::map< float, std::pair<glm::vec3, glm::vec3> >::const_iterator upper = m_keyframes.upper_bound(time);
+    std::map< float, std::pair<glm::vec3, glm::vec3> >::const_iterator lower = std::prev(upper);
+    std::map< float, std::pair<glm::vec3, glm::vec3> >::const_iterator end = m_keyframes.end();
+    if(upper != end && lower != end )
+    {
+        result[0] = *lower;
+        result[1] = *upper;
+    }
+    return result;
 }
 
 const glm::mat4& Camera::viewMatrix() const

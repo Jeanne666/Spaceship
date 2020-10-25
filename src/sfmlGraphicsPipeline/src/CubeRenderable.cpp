@@ -15,53 +15,53 @@ CubeRenderable::CubeRenderable(ShaderProgramPtr shaderProgram)
     getUnitCube(m_positions, m_normals, tmp_tex);
 
     //Assign one color to each face
-    m_colors.push_back(glm::vec4(1,0,0,1));
-    m_colors.push_back(glm::vec4(1,0,0,1));
-    m_colors.push_back(glm::vec4(1,0,0,1));
+    m_colors.push_back(glm::vec4(1,0,0,0.5));
+    m_colors.push_back(glm::vec4(1,0,0,0.5));
+    m_colors.push_back(glm::vec4(1,0,0,0.5));
 
-    m_colors.push_back(glm::vec4(0,1,0,1));
-    m_colors.push_back(glm::vec4(0,1,0,1));
-    m_colors.push_back(glm::vec4(0,1,0,1));
+    m_colors.push_back(glm::vec4(0,1,0,0.5));
+    m_colors.push_back(glm::vec4(0,1,0,0.5));
+    m_colors.push_back(glm::vec4(0,1,0,0.5));
 
-    m_colors.push_back(glm::vec4(0,0,1,1));
-    m_colors.push_back(glm::vec4(0,0,1,1));
-    m_colors.push_back(glm::vec4(0,0,1,1));
+    m_colors.push_back(glm::vec4(0,0,1,0.5));
+    m_colors.push_back(glm::vec4(0,0,1,0.5));
+    m_colors.push_back(glm::vec4(0,0,1,0.5));
 
-    m_colors.push_back(glm::vec4(0,1,1,1));
-    m_colors.push_back(glm::vec4(0,1,1,1));
-    m_colors.push_back(glm::vec4(0,1,1,1));
+    m_colors.push_back(glm::vec4(0,1,1,0.5));
+    m_colors.push_back(glm::vec4(0,1,1,0.5));
+    m_colors.push_back(glm::vec4(0,1,1,0.5));
 
-    m_colors.push_back(glm::vec4(1,0,1,1));
-    m_colors.push_back(glm::vec4(1,0,1,1));
-    m_colors.push_back(glm::vec4(1,0,1,1));
+    m_colors.push_back(glm::vec4(1,0,1,0.5));
+    m_colors.push_back(glm::vec4(1,0,1,0.5));
+    m_colors.push_back(glm::vec4(1,0,1,0.5));
 
-    m_colors.push_back(glm::vec4(1,1,0,1));
-    m_colors.push_back(glm::vec4(1,1,0,1));
-    m_colors.push_back(glm::vec4(1,1,0,1));
+    m_colors.push_back(glm::vec4(1,1,0,0.5));
+    m_colors.push_back(glm::vec4(1,1,0,0.5));
+    m_colors.push_back(glm::vec4(1,1,0,0.5));
 
-    m_colors.push_back(glm::vec4(0,0.5,0.5,1));
-    m_colors.push_back(glm::vec4(0,0.5,0.5,1));
-    m_colors.push_back(glm::vec4(0,0.5,0.5,1));
+    m_colors.push_back(glm::vec4(0,0.5,0.5,0.5));
+    m_colors.push_back(glm::vec4(0,0.5,0.5,0.5));
+    m_colors.push_back(glm::vec4(0,0.5,0.5,0.5));
 
-    m_colors.push_back(glm::vec4(0.5,0,0.5,1));
-    m_colors.push_back(glm::vec4(0.5,0,0.5,1));
-    m_colors.push_back(glm::vec4(0.5,0,0.5,1));
+    m_colors.push_back(glm::vec4(0.5,0,0.5,0.5));
+    m_colors.push_back(glm::vec4(0.5,0,0.5,0.5));
+    m_colors.push_back(glm::vec4(0.5,0,0.5,0.5));
 
-    m_colors.push_back(glm::vec4(0.5,0.5,0,1));
-    m_colors.push_back(glm::vec4(0.5,0.5,0,1));
-    m_colors.push_back(glm::vec4(0.5,0.5,0,1));
+    m_colors.push_back(glm::vec4(0.5,0.5,0,0.5));
+    m_colors.push_back(glm::vec4(0.5,0.5,0,0.5));
+    m_colors.push_back(glm::vec4(0.5,0.5,0,0.5));
 
-    m_colors.push_back(glm::vec4(0.8,0.2,0,1));
-    m_colors.push_back(glm::vec4(0.8,0.2,0,1));
-    m_colors.push_back(glm::vec4(0.8,0.2,0,1));
+    m_colors.push_back(glm::vec4(0.8,0.2,0,0.5));
+    m_colors.push_back(glm::vec4(0.8,0.2,0,0.5));
+    m_colors.push_back(glm::vec4(0.8,0.2,0,0.5));
 
-    m_colors.push_back(glm::vec4(0.2,0,0.8,1));
-    m_colors.push_back(glm::vec4(0.2,0,0.8,1));
-    m_colors.push_back(glm::vec4(0.2,0,0.8,1));
+    m_colors.push_back(glm::vec4(0.2,0,0.8,0.5));
+    m_colors.push_back(glm::vec4(0.2,0,0.8,0.5));
+    m_colors.push_back(glm::vec4(0.2,0,0.8,0.5));
 
-    m_colors.push_back(glm::vec4(0,0.8,0.2,1));
-    m_colors.push_back(glm::vec4(0,0.8,0.2,1));
-    m_colors.push_back(glm::vec4(0,0.8,0.2,1));
+    m_colors.push_back(glm::vec4(0,0.8,0.2,0.5));
+    m_colors.push_back(glm::vec4(0,0.8,0.2,0.5));
+    m_colors.push_back(glm::vec4(0,0.8,0.2,0.5));
 
     //Create buffers
     glGenBuffers(1, &m_pBuffer); //vertices

@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++0x -fopenmp
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include" -I"/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/extlib/glm-0.9.7.1" -I"/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/extlib/glew-1.13.0/include" -I/usr/include/SFML -I"/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/extlib/freetype-2.5.5/include" -I"/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/extlib/tinyobjloader" 
+CXX_INCLUDES = -I"/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include" -I"/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/extlib/glm-0.9.7.1" -I"/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/extlib/glew-1.13.0/include" -I/usr/include/SFML -I"/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/extlib/freetype-2.5.5/include" -I"/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/extlib/tinyobjloader" 
 

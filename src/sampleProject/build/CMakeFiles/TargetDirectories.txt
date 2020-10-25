@@ -1,3 +1,3 @@
-/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sampleProject/build/CMakeFiles/rebuild_cache.dir
-/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sampleProject/build/CMakeFiles/edit_cache.dir
-/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sampleProject/build/CMakeFiles/main.dir
+/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sampleProject/build/CMakeFiles/rebuild_cache.dir
+/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sampleProject/build/CMakeFiles/edit_cache.dir
+/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sampleProject/build/CMakeFiles/main.dir

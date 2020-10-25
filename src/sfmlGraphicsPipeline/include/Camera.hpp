@@ -9,6 +9,9 @@
  */
 
 #include <glm/glm.hpp>
+#include <map>
+#include <array>
+
 /**@brief Manage the Camera.
  *
  * We consider a camera to be defined by two 4x4 matrices:
@@ -59,6 +62,10 @@ public:
      * @param time Current simulation time.
      */
     void animate( float time );
+    
+    void setAnimation(bool isAnimated);
+    
+    void addKeyframe( const glm::vec3& pos, const glm::vec3& target, float time );
 
     /**
      * @name Camera View Matrix
@@ -273,6 +280,7 @@ public:
      */
     void update( float dx, float dy );
     ///@}
+    
 private:
 
     /** @name Private members */
@@ -283,6 +291,11 @@ private:
     float m_zfar;
     glm::mat4 m_view;
     glm::mat4 m_projection;
+    
+    bool is_animated;
+    typedef std::pair< float, std::pair<glm::vec3, glm::vec3> > Keyframe;
+	std::array< Keyframe, 2 > getBoundingKeyframes( float time ) const;
+    std::map< float, std::pair<glm::vec3, glm::vec3> > m_keyframes;
 };
 
 #endif

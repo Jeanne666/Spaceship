@@ -75,6 +75,8 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Camera.cpp.o: ../extlib/glm-0.9.7.1/gl
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Camera.cpp.o: ../extlib/glm-0.9.7.1/glm/gtc/type_ptr.inl
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Camera.cpp.o: ../extlib/glm-0.9.7.1/glm/gtc/vec1.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Camera.cpp.o: ../extlib/glm-0.9.7.1/glm/gtc/vec1.inl
+CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Camera.cpp.o: ../extlib/glm-0.9.7.1/glm/gtx/compatibility.hpp
+CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Camera.cpp.o: ../extlib/glm-0.9.7.1/glm/gtx/compatibility.inl
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Camera.cpp.o: ../extlib/glm-0.9.7.1/glm/integer.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Camera.cpp.o: ../extlib/glm-0.9.7.1/glm/mat2x2.hpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Camera.cpp.o: ../extlib/glm-0.9.7.1/glm/mat2x3.hpp

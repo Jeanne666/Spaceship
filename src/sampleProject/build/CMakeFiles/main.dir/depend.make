@@ -94,6 +94,7 @@ CMakeFiles/main.dir/main.cpp.o: ../../sfmlGraphicsPipeline/extlib/glm-0.9.7.1/gl
 CMakeFiles/main.dir/main.cpp.o: ../../sfmlGraphicsPipeline/extlib/glm-0.9.7.1/glm/vec4.hpp
 CMakeFiles/main.dir/main.cpp.o: ../../sfmlGraphicsPipeline/extlib/glm-0.9.7.1/glm/vector_relational.hpp
 CMakeFiles/main.dir/main.cpp.o: ../../sfmlGraphicsPipeline/include/Camera.hpp
+CMakeFiles/main.dir/main.cpp.o: ../../sfmlGraphicsPipeline/include/CubeRenderable.hpp
 CMakeFiles/main.dir/main.cpp.o: ../../sfmlGraphicsPipeline/include/FPSCounter.hpp
 CMakeFiles/main.dir/main.cpp.o: ../../sfmlGraphicsPipeline/include/FrameRenderable.hpp
 CMakeFiles/main.dir/main.cpp.o: ../../sfmlGraphicsPipeline/include/GeometricTransformation.hpp

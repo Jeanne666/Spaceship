@@ -76,6 +76,8 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Camera.cpp.o
  ../extlib/glm-0.9.7.1/glm/gtc/type_ptr.inl
  ../extlib/glm-0.9.7.1/glm/gtc/vec1.hpp
  ../extlib/glm-0.9.7.1/glm/gtc/vec1.inl
+ ../extlib/glm-0.9.7.1/glm/gtx/compatibility.hpp
+ ../extlib/glm-0.9.7.1/glm/gtx/compatibility.inl
  ../extlib/glm-0.9.7.1/glm/integer.hpp
  ../extlib/glm-0.9.7.1/glm/mat2x2.hpp
  ../extlib/glm-0.9.7.1/glm/mat2x3.hpp
@@ -93,8 +95,8 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Camera.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Camera.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/Camera.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Camera.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/Camera.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/CubeRenderable.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -182,16 +184,16 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/CubeRenderable.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/CubeRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Plane.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Renderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Sphere.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Utils.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/log.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/CubeRenderable.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/CubeRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Plane.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Renderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Sphere.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Utils.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/log.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/CubeRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/CylinderRenderable.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -281,19 +283,19 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/CylinderRenderable.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/CylinderRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Plane.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Renderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Sphere.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Utils.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/log.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/CylinderRenderable.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/CylinderRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Plane.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Renderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Sphere.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Utils.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/log.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/CylinderRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/FPSCounter.cpp.o
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/FPSCounter.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/FPSCounter.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/FPSCounter.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/FPSCounter.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/FrameRenderable.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -381,11 +383,11 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/FrameRenderable.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/FrameRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Renderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/FrameRenderable.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/FrameRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Renderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/FrameRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/GeometricTransformation.cpp.o
  ../extlib/glm-0.9.7.1/glm/common.hpp
  ../extlib/glm-0.9.7.1/glm/detail/_fixes.hpp
@@ -470,8 +472,8 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/GeometricTransformation.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/GeometricTransformation.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/GeometricTransformation.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/HierarchicalCylinderRenderable.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -561,17 +563,17 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/HierarchicalCylinderRenderable.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/HierarchicalCylinderRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Plane.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Renderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Sphere.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Utils.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/log.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/HierarchicalCylinderRenderable.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/HierarchicalCylinderRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Plane.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Renderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Sphere.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Utils.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/log.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/HierarchicalCylinderRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/HierarchicalMeshRenderable.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -659,18 +661,18 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/HierarchicalMeshRenderable.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/HierarchicalMeshRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Io.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Plane.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Renderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Sphere.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Utils.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/log.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/HierarchicalMeshRenderable.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/HierarchicalMeshRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Io.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Plane.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Renderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Sphere.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Utils.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/log.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/HierarchicalMeshRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/HierarchicalRenderable.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -764,15 +766,15 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/HierarchicalRenderable.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Camera.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/FPSCounter.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Renderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Viewer.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/lighting/Light.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/HierarchicalRenderable.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Camera.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/FPSCounter.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Renderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Viewer.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/lighting/Light.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/HierarchicalRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/HierarchicalSphereRenderable.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -860,17 +862,17 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/HierarchicalSphereRenderable.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/HierarchicalSphereRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Plane.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Renderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Sphere.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Utils.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/log.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/HierarchicalSphereRenderable.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/HierarchicalSphereRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Plane.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Renderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Sphere.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Utils.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/log.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/HierarchicalSphereRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/IndexedCubeRenderable.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -958,16 +960,16 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/IndexedCubeRenderable.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/IndexedCubeRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Plane.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Renderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Sphere.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Utils.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/log.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/IndexedCubeRenderable.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/IndexedCubeRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Plane.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Renderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Sphere.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Utils.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/log.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/IndexedCubeRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Io.cpp.o
  ../extlib/glm-0.9.7.1/glm/common.hpp
  ../extlib/glm-0.9.7.1/glm/detail/_fixes.hpp
@@ -1049,8 +1051,8 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Io.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
  ../extlib/tinyobjloader/tiny_obj_loader.h
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Io.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/Io.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Io.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/Io.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/KeyframeCollection.cpp.o
  ../extlib/glm-0.9.7.1/glm/common.hpp
  ../extlib/glm-0.9.7.1/glm/detail/_fixes.hpp
@@ -1137,9 +1139,9 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/KeyframeCollection.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/KeyframeCollection.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/KeyframeCollection.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/KeyframeCollection.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/KeyframeCollection.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/MeshRenderable.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -1227,17 +1229,17 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/MeshRenderable.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Io.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/MeshRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Plane.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Renderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Sphere.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Utils.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/log.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/MeshRenderable.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Io.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/MeshRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Plane.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Renderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Sphere.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Utils.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/log.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/MeshRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Plane.cpp.o
  ../extlib/glm-0.9.7.1/glm/common.hpp
  ../extlib/glm-0.9.7.1/glm/detail/_fixes.hpp
@@ -1320,8 +1322,8 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Plane.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Plane.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/Plane.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Plane.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/Plane.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Renderable.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -1415,20 +1417,20 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Renderable.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Camera.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/FPSCounter.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Renderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Viewer.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/lighting/Light.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/Renderable.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Camera.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/FPSCounter.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Renderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Viewer.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/lighting/Light.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/Renderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/ShaderProgram.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/log.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/ShaderProgram.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/log.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/ShaderProgram.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Sphere.cpp.o
  ../extlib/glm-0.9.7.1/glm/common.hpp
  ../extlib/glm-0.9.7.1/glm/detail/_fixes.hpp
@@ -1509,8 +1511,8 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Sphere.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Sphere.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/Sphere.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Sphere.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/Sphere.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Texture.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -1603,9 +1605,9 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Texture.cpp.o
  ../include/gl_helper.hpp
  ../include/log.hpp
  ../include/stb_image.h
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Texture.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/Texture.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Texture.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/Texture.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Utils.cpp.o
  ../extlib/glm-0.9.7.1/glm/common.hpp
  ../extlib/glm-0.9.7.1/glm/detail/_fixes.hpp
@@ -1694,12 +1696,12 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Utils.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Plane.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Sphere.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Utils.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/log.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/Utils.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Plane.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Sphere.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Utils.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/log.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/Utils.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Viewer.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -1793,18 +1795,18 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Viewer.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Camera.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/FPSCounter.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Renderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Viewer.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/lighting/Light.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/log.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/Viewer.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Camera.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/FPSCounter.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Renderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Viewer.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/lighting/Light.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/log.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/Viewer.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Collision.cpp.o
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/Collision.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/dynamics/Collision.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/Collision.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/dynamics/Collision.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ConstantForceField.cpp.o
  ../extlib/glm-0.9.7.1/glm/common.hpp
  ../extlib/glm-0.9.7.1/glm/detail/_fixes.hpp
@@ -1885,10 +1887,10 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ConstantForceField.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/ConstantForceField.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/ForceField.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/dynamics/ConstantForceField.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/ConstantForceField.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/ForceField.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/dynamics/ConstantForceField.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ConstantForceFieldRenderable.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -1976,16 +1978,16 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ConstantForceFieldRenderable.
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Renderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/ConstantForceField.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/ConstantForceFieldRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/ForceField.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/log.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/dynamics/ConstantForceFieldRenderable.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Renderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/ConstantForceField.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/ConstantForceFieldRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/ForceField.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/log.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/dynamics/ConstantForceFieldRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ControlledForceFieldRenderable.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -2075,16 +2077,16 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ControlledForceFieldRenderabl
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Renderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/ConstantForceField.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/ControlledForceFieldRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/ForceField.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/log.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/dynamics/ControlledForceFieldRenderable.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Renderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/ConstantForceField.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/ControlledForceFieldRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/ForceField.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/log.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/dynamics/ControlledForceFieldRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DampingForceField.cpp.o
  ../extlib/glm-0.9.7.1/glm/common.hpp
  ../extlib/glm-0.9.7.1/glm/detail/_fixes.hpp
@@ -2165,10 +2167,10 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DampingForceField.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/DampingForceField.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/ForceField.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/dynamics/DampingForceField.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/DampingForceField.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/ForceField.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/dynamics/DampingForceField.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystem.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -2259,16 +2261,16 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystem.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Plane.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/Collision.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/DynamicSystem.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/ForceField.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/ParticleParticleCollision.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/ParticlePlaneCollision.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/Solver.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/dynamics/DynamicSystem.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Plane.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/Collision.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/DynamicSystem.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/ForceField.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/ParticleParticleCollision.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/ParticlePlaneCollision.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/Solver.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/dynamics/DynamicSystem.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystemRenderable.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -2364,23 +2366,23 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystemRenderable.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Camera.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/FPSCounter.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/HierarchicalCylinderRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Plane.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Renderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Viewer.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/Collision.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/DynamicSystem.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/DynamicSystemRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/ForceField.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/Solver.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/lighting/Light.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/dynamics/DynamicSystemRenderable.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Camera.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/FPSCounter.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/HierarchicalCylinderRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Plane.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Renderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Viewer.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/Collision.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/DynamicSystem.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/DynamicSystemRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/ForceField.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/Solver.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/lighting/Light.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/dynamics/DynamicSystemRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/EulerExplicitSolver.cpp.o
  ../extlib/glm-0.9.7.1/glm/common.hpp
  ../extlib/glm-0.9.7.1/glm/detail/_fixes.hpp
@@ -2461,13 +2463,13 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/EulerExplicitSolver.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/EulerExplicitSolver.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/Solver.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/dynamics/EulerExplicitSolver.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/EulerExplicitSolver.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/Solver.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/dynamics/EulerExplicitSolver.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ForceField.cpp.o
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/ForceField.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/dynamics/ForceField.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/ForceField.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/dynamics/ForceField.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Particle.cpp.o
  ../extlib/glm-0.9.7.1/glm/common.hpp
  ../extlib/glm-0.9.7.1/glm/detail/_fixes.hpp
@@ -2548,8 +2550,8 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Particle.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/dynamics/Particle.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/dynamics/Particle.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleListRenderable.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -2637,17 +2639,17 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleListRenderable.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Plane.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Renderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Sphere.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Utils.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/ParticleListRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/dynamics/ParticleListRenderable.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Plane.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Renderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Sphere.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Utils.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/ParticleListRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/dynamics/ParticleListRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleParticleCollision.cpp.o
  ../extlib/glm-0.9.7.1/glm/common.hpp
  ../extlib/glm-0.9.7.1/glm/detail/_fixes.hpp
@@ -2735,10 +2737,10 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleParticleCollision.cpp
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/Collision.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/ParticleParticleCollision.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/dynamics/ParticleParticleCollision.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/Collision.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/ParticleParticleCollision.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/dynamics/ParticleParticleCollision.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticlePlaneCollision.cpp.o
  ../extlib/glm-0.9.7.1/glm/common.hpp
  ../extlib/glm-0.9.7.1/glm/detail/_fixes.hpp
@@ -2819,11 +2821,11 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticlePlaneCollision.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Plane.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/Collision.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/ParticlePlaneCollision.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/dynamics/ParticlePlaneCollision.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Plane.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/Collision.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/ParticlePlaneCollision.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/dynamics/ParticlePlaneCollision.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleRenderable.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -2913,18 +2915,18 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleRenderable.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Plane.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Renderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Sphere.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Utils.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/ParticleRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/log.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/dynamics/ParticleRenderable.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Plane.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Renderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Sphere.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Utils.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/ParticleRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/log.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/dynamics/ParticleRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Solver.cpp.o
  ../extlib/glm-0.9.7.1/glm/common.hpp
  ../extlib/glm-0.9.7.1/glm/detail/_fixes.hpp
@@ -3005,9 +3007,9 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Solver.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/Solver.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/dynamics/Solver.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/Solver.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/dynamics/Solver.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringForceField.cpp.o
  ../extlib/glm-0.9.7.1/glm/common.hpp
  ../extlib/glm-0.9.7.1/glm/detail/_fixes.hpp
@@ -3088,10 +3090,10 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringForceField.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/ForceField.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/SpringForceField.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/dynamics/SpringForceField.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/ForceField.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/SpringForceField.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/dynamics/SpringForceField.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringForceFieldRenderable.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -3179,16 +3181,16 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringForceFieldRenderable.cp
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Renderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/ForceField.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/SpringForceField.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/SpringForceFieldRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/log.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/dynamics/SpringForceFieldRenderable.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Renderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/ForceField.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/SpringForceField.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/SpringForceFieldRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/log.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/dynamics/SpringForceFieldRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringListRenderable.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -3276,21 +3278,21 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringListRenderable.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Renderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/ForceField.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/SpringForceField.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/dynamics/SpringListRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/log.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/dynamics/SpringListRenderable.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Renderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/ForceField.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/Particle.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/SpringForceField.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/dynamics/SpringListRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/log.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/dynamics/SpringListRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/gl_helper.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/log.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/gl_helper.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/log.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/gl_helper.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/DirectionalLightRenderable.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -3383,18 +3385,18 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/DirectionalLightRenderable.cp
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Plane.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Renderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Sphere.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Utils.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/lighting/DirectionalLightRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/lighting/Light.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/log.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/lighting/DirectionalLightRenderable.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Plane.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Renderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Sphere.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Utils.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/lighting/DirectionalLightRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/lighting/Light.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/log.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/lighting/DirectionalLightRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/Light.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -3482,11 +3484,11 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/Light.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/lighting/Light.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/log.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/lighting/Light.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/lighting/Light.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/log.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/lighting/Light.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedCubeRenderable.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -3574,18 +3576,18 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedCubeRenderable.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Plane.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Renderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Sphere.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Utils.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/lighting/LightedCubeRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/lighting/Material.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/log.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/lighting/LightedCubeRenderable.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Plane.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Renderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Sphere.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Utils.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/lighting/LightedCubeRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/lighting/Material.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/log.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/lighting/LightedCubeRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedCylinderRenderable.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -3673,18 +3675,18 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedCylinderRenderable.cpp
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Plane.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Renderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Sphere.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Utils.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/lighting/LightedCylinderRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/lighting/Material.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/log.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/lighting/LightedCylinderRenderable.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Plane.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Renderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Sphere.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Utils.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/lighting/LightedCylinderRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/lighting/Material.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/log.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/lighting/LightedCylinderRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedMeshRenderable.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -3772,20 +3774,20 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedMeshRenderable.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Io.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Plane.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Renderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Sphere.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Utils.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/lighting/Light.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/lighting/LightedMeshRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/lighting/Material.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/log.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/lighting/LightedMeshRenderable.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Io.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Plane.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Renderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Sphere.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Utils.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/lighting/Light.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/lighting/LightedMeshRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/lighting/Material.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/log.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/lighting/LightedMeshRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/Material.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -3873,11 +3875,11 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/Material.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/lighting/Material.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/log.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/lighting/Material.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/lighting/Material.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/log.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/lighting/Material.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/PointLightRenderable.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -3970,18 +3972,18 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/PointLightRenderable.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Plane.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Renderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Sphere.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Utils.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/lighting/Light.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/lighting/PointLightRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/log.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/lighting/PointLightRenderable.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Plane.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Renderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Sphere.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Utils.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/lighting/Light.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/lighting/PointLightRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/log.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/lighting/PointLightRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/SpotLightRenderable.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -4074,24 +4076,24 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/SpotLightRenderable.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Plane.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Renderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Sphere.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Utils.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/lighting/Light.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/lighting/SpotLightRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/log.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/lighting/SpotLightRenderable.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Plane.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Renderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Sphere.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Utils.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/lighting/Light.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/lighting/SpotLightRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/log.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/lighting/SpotLightRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/log.cpp.o
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/log.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/log.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/log.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/log.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/stb_image.cpp.o
  ../include/stb_image.h
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/stb_image.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/stb_image.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/AsteroidRenderable.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -4181,22 +4183,22 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/AsteroidRenderable.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Io.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/KeyframeCollection.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Plane.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Renderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Sphere.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Utils.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/lighting/Light.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/lighting/Material.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/log.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/texturing/AsteroidRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/texturing/KeyFramedTexturedLightedMeshRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/texturing/AsteroidRenderable.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Io.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/KeyframeCollection.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Plane.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Renderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Sphere.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Utils.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/lighting/Light.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/lighting/Material.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/log.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/texturing/AsteroidRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/texturing/KeyFramedTexturedLightedMeshRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/texturing/AsteroidRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/BillBoardPlaneRenderable.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -4284,17 +4286,17 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/BillBoardPlaneRenderable.cpp
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Plane.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Renderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Sphere.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Utils.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/lighting/Material.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/log.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/texturing/BillBoardPlaneRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/texturing/BillBoardPlaneRenderable.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Plane.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Renderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Sphere.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Utils.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/lighting/Material.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/log.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/texturing/BillBoardPlaneRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/texturing/BillBoardPlaneRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/KeyFramedTexturedLightedMeshRenderable.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -4382,21 +4384,21 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/KeyFramedTexturedLightedMesh
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Io.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/KeyframeCollection.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Plane.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Renderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Sphere.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Utils.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/lighting/Light.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/lighting/Material.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/log.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/texturing/KeyFramedTexturedLightedMeshRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/texturing/KeyFramedTexturedLightedMeshRenderable.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Io.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/KeyframeCollection.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Plane.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Renderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Sphere.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Utils.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/lighting/Light.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/lighting/Material.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/log.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/texturing/KeyFramedTexturedLightedMeshRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/texturing/KeyFramedTexturedLightedMeshRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MipMapCubeRenderable.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -4484,18 +4486,18 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MipMapCubeRenderable.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Plane.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Renderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Sphere.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Utils.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/lighting/Material.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/log.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/texturing/MipMapCubeRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/texturing/MipMapCubeRenderable.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Plane.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Renderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Sphere.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Utils.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/lighting/Material.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/log.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/texturing/MipMapCubeRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/texturing/MipMapCubeRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MultiTexturedCubeRenderable.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -4583,18 +4585,18 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MultiTexturedCubeRenderable.
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Plane.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Renderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Sphere.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Utils.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/lighting/Material.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/log.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/texturing/MultiTexturedCubeRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/texturing/MultiTexturedCubeRenderable.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Plane.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Renderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Sphere.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Utils.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/lighting/Material.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/log.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/texturing/MultiTexturedCubeRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/texturing/MultiTexturedCubeRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/SkyBox.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -4682,19 +4684,19 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/SkyBox.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Plane.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Renderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Sphere.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Texture.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Utils.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/lighting/Material.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/log.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/texturing/SkyBox.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/texturing/SkyBox.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Plane.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Renderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Sphere.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Texture.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Utils.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/lighting/Material.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/log.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/texturing/SkyBox.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/texturing/SkyBox.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedCubeRenderable.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -4782,18 +4784,18 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedCubeRenderable.cpp.o
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Plane.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Renderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Sphere.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Utils.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/lighting/Material.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/log.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/texturing/TexturedCubeRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/texturing/TexturedCubeRenderable.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Plane.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Renderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Sphere.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Utils.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/lighting/Material.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/log.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/texturing/TexturedCubeRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/texturing/TexturedCubeRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedLightedMeshRenderable.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -4881,20 +4883,20 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedLightedMeshRenderabl
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Io.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Plane.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Renderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Sphere.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Utils.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/lighting/Light.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/lighting/Material.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/log.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/texturing/TexturedLightedMeshRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/texturing/TexturedLightedMeshRenderable.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Io.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Plane.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Renderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Sphere.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Utils.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/lighting/Light.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/lighting/Material.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/log.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/texturing/TexturedLightedMeshRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/texturing/TexturedLightedMeshRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedPlaneRenderable.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -4982,18 +4984,18 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedPlaneRenderable.cpp.
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Plane.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Renderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Sphere.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Utils.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/lighting/Material.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/log.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/texturing/TexturedPlaneRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/texturing/TexturedPlaneRenderable.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Plane.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Renderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Sphere.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Utils.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/lighting/Material.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/log.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/texturing/TexturedPlaneRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/texturing/TexturedPlaneRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedTriangleRenderable.cpp.o
  ../extlib/glew-1.13.0/include/GL/glew.h
  ../extlib/glm-0.9.7.1/glm/common.hpp
@@ -5081,15 +5083,15 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedTriangleRenderable.c
  ../extlib/glm-0.9.7.1/glm/vec3.hpp
  ../extlib/glm-0.9.7.1/glm/vec4.hpp
  ../extlib/glm-0.9.7.1/glm/vector_relational.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Plane.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Renderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Sphere.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/Utils.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/gl_helper.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/lighting/Material.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/log.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/include/texturing/TexturedTriangleRenderable.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/src/texturing/TexturedTriangleRenderable.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/GeometricTransformation.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Plane.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Renderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/ShaderProgram.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Sphere.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/Utils.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/gl_helper.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/lighting/Material.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/log.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/include/texturing/TexturedTriangleRenderable.hpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/texturing/TexturedTriangleRenderable.cpp

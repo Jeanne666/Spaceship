@@ -789,6 +789,18 @@ detail/func_vector_relational.hpp
 ../../sfmlGraphicsPipeline/include/Camera.hpp
 glm/glm.hpp
 -
+map
+-
+array
+-
+
+../../sfmlGraphicsPipeline/include/CubeRenderable.hpp
+Renderable.hpp
+../../sfmlGraphicsPipeline/include/Renderable.hpp
+vector
+-
+glm/glm.hpp
+-
 
 ../../sfmlGraphicsPipeline/include/FPSCounter.hpp
 chrono
@@ -1020,7 +1032,7 @@ vector
 glm/glm.hpp
 -
 
-/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sampleProject/main.cpp
+/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sampleProject/main.cpp
 vector
 -
 Viewer.hpp
@@ -1030,6 +1042,8 @@ ShaderProgram.hpp
 lighting/PointLightRenderable.hpp
 -
 FrameRenderable.hpp
+-
+CubeRenderable.hpp
 -
 texturing/SkyBox.hpp
 -

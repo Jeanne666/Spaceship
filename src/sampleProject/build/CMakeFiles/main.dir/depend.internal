@@ -95,6 +95,7 @@ CMakeFiles/main.dir/main.cpp.o
  ../../sfmlGraphicsPipeline/extlib/glm-0.9.7.1/glm/vec4.hpp
  ../../sfmlGraphicsPipeline/extlib/glm-0.9.7.1/glm/vector_relational.hpp
  ../../sfmlGraphicsPipeline/include/Camera.hpp
+ ../../sfmlGraphicsPipeline/include/CubeRenderable.hpp
  ../../sfmlGraphicsPipeline/include/FPSCounter.hpp
  ../../sfmlGraphicsPipeline/include/FrameRenderable.hpp
  ../../sfmlGraphicsPipeline/include/GeometricTransformation.hpp
@@ -116,4 +117,4 @@ CMakeFiles/main.dir/main.cpp.o
  ../../sfmlGraphicsPipeline/include/texturing/AsteroidRenderable.hpp
  ../../sfmlGraphicsPipeline/include/texturing/KeyFramedTexturedLightedMeshRenderable.hpp
  ../../sfmlGraphicsPipeline/include/texturing/SkyBox.hpp
- /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sampleProject/main.cpp
+ /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sampleProject/main.cpp
