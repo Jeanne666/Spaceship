@@ -47,6 +47,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/Material.cpp.o"
   "CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/PointLightRenderable.cpp.o"
   "CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/SpotLightRenderable.cpp.o"
+  "CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/TexturedMeshPointLightRenderable.cpp.o"
   "CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/log.cpp.o"
   "CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/stb_image.cpp.o"
   "CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/AsteroidRenderable.cpp.o"

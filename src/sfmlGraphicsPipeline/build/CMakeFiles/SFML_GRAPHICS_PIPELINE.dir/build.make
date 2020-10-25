@@ -681,9 +681,22 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/SpotLightRenderable.cpp.s: cm
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/SpotLightRenderable.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/lighting/SpotLightRenderable.cpp" -o CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/SpotLightRenderable.cpp.s
 
+CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/TexturedMeshPointLightRenderable.cpp.o: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/flags.make
+CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/TexturedMeshPointLightRenderable.cpp.o: ../src/lighting/TexturedMeshPointLightRenderable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/TexturedMeshPointLightRenderable.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/TexturedMeshPointLightRenderable.cpp.o -c "/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/lighting/TexturedMeshPointLightRenderable.cpp"
+
+CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/TexturedMeshPointLightRenderable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/TexturedMeshPointLightRenderable.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/lighting/TexturedMeshPointLightRenderable.cpp" > CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/TexturedMeshPointLightRenderable.cpp.i
+
+CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/TexturedMeshPointLightRenderable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/TexturedMeshPointLightRenderable.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/lighting/TexturedMeshPointLightRenderable.cpp" -o CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/TexturedMeshPointLightRenderable.cpp.s
+
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/log.cpp.o: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/flags.make
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/log.cpp.o: ../src/log.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/log.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/log.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/log.cpp.o -c "/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/log.cpp"
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/log.cpp.i: cmake_force
@@ -696,7 +709,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/log.cpp.s: cmake_force
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/stb_image.cpp.o: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/flags.make
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/stb_image.cpp.o: ../src/stb_image.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/stb_image.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/stb_image.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/stb_image.cpp.o -c "/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/stb_image.cpp"
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/stb_image.cpp.i: cmake_force
@@ -709,7 +722,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/stb_image.cpp.s: cmake_force
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/AsteroidRenderable.cpp.o: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/flags.make
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/AsteroidRenderable.cpp.o: ../src/texturing/AsteroidRenderable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/AsteroidRenderable.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/AsteroidRenderable.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/AsteroidRenderable.cpp.o -c "/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/texturing/AsteroidRenderable.cpp"
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/AsteroidRenderable.cpp.i: cmake_force
@@ -722,7 +735,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/AsteroidRenderable.cpp.s: cm
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/BillBoardPlaneRenderable.cpp.o: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/flags.make
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/BillBoardPlaneRenderable.cpp.o: ../src/texturing/BillBoardPlaneRenderable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/BillBoardPlaneRenderable.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/BillBoardPlaneRenderable.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/BillBoardPlaneRenderable.cpp.o -c "/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/texturing/BillBoardPlaneRenderable.cpp"
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/BillBoardPlaneRenderable.cpp.i: cmake_force
@@ -735,7 +748,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/BillBoardPlaneRenderable.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/KeyFramedTexturedLightedMeshRenderable.cpp.o: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/flags.make
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/KeyFramedTexturedLightedMeshRenderable.cpp.o: ../src/texturing/KeyFramedTexturedLightedMeshRenderable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/KeyFramedTexturedLightedMeshRenderable.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/KeyFramedTexturedLightedMeshRenderable.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/KeyFramedTexturedLightedMeshRenderable.cpp.o -c "/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/texturing/KeyFramedTexturedLightedMeshRenderable.cpp"
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/KeyFramedTexturedLightedMeshRenderable.cpp.i: cmake_force
@@ -748,7 +761,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/KeyFramedTexturedLightedMesh
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MipMapCubeRenderable.cpp.o: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/flags.make
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MipMapCubeRenderable.cpp.o: ../src/texturing/MipMapCubeRenderable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MipMapCubeRenderable.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MipMapCubeRenderable.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MipMapCubeRenderable.cpp.o -c "/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/texturing/MipMapCubeRenderable.cpp"
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MipMapCubeRenderable.cpp.i: cmake_force
@@ -761,7 +774,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MipMapCubeRenderable.cpp.s: 
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MultiTexturedCubeRenderable.cpp.o: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/flags.make
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MultiTexturedCubeRenderable.cpp.o: ../src/texturing/MultiTexturedCubeRenderable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MultiTexturedCubeRenderable.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MultiTexturedCubeRenderable.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MultiTexturedCubeRenderable.cpp.o -c "/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/texturing/MultiTexturedCubeRenderable.cpp"
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MultiTexturedCubeRenderable.cpp.i: cmake_force
@@ -774,7 +787,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MultiTexturedCubeRenderable.
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/SkyBox.cpp.o: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/flags.make
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/SkyBox.cpp.o: ../src/texturing/SkyBox.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/SkyBox.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/SkyBox.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/SkyBox.cpp.o -c "/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/texturing/SkyBox.cpp"
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/SkyBox.cpp.i: cmake_force
@@ -787,7 +800,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/SkyBox.cpp.s: cmake_force
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedCubeRenderable.cpp.o: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/flags.make
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedCubeRenderable.cpp.o: ../src/texturing/TexturedCubeRenderable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedCubeRenderable.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedCubeRenderable.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedCubeRenderable.cpp.o -c "/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/texturing/TexturedCubeRenderable.cpp"
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedCubeRenderable.cpp.i: cmake_force
@@ -800,7 +813,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedCubeRenderable.cpp.s
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedLightedMeshRenderable.cpp.o: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/flags.make
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedLightedMeshRenderable.cpp.o: ../src/texturing/TexturedLightedMeshRenderable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedLightedMeshRenderable.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedLightedMeshRenderable.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedLightedMeshRenderable.cpp.o -c "/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/texturing/TexturedLightedMeshRenderable.cpp"
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedLightedMeshRenderable.cpp.i: cmake_force
@@ -813,7 +826,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedLightedMeshRenderabl
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedPlaneRenderable.cpp.o: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/flags.make
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedPlaneRenderable.cpp.o: ../src/texturing/TexturedPlaneRenderable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedPlaneRenderable.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedPlaneRenderable.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedPlaneRenderable.cpp.o -c "/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/texturing/TexturedPlaneRenderable.cpp"
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedPlaneRenderable.cpp.i: cmake_force
@@ -826,7 +839,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedPlaneRenderable.cpp.
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedTriangleRenderable.cpp.o: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/flags.make
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedTriangleRenderable.cpp.o: ../src/texturing/TexturedTriangleRenderable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedTriangleRenderable.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedTriangleRenderable.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedTriangleRenderable.cpp.o -c "/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/src/texturing/TexturedTriangleRenderable.cpp"
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedTriangleRenderable.cpp.i: cmake_force
@@ -887,6 +900,7 @@ SFML_GRAPHICS_PIPELINE_OBJECTS = \
 "CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/Material.cpp.o" \
 "CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/PointLightRenderable.cpp.o" \
 "CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/SpotLightRenderable.cpp.o" \
+"CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/TexturedMeshPointLightRenderable.cpp.o" \
 "CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/log.cpp.o" \
 "CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/stb_image.cpp.o" \
 "CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/AsteroidRenderable.cpp.o" \
@@ -951,6 +965,7 @@ libSFML_GRAPHICS_PIPELINE.a: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/
 libSFML_GRAPHICS_PIPELINE.a: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/Material.cpp.o
 libSFML_GRAPHICS_PIPELINE.a: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/PointLightRenderable.cpp.o
 libSFML_GRAPHICS_PIPELINE.a: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/SpotLightRenderable.cpp.o
+libSFML_GRAPHICS_PIPELINE.a: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/TexturedMeshPointLightRenderable.cpp.o
 libSFML_GRAPHICS_PIPELINE.a: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/log.cpp.o
 libSFML_GRAPHICS_PIPELINE.a: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/stb_image.cpp.o
 libSFML_GRAPHICS_PIPELINE.a: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/AsteroidRenderable.cpp.o
@@ -965,7 +980,7 @@ libSFML_GRAPHICS_PIPELINE.a: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing
 libSFML_GRAPHICS_PIPELINE.a: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedTriangleRenderable.cpp.o
 libSFML_GRAPHICS_PIPELINE.a: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make
 libSFML_GRAPHICS_PIPELINE.a: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_61) "Linking CXX static library libSFML_GRAPHICS_PIPELINE.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_62) "Linking CXX static library libSFML_GRAPHICS_PIPELINE.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/link.txt --verbose=$(VERBOSE)
 

@@ -794,14 +794,6 @@ map
 array
 -
 
-../../sfmlGraphicsPipeline/include/CubeRenderable.hpp
-Renderable.hpp
-../../sfmlGraphicsPipeline/include/Renderable.hpp
-vector
--
-glm/glm.hpp
--
-
 ../../sfmlGraphicsPipeline/include/FPSCounter.hpp
 chrono
 -
@@ -972,11 +964,15 @@ string
 memory
 -
 
-../../sfmlGraphicsPipeline/include/lighting/PointLightRenderable.hpp
+../../sfmlGraphicsPipeline/include/lighting/TexturedMeshPointLightRenderable.hpp
 ./../HierarchicalRenderable.hpp
 ../../sfmlGraphicsPipeline/include/HierarchicalRenderable.hpp
+./../KeyframeCollection.hpp
+../../sfmlGraphicsPipeline/include/KeyframeCollection.hpp
 Light.hpp
 ../../sfmlGraphicsPipeline/include/lighting/Light.hpp
+string
+-
 vector
 -
 glm/glm.hpp
@@ -1039,11 +1035,9 @@ Viewer.hpp
 -
 ShaderProgram.hpp
 -
-lighting/PointLightRenderable.hpp
+lighting/TexturedMeshPointLightRenderable.hpp
 -
 FrameRenderable.hpp
--
-CubeRenderable.hpp
 -
 texturing/SkyBox.hpp
 -

@@ -3,17 +3,18 @@
 #include <Viewer.hpp>
 #include <ShaderProgram.hpp>
 
-#include <lighting/PointLightRenderable.hpp>
 //#include <lighting/SpotLightRenderable.hpp>
 
+#include <lighting/TexturedMeshPointLightRenderable.hpp>
+
 #include <FrameRenderable.hpp>
-#include <CubeRenderable.hpp>
 #include <texturing/SkyBox.hpp>
 #include <lighting/LightedMeshRenderable.hpp>
 #include <texturing/KeyFramedTexturedLightedMeshRenderable.hpp>
 #include <texturing/AsteroidRenderable.hpp>
 
 int shuttleAnimation(KeyFramedTexturedLightedMeshRenderablePtr& shuttle, Viewer& viewer);
+void fireAnimation(TexturedMeshPointLightRenderablePtr& fireRenderable, const float TIME_MAX);
 void asteroid1Animation(AsteroidRenderablePtr& asteroid);
 void asteroid2Animation(AsteroidRenderablePtr& asteroid);
 void asteroid3Animation(AsteroidRenderablePtr& asteroid);
@@ -46,41 +47,14 @@ void initialize_scene( Viewer& viewer )
 
     //Define a directional light for the whole scene
     glm::vec3 d_direction = glm::normalize(glm::vec3(1.0,0.63,-1.0));
-    glm::vec3 d_ambient(0.5,0.5,0.5), d_diffuse(0.7,0.7,0.7), d_specular(0.7,0.7,0.7);
+    glm::vec3 d_ambient(0.3,0.3,0.3), d_diffuse(0.7,0.7,0.7), d_specular(0.7,0.7,0.7);
     DirectionalLightPtr directionalLight = std::make_shared<DirectionalLight>(d_direction, d_ambient, d_diffuse, d_specular);
     viewer.setDirectionalLight(directionalLight);
 
 
-    //Define a point light
-    /*glm::vec3 p_position(0.0,0.0,0.0), p_ambient(0.0,0.0,0.0), p_diffuse(0.0,0.0,0.0), p_specular(0.0,0.0,0.0);
-    float p_constant=0.0, p_linear=0.0, p_quadratic=0.0;
-    p_position = glm::vec3(0.0, 0.0, 5.0);
-    p_ambient = glm::vec3(0.0,0.0,0.0);
-    p_diffuse = glm::vec3(1.0,0.8,0.8);
-    p_specular = glm::vec3(1.0,0.8,0.8);
-    p_constant=1.0;
-    p_linear=5e-1;
-    p_quadratic=0;
-    PointLightPtr pointLight1 = std::make_shared<PointLight>(p_position, p_ambient, p_diffuse, p_specular, p_constant, p_linear, p_quadratic);
-    viewer.addPointLight(pointLight1);
-    PointLightRenderablePtr pointLightRenderable1 = std::make_shared<PointLightRenderable>(flatShader, pointLight1);
-    viewer.addRenderable(pointLightRenderable1);*/
+    
 
-/*    p_position = glm::vec3(8, 5.0, 5.0);
-    p_ambient = glm::vec3(0.0,0.0,0.0);
-    p_diffuse = glm::vec3(0.0,0.0,1.0);
-    p_specular = glm::vec3(0.0,0.0,1.0);
-    p_constant=1.0;
-    p_linear=5e-1;
-    p_quadratic=0;
-    PointLightPtr pointLight2 = std::make_shared<PointLight>(p_position, p_ambient, p_diffuse, p_specular, p_constant, p_linear, p_quadratic);
-    PointLightRenderablePtr pointLightRenderable2 = std::make_shared<PointLightRenderable>(flatShader, pointLight2);
-    localTransformation = glm::scale(glm::mat4(1.0), glm::vec3(0.5,0.5,0.5));
-    pointLightRenderable2->setLocalTransform(localTransformation);
-    viewer.addPointLight(pointLight2);
-    viewer.addRenderable(pointLightRenderable2);
-
-    //Define a spot light
+/*  //Define a spot light
     glm::vec3 s_position(0.0,5.0,-8.0), s_spotDirection = glm::normalize(glm::vec3(0.0,-1.0,1.0));
     //glm::vec3 s_ambient(0.0,0.0,0.0), s_diffuse(0.0,0.0,0.0), s_specular(0.0,0.0,0.0);
     glm::vec3 s_ambient(0.0,0.0,0.0), s_diffuse(0.5,0.5,0.5), s_specular(0.5,0.5,0.5);
@@ -100,6 +74,8 @@ void initialize_scene( Viewer& viewer )
     //Define a shader for textured renderables
     ShaderProgramPtr textureShader = std::make_shared<ShaderProgram>( "../../sfmlGraphicsPipeline/shaders/textureVertex.glsl","../../sfmlGraphicsPipeline/shaders/textureFragment.glsl");
     viewer.addShaderProgram( textureShader );
+    ShaderProgramPtr unlightedTextureShader = std::make_shared<ShaderProgram>( "../../sfmlGraphicsPipeline/shaders/unlightedTextureVertex.glsl","../../sfmlGraphicsPipeline/shaders/unlightedTextureFragment.glsl");
+    viewer.addShaderProgram( unlightedTextureShader );
     
         
     //Moon
@@ -132,20 +108,41 @@ void initialize_scene( Viewer& viewer )
     shuttle->setMaterial(Material::Pearl());
     viewer.addRenderable(shuttle);
     
-    int t=shuttleAnimation(shuttle, viewer);
+    int t=0;
+    t=shuttleAnimation(shuttle, viewer);
     
-    //FIXME
-    //Fire
-    /*KeyFramedTexturedLightedMeshRenderablePtr fire = std::make_shared<KeyFramedTexturedLightedMeshRenderable>(textureShader, "../../../model/fire/fire.obj", "../../../model/fire/fire.png");
-    fire->setLocalTransform(glm::translate(glm::mat4(1.0),glm::vec3(0.45,-0.05,3.8)));
-    fire->setMaterial(Material::Pearl());
-    viewer.addRenderable(fire);*/
+    //FireUp
+    PointLightPtr fireLightUp = std::make_shared<PointLight>(glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0,0.0,0.0), glm::vec3(1.0,0.8,0.8), glm::vec3(1.0,0.8,0.8), 1.0, 5e-1, 0);
+    viewer.addPointLight(fireLightUp);
+    TexturedMeshPointLightRenderablePtr fireUp = std::make_shared<TexturedMeshPointLightRenderable>(unlightedTextureShader, "../../../model/fire/fire.obj", "../../../model/fire/fire3.png", fireLightUp);
+    fireUp->setLocalTransform(GeometricTransformation(glm::vec3{-0.9,0,0.28},
+    											glm::angleAxis(glm::radians(-90.f), glm::vec3(0, 1, 0)),
+    											glm::vec3{0.2,0.2,0.2}).toMatrix());
+    HierarchicalRenderable::addChild(shuttle, fireUp);
+    fireAnimation(fireUp, t);
     
-    //Position the camera
-	viewer.getCamera().setAnimation(false);
-
-	CubeRenderablePtr cube = std::make_shared<CubeRenderable>(flatShader);
-	viewer.addRenderable(cube);
+    //FireLeft
+    PointLightPtr fireLightLeft = std::make_shared<PointLight>(glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0,0.0,0.0), glm::vec3(1.0,0.8,0.8), glm::vec3(1.0,0.8,0.8), 1.0, 5e-1, 0);
+    viewer.addPointLight(fireLightLeft);
+    TexturedMeshPointLightRenderablePtr fireLeft = std::make_shared<TexturedMeshPointLightRenderable>(unlightedTextureShader, "../../../model/fire/fire.obj", "../../../model/fire/fire3.png", fireLightLeft);
+    fireLeft->setLocalTransform(GeometricTransformation(glm::vec3{-0.9,0.08,0.15},
+    											glm::angleAxis(glm::radians(-90.f), glm::vec3(0, 1, 0)),
+    											glm::vec3{0.2,0.2,0.2}).toMatrix());
+    HierarchicalRenderable::addChild(shuttle, fireLeft);
+    fireAnimation(fireLeft, t);
+    
+    //FireRight
+    PointLightPtr fireLightRight = std::make_shared<PointLight>(glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0,0.0,0.0), glm::vec3(1.0,0.8,0.8), glm::vec3(1.0,0.8,0.8), 1.0, 5e-1, 0);
+    viewer.addPointLight(fireLightRight);
+    TexturedMeshPointLightRenderablePtr fireRight = std::make_shared<TexturedMeshPointLightRenderable>(unlightedTextureShader, "../../../model/fire/fire.obj", "../../../model/fire/fire3.png", fireLightRight);
+    fireRight->setLocalTransform(GeometricTransformation(glm::vec3{-0.9,-0.08,0.15},
+    											glm::angleAxis(glm::radians(-90.f), glm::vec3(0, 1, 0)),
+    											glm::vec3{0.2,0.2,0.2}).toMatrix());
+    HierarchicalRenderable::addChild(shuttle, fireRight);
+    fireAnimation(fireRight, t);
+    
+    //Is the camera moving
+	viewer.getCamera().setAnimation(true);
 
     viewer.startAnimation();
     viewer.setAnimationLoop(true, t);
@@ -367,6 +364,17 @@ int shuttleAnimation(KeyFramedTexturedLightedMeshRenderablePtr& shuttle, Viewer&
     
     return t+1;
         
+}
+
+void fireAnimation(TexturedMeshPointLightRenderablePtr& fireRenderable, const float TIME_MAX){  
+    for(float t=0.0;t<TIME_MAX;t+=0.2){
+    	fireRenderable->addParentTransformKeyframe(GeometricTransformation(glm::vec3{0,0,0},
+    											glm::quat{0,0,0,0},
+    											glm::vec3{1,1,1}), t);
+    	fireRenderable->addParentTransformKeyframe(GeometricTransformation(glm::vec3{0,0,0},
+    											glm::quat{0,0,0,0},
+    											glm::vec3{0.95,0.98,0.98}), t+0.1);
+    }
 }
 
 void asteroid1Animation(AsteroidRenderablePtr& asteroid){

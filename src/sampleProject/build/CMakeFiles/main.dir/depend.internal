@@ -95,7 +95,6 @@ CMakeFiles/main.dir/main.cpp.o
  ../../sfmlGraphicsPipeline/extlib/glm-0.9.7.1/glm/vec4.hpp
  ../../sfmlGraphicsPipeline/extlib/glm-0.9.7.1/glm/vector_relational.hpp
  ../../sfmlGraphicsPipeline/include/Camera.hpp
- ../../sfmlGraphicsPipeline/include/CubeRenderable.hpp
  ../../sfmlGraphicsPipeline/include/FPSCounter.hpp
  ../../sfmlGraphicsPipeline/include/FrameRenderable.hpp
  ../../sfmlGraphicsPipeline/include/GeometricTransformation.hpp
@@ -112,7 +111,7 @@ CMakeFiles/main.dir/main.cpp.o
  ../../sfmlGraphicsPipeline/include/lighting/Light.hpp
  ../../sfmlGraphicsPipeline/include/lighting/LightedMeshRenderable.hpp
  ../../sfmlGraphicsPipeline/include/lighting/Material.hpp
- ../../sfmlGraphicsPipeline/include/lighting/PointLightRenderable.hpp
+ ../../sfmlGraphicsPipeline/include/lighting/TexturedMeshPointLightRenderable.hpp
  ../../sfmlGraphicsPipeline/include/log.hpp
  ../../sfmlGraphicsPipeline/include/texturing/AsteroidRenderable.hpp
  ../../sfmlGraphicsPipeline/include/texturing/KeyFramedTexturedLightedMeshRenderable.hpp
