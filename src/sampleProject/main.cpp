@@ -114,7 +114,7 @@ void initialize_scene( Viewer& viewer )
     //FireUp
     PointLightPtr fireLightUp = std::make_shared<PointLight>(glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0,0.0,0.0), glm::vec3(1.0,0.8,0.8), glm::vec3(1.0,0.8,0.8), 1.0, 5e-1, 0);
     viewer.addPointLight(fireLightUp);
-    TexturedMeshPointLightRenderablePtr fireUp = std::make_shared<TexturedMeshPointLightRenderable>(unlightedTextureShader, "../../../model/fire/fire.obj", "../../../model/fire/fire3.png", fireLightUp);
+    TexturedMeshPointLightRenderablePtr fireUp = std::make_shared<TexturedMeshPointLightRenderable>(unlightedTextureShader, "../../../model/fire/fire.obj", "../../../model/fire/fire4.png", fireLightUp);
     fireUp->setLocalTransform(GeometricTransformation(glm::vec3{-0.9,0,0.28},
     											glm::angleAxis(glm::radians(-90.f), glm::vec3(0, 1, 0)),
     											glm::vec3{0.2,0.2,0.2}).toMatrix());
@@ -124,7 +124,7 @@ void initialize_scene( Viewer& viewer )
     //FireLeft
     PointLightPtr fireLightLeft = std::make_shared<PointLight>(glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0,0.0,0.0), glm::vec3(1.0,0.8,0.8), glm::vec3(1.0,0.8,0.8), 1.0, 5e-1, 0);
     viewer.addPointLight(fireLightLeft);
-    TexturedMeshPointLightRenderablePtr fireLeft = std::make_shared<TexturedMeshPointLightRenderable>(unlightedTextureShader, "../../../model/fire/fire.obj", "../../../model/fire/fire3.png", fireLightLeft);
+    TexturedMeshPointLightRenderablePtr fireLeft = std::make_shared<TexturedMeshPointLightRenderable>(unlightedTextureShader, "../../../model/fire/fire.obj", "../../../model/fire/fire4.png", fireLightLeft);
     fireLeft->setLocalTransform(GeometricTransformation(glm::vec3{-0.9,0.08,0.15},
     											glm::angleAxis(glm::radians(-90.f), glm::vec3(0, 1, 0)),
     											glm::vec3{0.2,0.2,0.2}).toMatrix());
@@ -134,7 +134,7 @@ void initialize_scene( Viewer& viewer )
     //FireRight
     PointLightPtr fireLightRight = std::make_shared<PointLight>(glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0,0.0,0.0), glm::vec3(1.0,0.8,0.8), glm::vec3(1.0,0.8,0.8), 1.0, 5e-1, 0);
     viewer.addPointLight(fireLightRight);
-    TexturedMeshPointLightRenderablePtr fireRight = std::make_shared<TexturedMeshPointLightRenderable>(unlightedTextureShader, "../../../model/fire/fire.obj", "../../../model/fire/fire3.png", fireLightRight);
+    TexturedMeshPointLightRenderablePtr fireRight = std::make_shared<TexturedMeshPointLightRenderable>(unlightedTextureShader, "../../../model/fire/fire.obj", "../../../model/fire/fire4.png", fireLightRight);
     fireRight->setLocalTransform(GeometricTransformation(glm::vec3{-0.9,-0.08,0.15},
     											glm::angleAxis(glm::radians(-90.f), glm::vec3(0, 1, 0)),
     											glm::vec3{0.2,0.2,0.2}).toMatrix());
