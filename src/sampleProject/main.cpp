@@ -6,7 +6,6 @@
 //#include <lighting/SpotLightRenderable.hpp>
 
 #include <lighting/TexturedMeshPointLightRenderable.hpp>
-
 #include <FrameRenderable.hpp>
 #include <texturing/SkyBox.hpp>
 #include <lighting/LightedMeshRenderable.hpp>
@@ -34,7 +33,7 @@ void initialize_scene( Viewer& viewer )
     FrameRenderablePtr frame = std::make_shared<FrameRenderable>(flatShader);
     viewer.addRenderable(frame);
 
-	//Skybox Cube
+    //Skybox Cube
     ShaderProgramPtr skyBoxShader = std::make_shared<ShaderProgram>("../../sfmlGraphicsPipeline/shaders/skyBoxTextureVertex.glsl","../../sfmlGraphicsPipeline/shaders/skyBoxTextureFragment.glsl");
     viewer.addShaderProgram( skyBoxShader );
     
@@ -141,8 +140,17 @@ void initialize_scene( Viewer& viewer )
     HierarchicalRenderable::addChild(shuttle, fireRight);
     fireAnimation(fireRight, t);
     
+    //MeanSpaceship
+    KeyFramedTexturedLightedMeshRenderablePtr meanguy = std::make_shared<KeyFramedTexturedLightedMeshRenderable>(textureShader, "../../../model/meanSpaceship/usable/meanScaleUp.obj", "../../../model/meanSpaceship/texture/test.png");
+    //../../../model/meanSpaceship/texture/texture-3.png
+    //../../../model/meanSpaceship/usable/meanWhole.mtl
+    meanguy->setLocalTransform(glm::scale(glm::mat4(1.0f),glm::vec3(0.05,0.05,0.05)));
+    viewer.addRenderable(meanguy);
+    //meanGuyAnimation(meanguy,t);
+    
+    
     //Is the camera moving
-	viewer.getCamera().setAnimation(true);
+	viewer.getCamera().setAnimation(false);
 
     viewer.startAnimation();
     viewer.setAnimationLoop(true, t);
@@ -359,8 +367,8 @@ int shuttleAnimation(KeyFramedTexturedLightedMeshRenderablePtr& shuttle, Viewer&
     	shuttle->addParentTransformKeyframe(*it,t);
     	viewer.getCamera().addKeyframe((*it).getTranslation()+glm::vec3(-12,-(*it).getTranslation()[1],5),(*it).getTranslation()+glm::vec3(0,-(*it).getTranslation()[1],0),t);
     	t+=0.3;
-    }
     gtShuttle.clear();
+    }
     
     return t+1;
         
@@ -399,7 +407,7 @@ void asteroid1Animation(AsteroidRenderablePtr& asteroid){
     
     for(auto it=gt.begin() ; it<gt.end() ; ++it){
     	asteroid->addParentTransformKeyframe(*it,t);
-    	t+=6;
+    	t+=8;
     }
 }
 
@@ -425,7 +433,7 @@ void asteroid2Animation(AsteroidRenderablePtr& asteroid){
     
     for(auto it=gt.begin() ; it<gt.end() ; ++it){
     	asteroid->addParentTransformKeyframe(*it,t);
-    	t+=6;
+    	t+=8;
     }
 }
 
@@ -452,8 +460,42 @@ void asteroid3Animation(AsteroidRenderablePtr& asteroid){
     
     for(auto it=gt.begin() ; it<gt.end() ; ++it){
     	asteroid->addParentTransformKeyframe(*it,t);
-    	t+=6;
+    	t+=8;
     }
 }
+
+
+void meanGuyAnimation(KeyFramedTexturedLightedMeshRenderablePtr& meanie, Viewer& viewer){
+	
+    std::vector<GeometricTransformation> gtMeanGuy;
+    float t=0.0;
+    
+    gtMeanGuy.push_back(GeometricTransformation(glm::vec3{0,0,0},
+    											glm::quat{0,0,0,0},
+    											glm::vec3{1,1,1}));
+    
+    gtMeanGuy.push_back(GeometricTransformation(glm::vec3{15,20,0},
+    											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 1, 0)),
+    											glm::vec3{1,1,1}));
+    gtMeanGuy.push_back(GeometricTransformation(glm::vec3{15,20,0},
+    											glm::angleAxis(glm::radians(72.f), glm::vec3(0, 1, 0)),
+    											glm::vec3{1,1,1}));
+    gtMeanGuy.push_back(GeometricTransformation(glm::vec3{15,20,0},
+    											glm::angleAxis(glm::radians(144.f), glm::vec3(0, 1, 0)),
+    											glm::vec3{1,1,1}));
+    gtMeanGuy.push_back(GeometricTransformation(glm::vec3{15,20,0},
+    											glm::angleAxis(glm::radians(216.f), glm::vec3(0, 1, 0)),
+    											glm::vec3{1,1,1}));
+    gtMeanGuy.push_back(GeometricTransformation(glm::vec3{15,20,0},
+    											glm::angleAxis(glm::radians(360.f), glm::vec3(0, 1, 0)),
+    											glm::vec3{1,1,1}));
+    											
+    for(auto it=gtMeanGuy.begin() ; it<gtMeanGuy.end() ; ++it){
+    	meanie->addParentTransformKeyframe(*it,t);
+    	t+=8;
+    }											
+    
+}
+
 
 
