@@ -17,6 +17,7 @@ void fireAnimation(TexturedMeshPointLightRenderablePtr& fireRenderable, const fl
 void asteroid1Animation(AsteroidRenderablePtr& asteroid);
 void asteroid2Animation(AsteroidRenderablePtr& asteroid);
 void asteroid3Animation(AsteroidRenderablePtr& asteroid);
+void meanGuyAnimation(KeyFramedTexturedLightedMeshRenderablePtr& meanguy);
 
 
 void initialize_scene( Viewer& viewer )
@@ -142,15 +143,20 @@ void initialize_scene( Viewer& viewer )
     
     //MeanSpaceship
     KeyFramedTexturedLightedMeshRenderablePtr meanguy = std::make_shared<KeyFramedTexturedLightedMeshRenderable>(textureShader, "../../../model/meanSpaceship/usable/meanScaleUp.obj", "../../../model/meanSpaceship/texture/test.png");
-    //../../../model/meanSpaceship/texture/texture-3.png
-    //../../../model/meanSpaceship/usable/meanWhole.mtl
+    //../../../model/meanSpaceship/usable/meanScaleUp.mtl
     meanguy->setLocalTransform(glm::scale(glm::mat4(1.0f),glm::vec3(0.05,0.05,0.05)));
+    const glm::vec3 ambient = glm::vec3(0.25f);
+    const glm::vec3 diffuse = glm::vec3(0.4f);
+    const glm::vec3 specular = glm::vec3(0.774597f);
+    float shininess = 0.6f;
+    meanguy->setMaterial(MaterialPtr(new Material(ambient, diffuse, specular, shininess)));
+    //meanguy->setMaterial(Material::Bronze());
     viewer.addRenderable(meanguy);
-    //meanGuyAnimation(meanguy,t);
+    meanGuyAnimation(meanguy);
     
     
     //Is the camera moving
-	viewer.getCamera().setAnimation(false);
+    viewer.getCamera().setAnimation(true);
 
     viewer.startAnimation();
     viewer.setAnimationLoop(true, t);
@@ -307,7 +313,7 @@ int shuttleAnimation(KeyFramedTexturedLightedMeshRenderablePtr& shuttle, Viewer&
 
 	for(auto it=gtShuttle.begin() ; it<gtShuttle.end() ; ++it){
     	shuttle->addParentTransformKeyframe(*it,t);
-    	viewer.getCamera().addKeyframe((*it).getTranslation()+glm::vec3(-12,-(*it).getTranslation()[1],5),(*it).getTranslation()+glm::vec3(0,-(*it).getTranslation()[1],0),t);
+    	viewer.getCamera().addKeyframe((*it).getTranslation()+glm::vec3(-10,-(*it).getTranslation()[1],5),(*it).getTranslation()+glm::vec3(0,-(*it).getTranslation()[1],0),t);
     	t+=0.5;
     }
     gtShuttle.clear();
@@ -327,7 +333,7 @@ int shuttleAnimation(KeyFramedTexturedLightedMeshRenderablePtr& shuttle, Viewer&
     
     for(auto it=gtShuttle.begin() ; it<gtShuttle.end() ; ++it){
     	shuttle->addParentTransformKeyframe(*it,t);
-    	viewer.getCamera().addKeyframe((*it).getTranslation()+glm::vec3(-12,-(*it).getTranslation()[1],5),(*it).getTranslation()+glm::vec3(0,-(*it).getTranslation()[1],0),t);
+    	viewer.getCamera().addKeyframe((*it).getTranslation()+glm::vec3(-10,-(*it).getTranslation()[1],5),(*it).getTranslation()+glm::vec3(0,-(*it).getTranslation()[1],0),t);
     	t+=0.3;
     }
     gtShuttle.clear();
@@ -338,7 +344,7 @@ int shuttleAnimation(KeyFramedTexturedLightedMeshRenderablePtr& shuttle, Viewer&
     
     for(auto it=gtShuttle.begin() ; it<gtShuttle.end() ; ++it){
     	shuttle->addParentTransformKeyframe(*it,t);
-    	viewer.getCamera().addKeyframe((*it).getTranslation()+glm::vec3(-12,-(*it).getTranslation()[1],5),(*it).getTranslation()+glm::vec3(0,-(*it).getTranslation()[1],0),t);
+    	viewer.getCamera().addKeyframe((*it).getTranslation()+glm::vec3(-10,-(*it).getTranslation()[1],5),(*it).getTranslation()+glm::vec3(0,-(*it).getTranslation()[1],0),t);
     	t+=0.5;
     }
     gtShuttle.clear();
@@ -365,7 +371,7 @@ int shuttleAnimation(KeyFramedTexturedLightedMeshRenderablePtr& shuttle, Viewer&
     
     for(auto it=gtShuttle.begin() ; it<gtShuttle.end() ; ++it){
     	shuttle->addParentTransformKeyframe(*it,t);
-    	viewer.getCamera().addKeyframe((*it).getTranslation()+glm::vec3(-12,-(*it).getTranslation()[1],5),(*it).getTranslation()+glm::vec3(0,-(*it).getTranslation()[1],0),t);
+    	viewer.getCamera().addKeyframe((*it).getTranslation()+glm::vec3(-10,-(*it).getTranslation()[1],5),(*it).getTranslation()+glm::vec3(0,-(*it).getTranslation()[1],0),t);
     	t+=0.3;
     gtShuttle.clear();
     }
@@ -465,29 +471,36 @@ void asteroid3Animation(AsteroidRenderablePtr& asteroid){
 }
 
 
-void meanGuyAnimation(KeyFramedTexturedLightedMeshRenderablePtr& meanie, Viewer& viewer){
+void meanGuyAnimation(KeyFramedTexturedLightedMeshRenderablePtr& meanie){
 	
     std::vector<GeometricTransformation> gtMeanGuy;
     float t=0.0;
     
-    gtMeanGuy.push_back(GeometricTransformation(glm::vec3{0,0,0},
+    gtMeanGuy.push_back(GeometricTransformation(glm::vec3{140,0,0},
     											glm::quat{0,0,0,0},
-    											glm::vec3{1,1,1}));
+    											glm::vec3{0.5,0.5,0.5}));
+    gtMeanGuy.push_back(GeometricTransformation(glm::vec3{140,0,0},
+    											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
+    											glm::vec3{0.5,0.5,0.5}));
     
-    gtMeanGuy.push_back(GeometricTransformation(glm::vec3{15,20,0},
-    											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 1, 0)),
+    /*gtMeanGuy.push_back(GeometricTransformation(glm::vec3{140,0,0},
+    											glm::quat{0,0,0,0},
+    											glm::vec3{1,1,1}));*/
+    
+    gtMeanGuy.push_back(GeometricTransformation(glm::vec3{140,0,0},
+    											glm::angleAxis(glm::radians(0.f), glm::vec3(1, 0, 0)),
     											glm::vec3{1,1,1}));
-    gtMeanGuy.push_back(GeometricTransformation(glm::vec3{15,20,0},
-    											glm::angleAxis(glm::radians(72.f), glm::vec3(0, 1, 0)),
+    gtMeanGuy.push_back(GeometricTransformation(glm::vec3{140,0,0},
+    											glm::angleAxis(glm::radians(72.f), glm::vec3(1, 0, 0)),
     											glm::vec3{1,1,1}));
-    gtMeanGuy.push_back(GeometricTransformation(glm::vec3{15,20,0},
-    											glm::angleAxis(glm::radians(144.f), glm::vec3(0, 1, 0)),
+    gtMeanGuy.push_back(GeometricTransformation(glm::vec3{140,0,0},
+    											glm::angleAxis(glm::radians(144.f), glm::vec3(1, 0, 0)),
     											glm::vec3{1,1,1}));
-    gtMeanGuy.push_back(GeometricTransformation(glm::vec3{15,20,0},
-    											glm::angleAxis(glm::radians(216.f), glm::vec3(0, 1, 0)),
+    gtMeanGuy.push_back(GeometricTransformation(glm::vec3{140,0,0},
+    											glm::angleAxis(glm::radians(216.f), glm::vec3(1, 0, 0)),
     											glm::vec3{1,1,1}));
-    gtMeanGuy.push_back(GeometricTransformation(glm::vec3{15,20,0},
-    											glm::angleAxis(glm::radians(360.f), glm::vec3(0, 1, 0)),
+    gtMeanGuy.push_back(GeometricTransformation(glm::vec3{140,0,0},
+    											glm::angleAxis(glm::radians(360.f), glm::vec3(1, 0, 0)),
     											glm::vec3{1,1,1}));
     											
     for(auto it=gtMeanGuy.begin() ; it<gtMeanGuy.end() ; ++it){
