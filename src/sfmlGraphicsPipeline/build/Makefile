@@ -1419,6 +1419,33 @@ src/lighting/SpotLightRenderable.cpp.s:
 	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/SpotLightRenderable.cpp.s
 .PHONY : src/lighting/SpotLightRenderable.cpp.s
 
+src/lighting/TexturedMeshPointLightRenderable.o: src/lighting/TexturedMeshPointLightRenderable.cpp.o
+
+.PHONY : src/lighting/TexturedMeshPointLightRenderable.o
+
+# target to build an object file
+src/lighting/TexturedMeshPointLightRenderable.cpp.o:
+	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/TexturedMeshPointLightRenderable.cpp.o
+.PHONY : src/lighting/TexturedMeshPointLightRenderable.cpp.o
+
+src/lighting/TexturedMeshPointLightRenderable.i: src/lighting/TexturedMeshPointLightRenderable.cpp.i
+
+.PHONY : src/lighting/TexturedMeshPointLightRenderable.i
+
+# target to preprocess a source file
+src/lighting/TexturedMeshPointLightRenderable.cpp.i:
+	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/TexturedMeshPointLightRenderable.cpp.i
+.PHONY : src/lighting/TexturedMeshPointLightRenderable.cpp.i
+
+src/lighting/TexturedMeshPointLightRenderable.s: src/lighting/TexturedMeshPointLightRenderable.cpp.s
+
+.PHONY : src/lighting/TexturedMeshPointLightRenderable.s
+
+# target to generate assembly for a file
+src/lighting/TexturedMeshPointLightRenderable.cpp.s:
+	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/TexturedMeshPointLightRenderable.cpp.s
+.PHONY : src/lighting/TexturedMeshPointLightRenderable.cpp.s
+
 src/log.o: src/log.cpp.o
 
 .PHONY : src/log.o
@@ -1896,6 +1923,9 @@ help:
 	@echo "... src/lighting/SpotLightRenderable.o"
 	@echo "... src/lighting/SpotLightRenderable.i"
 	@echo "... src/lighting/SpotLightRenderable.s"
+	@echo "... src/lighting/TexturedMeshPointLightRenderable.o"
+	@echo "... src/lighting/TexturedMeshPointLightRenderable.i"
+	@echo "... src/lighting/TexturedMeshPointLightRenderable.s"
 	@echo "... src/log.o"
 	@echo "... src/log.i"
 	@echo "... src/log.s"

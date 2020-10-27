@@ -85,7 +85,7 @@ main: /usr/lib/x86_64-linux-gnu/libsfml-window.so
 main: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so
 main: /usr/lib/x86_64-linux-gnu/libGLEW.so.2.1.0
 main: ../../sfmlGraphicsPipeline/extlib/freetype-2.5.5/build/libfreetype.a
-main: ../../sfmlGraphicsPipeline/extlib/tinyobjloader/build/libtinyobjloader.a
+main: ../../sfmlGraphicsPipeline/extlib/tinyobjloader/libtinyobjloader.a
 main: /usr/lib/x86_64-linux-gnu/libGL.so
 main: /usr/lib/x86_64-linux-gnu/libGLU.so
 main: CMakeFiles/main.dir/link.txt
