@@ -18,6 +18,7 @@ void asteroid1Animation(AsteroidRenderablePtr& asteroid);
 void asteroid2Animation(AsteroidRenderablePtr& asteroid);
 void asteroid3Animation(AsteroidRenderablePtr& asteroid);
 void meanGuyAnimation(KeyFramedTexturedLightedMeshRenderablePtr& meanguy);
+void missileAnimation(KeyFramedTexturedLightedMeshRenderablePtr& missile);
 
 
 void initialize_scene( Viewer& viewer )
@@ -153,6 +154,35 @@ void initialize_scene( Viewer& viewer )
     //meanguy->setMaterial(Material::Bronze());
     viewer.addRenderable(meanguy);
     meanGuyAnimation(meanguy);
+    
+    //Missiles
+    //Missile1
+    PointLightPtr missile1Light = std::make_shared<PointLight>(glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0,0.0,0.0), glm::vec3(1.0,0.8,0.8), glm::vec3(1.0,0.8,0.8), 1.0, 5e-1, 0);
+    viewer.addPointLight(missile1Light);
+    KeyFramedTexturedLightedMeshRenderablePtr missile1 = std::make_shared<KeyFramedTexturedLightedMeshRenderable>(textureShader, "../../../model/missile/missile.obj", "../../../model/missile/fireblue3.png");
+    //missile1->setLocalTransform(glm::scale(glm::mat4(1.0f),glm::vec3(1,1,1)));
+    missile1->setLocalTransform(GeometricTransformation(glm::vec3{0,0,0},
+    											glm::angleAxis(glm::radians(90.f), glm::vec3(0, 1, 0)),
+    											glm::vec3{1,1,1}).toMatrix());
+    const glm::vec3 ambientMissile = glm::vec3(0.1, 0.18725, 0.1745);
+    const glm::vec3 diffuseMissile = glm::vec3(0.396, 0.74151, 0.69102);
+    const glm::vec3 specularMissile = glm::vec3(0.297254, 0.30829, 0.306678);
+    float shininessMissile = 0.1f;
+    missile1->setMaterial(MaterialPtr(new Material(ambientMissile, diffuseMissile, specularMissile, shininessMissile)));
+    //viewer.addRenderable(missile1);
+    //HierarchicalRenderable::addChild(meanguy, missile1);
+    //missileAnimation(missile1);
+    
+    //Missile2
+    /*
+    PointLightPtr missile2Light = std::make_shared<PointLight>(glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0,0.0,0.0), glm::vec3(1.0,0.8,0.8), glm::vec3(1.0,0.8,0.8), 1.0, 5e-1, 0);
+    viewer.addPointLight(missile2Light);
+    KeyFramedTexturedLightedMeshRenderablePtr missile2 = std::make_shared<KeyFramedTexturedLightedMeshRenderable>(textureShader, "../../../model/missile/missile.obj", "../../../model/missile/fireblue3.png");
+    missile2->setLocalTransform(glm::scale(glm::mat4(1.0f),glm::vec3(1,1,1)));
+    missile2->setMaterial(MaterialPtr(new Material(ambientMissile, diffuseMissile, specularMissile, shininessMissile)));
+    viewer.addRenderable(missile2);
+    //missileAnimation(missile2);*/
+    
     
     
     //Is the camera moving
