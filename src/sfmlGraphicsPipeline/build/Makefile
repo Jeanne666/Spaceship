@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline"
+CMAKE_SOURCE_DIR = /home/jeanne/Documents/INSA-4A/Infographie/project-spaceship/src/sfmlGraphicsPipeline
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/build"
+CMAKE_BINARY_DIR = /home/jeanne/Documents/INSA-4A/Infographie/project-spaceship/src/sfmlGraphicsPipeline/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/build/CMakeFiles" "/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/build/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jeanne/Documents/INSA-4A/Infographie/project-spaceship/src/sfmlGraphicsPipeline/build/CMakeFiles /home/jeanne/Documents/INSA-4A/Infographie/project-spaceship/src/sfmlGraphicsPipeline/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jeanne/Documents/INSA-4A/Infographie/project-spaceship/src/sfmlGraphicsPipeline/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -1419,33 +1419,6 @@ src/lighting/SpotLightRenderable.cpp.s:
 	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/SpotLightRenderable.cpp.s
 .PHONY : src/lighting/SpotLightRenderable.cpp.s
 
-src/lighting/TexturedMeshPointLightRenderable.o: src/lighting/TexturedMeshPointLightRenderable.cpp.o
-
-.PHONY : src/lighting/TexturedMeshPointLightRenderable.o
-
-# target to build an object file
-src/lighting/TexturedMeshPointLightRenderable.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/TexturedMeshPointLightRenderable.cpp.o
-.PHONY : src/lighting/TexturedMeshPointLightRenderable.cpp.o
-
-src/lighting/TexturedMeshPointLightRenderable.i: src/lighting/TexturedMeshPointLightRenderable.cpp.i
-
-.PHONY : src/lighting/TexturedMeshPointLightRenderable.i
-
-# target to preprocess a source file
-src/lighting/TexturedMeshPointLightRenderable.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/TexturedMeshPointLightRenderable.cpp.i
-.PHONY : src/lighting/TexturedMeshPointLightRenderable.cpp.i
-
-src/lighting/TexturedMeshPointLightRenderable.s: src/lighting/TexturedMeshPointLightRenderable.cpp.s
-
-.PHONY : src/lighting/TexturedMeshPointLightRenderable.s
-
-# target to generate assembly for a file
-src/lighting/TexturedMeshPointLightRenderable.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/TexturedMeshPointLightRenderable.cpp.s
-.PHONY : src/lighting/TexturedMeshPointLightRenderable.cpp.s
-
 src/log.o: src/log.cpp.o
 
 .PHONY : src/log.o
@@ -1923,9 +1896,6 @@ help:
 	@echo "... src/lighting/SpotLightRenderable.o"
 	@echo "... src/lighting/SpotLightRenderable.i"
 	@echo "... src/lighting/SpotLightRenderable.s"
-	@echo "... src/lighting/TexturedMeshPointLightRenderable.o"
-	@echo "... src/lighting/TexturedMeshPointLightRenderable.i"
-	@echo "... src/lighting/TexturedMeshPointLightRenderable.s"
 	@echo "... src/log.o"
 	@echo "... src/log.i"
 	@echo "... src/log.s"
