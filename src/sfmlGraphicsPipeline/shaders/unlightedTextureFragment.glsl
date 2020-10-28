@@ -16,5 +16,12 @@ out vec4 outColor;
 
 void main()
 {
-    outColor = texture(texSampler, surfel_texCoord);
+
+    
+    vec4 texColor = texture(texSampler, surfel_texCoord);
+    if(texColor.a < 0.13)
+        discard;
+    outColor = texColor;
+    
+
 }

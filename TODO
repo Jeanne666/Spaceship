@@ -4,9 +4,9 @@ Animer shuttle - DONE
 Animer vaisseau méchant - DONE mais à voir pour améliorer
 Animer missiles - DONE
 Animer missile final - DONE
-Faire briller les missiles et la sphere de chargement
+Faire briller les missiles et la sphere de chargement - WIP
+Faire le feu d'un réacteur (pb avec la transparence et les sources de lumières) - tried something : DONE mais voir si ça va
 Animer explosion 
-Faire le feu d'un réacteur (pb avec la transparence et les sources de lumières) - à revoir
 Trouver modèle chat - on en a plein mais voir si on les utilise
 Resoudre pb asteroid - pb1 DONE (ça tourne), pb2 texture à voir en bonus
 Bonus : moon, planetes, scene fin avec chat etc
