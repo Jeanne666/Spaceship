@@ -18,7 +18,12 @@ void asteroid1Animation(AsteroidRenderablePtr& asteroid);
 void asteroid2Animation(AsteroidRenderablePtr& asteroid);
 void asteroid3Animation(AsteroidRenderablePtr& asteroid);
 void meanGuyAnimation(KeyFramedTexturedLightedMeshRenderablePtr& meanguy);
-void missileAnimation(KeyFramedTexturedLightedMeshRenderablePtr& missile);
+void missile1Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile);
+void missile2Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile);
+void missile3Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile);
+void missile4Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile);
+void missile5Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile);
+void missile6Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile);
 
 
 void initialize_scene( Viewer& viewer )
@@ -146,12 +151,12 @@ void initialize_scene( Viewer& viewer )
     KeyFramedTexturedLightedMeshRenderablePtr meanguy = std::make_shared<KeyFramedTexturedLightedMeshRenderable>(textureShader, "../../../model/meanSpaceship/usable/meanScaleUp.obj", "../../../model/meanSpaceship/texture/test.png");
     //../../../model/meanSpaceship/usable/meanScaleUp.mtl
     meanguy->setLocalTransform(glm::scale(glm::mat4(1.0f),glm::vec3(0.05,0.05,0.05)));
-    const glm::vec3 ambient = glm::vec3(0.25f);
+    //custom material : chrome
+    const glm::vec3 ambient = glm::vec3(0.25f);	
     const glm::vec3 diffuse = glm::vec3(0.4f);
     const glm::vec3 specular = glm::vec3(0.774597f);
     float shininess = 0.6f;
     meanguy->setMaterial(MaterialPtr(new Material(ambient, diffuse, specular, shininess)));
-    //meanguy->setMaterial(Material::Bronze());
     viewer.addRenderable(meanguy);
     meanGuyAnimation(meanguy);
     
@@ -161,28 +166,61 @@ void initialize_scene( Viewer& viewer )
     viewer.addPointLight(missile1Light);
     KeyFramedTexturedLightedMeshRenderablePtr missile1 = std::make_shared<KeyFramedTexturedLightedMeshRenderable>(textureShader, "../../../model/missile/missile.obj", "../../../model/missile/fireblue3.png");
     //missile1->setLocalTransform(glm::scale(glm::mat4(1.0f),glm::vec3(1,1,1)));
-    missile1->setLocalTransform(GeometricTransformation(glm::vec3{0,0,0},
-    											glm::angleAxis(glm::radians(90.f), glm::vec3(0, 1, 0)),
-    											glm::vec3{1,1,1}).toMatrix());
-    const glm::vec3 ambientMissile = glm::vec3(0.1, 0.18725, 0.1745);
+    missile1->setLocalTransform(GeometricTransformation(glm::vec3{0,0,0}, glm::angleAxis(glm::radians(90.f), glm::vec3(0, 1, 0)), glm::vec3{1,1,1}).toMatrix());
+    //custom material : turquoise
+    const glm::vec3 ambientMissile = glm::vec3(0.1, 0.18725, 0.1745);	
     const glm::vec3 diffuseMissile = glm::vec3(0.396, 0.74151, 0.69102);
     const glm::vec3 specularMissile = glm::vec3(0.297254, 0.30829, 0.306678);
     float shininessMissile = 0.1f;
     missile1->setMaterial(MaterialPtr(new Material(ambientMissile, diffuseMissile, specularMissile, shininessMissile)));
-    //viewer.addRenderable(missile1);
+    viewer.addRenderable(missile1);
     //HierarchicalRenderable::addChild(meanguy, missile1);
-    //missileAnimation(missile1);
+    missile1Animation(missile1);
     
     //Missile2
-    /*
     PointLightPtr missile2Light = std::make_shared<PointLight>(glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0,0.0,0.0), glm::vec3(1.0,0.8,0.8), glm::vec3(1.0,0.8,0.8), 1.0, 5e-1, 0);
     viewer.addPointLight(missile2Light);
     KeyFramedTexturedLightedMeshRenderablePtr missile2 = std::make_shared<KeyFramedTexturedLightedMeshRenderable>(textureShader, "../../../model/missile/missile.obj", "../../../model/missile/fireblue3.png");
-    missile2->setLocalTransform(glm::scale(glm::mat4(1.0f),glm::vec3(1,1,1)));
+    missile2->setLocalTransform(GeometricTransformation(glm::vec3{0,0,0}, glm::angleAxis(glm::radians(90.f), glm::vec3(0, 1, 0)), glm::vec3{1,1,1}).toMatrix());
     missile2->setMaterial(MaterialPtr(new Material(ambientMissile, diffuseMissile, specularMissile, shininessMissile)));
     viewer.addRenderable(missile2);
-    //missileAnimation(missile2);*/
+    missile2Animation(missile2);
     
+    //Missile3
+    PointLightPtr missile3Light = std::make_shared<PointLight>(glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0,0.0,0.0), glm::vec3(1.0,0.8,0.8), glm::vec3(1.0,0.8,0.8), 1.0, 5e-1, 0);
+    viewer.addPointLight(missile3Light);
+    KeyFramedTexturedLightedMeshRenderablePtr missile3 = std::make_shared<KeyFramedTexturedLightedMeshRenderable>(textureShader, "../../../model/missile/missile.obj", "../../../model/missile/fireblue3.png");
+    missile3->setLocalTransform(GeometricTransformation(glm::vec3{0,0,0}, glm::angleAxis(glm::radians(90.f), glm::vec3(0, 1, 0)), glm::vec3{1,1,1}).toMatrix());
+    missile3->setMaterial(MaterialPtr(new Material(ambientMissile, diffuseMissile, specularMissile, shininessMissile)));
+    viewer.addRenderable(missile3);
+    missile3Animation(missile3);
+    
+    //Missile4
+    PointLightPtr missile4Light = std::make_shared<PointLight>(glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0,0.0,0.0), glm::vec3(1.0,0.8,0.8), glm::vec3(1.0,0.8,0.8), 1.0, 5e-1, 0);
+    viewer.addPointLight(missile4Light);
+    KeyFramedTexturedLightedMeshRenderablePtr missile4 = std::make_shared<KeyFramedTexturedLightedMeshRenderable>(textureShader, "../../../model/missile/missile.obj", "../../../model/missile/fireblue3.png");
+    missile4->setLocalTransform(GeometricTransformation(glm::vec3{0,0,0}, glm::angleAxis(glm::radians(90.f), glm::vec3(0, 1, 0)), glm::vec3{1,1,1}).toMatrix());
+    missile4->setMaterial(MaterialPtr(new Material(ambientMissile, diffuseMissile, specularMissile, shininessMissile)));
+    viewer.addRenderable(missile4);
+    missile4Animation(missile4);
+    
+    //Missile5
+    PointLightPtr missile5Light = std::make_shared<PointLight>(glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0,0.0,0.0), glm::vec3(1.0,0.8,0.8), glm::vec3(1.0,0.8,0.8), 1.0, 5e-1, 0);
+    viewer.addPointLight(missile5Light);
+    KeyFramedTexturedLightedMeshRenderablePtr missile5 = std::make_shared<KeyFramedTexturedLightedMeshRenderable>(textureShader, "../../../model/missile/missile.obj", "../../../model/missile/fireblue3.png");
+    missile5->setLocalTransform(GeometricTransformation(glm::vec3{0,0,0}, glm::angleAxis(glm::radians(90.f), glm::vec3(0, 1, 0)), glm::vec3{1,1,1}).toMatrix());
+    missile5->setMaterial(MaterialPtr(new Material(ambientMissile, diffuseMissile, specularMissile, shininessMissile)));
+    viewer.addRenderable(missile5);
+    missile5Animation(missile5);
+    
+    //Missile6
+    PointLightPtr missile6Light = std::make_shared<PointLight>(glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0,0.0,0.0), glm::vec3(1.0,0.8,0.8), glm::vec3(1.0,0.8,0.8), 1.0, 5e-1, 0);
+    viewer.addPointLight(missile6Light);
+    KeyFramedTexturedLightedMeshRenderablePtr missile6 = std::make_shared<KeyFramedTexturedLightedMeshRenderable>(textureShader, "../../../model/missile/missile.obj", "../../../model/missile/fireblue3.png");
+    missile6->setLocalTransform(GeometricTransformation(glm::vec3{0,0,0}, glm::angleAxis(glm::radians(90.f), glm::vec3(0, 1, 0)), glm::vec3{1,1,1}).toMatrix());
+    missile6->setMaterial(MaterialPtr(new Material(ambientMissile, diffuseMissile, specularMissile, shininessMissile)));
+    viewer.addRenderable(missile6);
+    missile6Animation(missile6);
     
     
     //Is the camera moving
@@ -512,6 +550,13 @@ void meanGuyAnimation(KeyFramedTexturedLightedMeshRenderablePtr& meanie){
     gtMeanGuy.push_back(GeometricTransformation(glm::vec3{140,0,0},
     											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
     											glm::vec3{0.5,0.5,0.5}));
+    											
+    for(auto it=gtMeanGuy.begin() ; it<gtMeanGuy.end() ; ++it){
+    	meanie->addParentTransformKeyframe(*it,t);
+    	t+=0.1;
+    }
+    
+    gtMeanGuy.clear();
     
     /*gtMeanGuy.push_back(GeometricTransformation(glm::vec3{140,0,0},
     											glm::quat{0,0,0,0},
@@ -537,6 +582,120 @@ void meanGuyAnimation(KeyFramedTexturedLightedMeshRenderablePtr& meanie){
     	meanie->addParentTransformKeyframe(*it,t);
     	t+=8;
     }											
+    
+}
+
+void missile1Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
+	
+    std::vector<GeometricTransformation> gtMissile;
+    float t=22.0;
+    														
+   gtMissile.push_back(GeometricTransformation(glm::vec3{160,0,0},
+    											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
+    											glm::vec3{1,1,1}));			
+   gtMissile.push_back(GeometricTransformation(glm::vec3{10,0,0},
+    											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
+    											glm::vec3{1,1,1}));
+    
+    for(auto it=gtMissile.begin() ; it<gtMissile.end() ; ++it){
+    	missile->addParentTransformKeyframe(*it,t);
+    	t+=0.5;
+    }	
+    
+}
+
+void missile2Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
+	
+    std::vector<GeometricTransformation> gtMissile;
+    float t=23.0;
+    														
+   gtMissile.push_back(GeometricTransformation(glm::vec3{160,0,0},
+    											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
+    											glm::vec3{1,1,1}));			
+   gtMissile.push_back(GeometricTransformation(glm::vec3{10,0,0},
+    											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
+    											glm::vec3{1,1,1}));
+    
+    for(auto it=gtMissile.begin() ; it<gtMissile.end() ; ++it){
+    	missile->addParentTransformKeyframe(*it,t);
+    	t+=0.5;
+    }	
+    
+}
+
+void missile3Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
+	
+    std::vector<GeometricTransformation> gtMissile;
+    float t=25.0;
+    														
+   gtMissile.push_back(GeometricTransformation(glm::vec3{160,-10,0},
+    											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
+    											glm::vec3{1,1,1}));			
+   gtMissile.push_back(GeometricTransformation(glm::vec3{10,-10,0},
+    											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
+    											glm::vec3{1,1,1}));
+    
+    for(auto it=gtMissile.begin() ; it<gtMissile.end() ; ++it){
+    	missile->addParentTransformKeyframe(*it,t);
+    	t+=0.5;
+    }	
+    
+}
+
+void missile4Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
+	
+    std::vector<GeometricTransformation> gtMissile;
+    float t=25.5;
+    														
+   gtMissile.push_back(GeometricTransformation(glm::vec3{160,-10,0},
+    											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
+    											glm::vec3{1,1,1}));			
+   gtMissile.push_back(GeometricTransformation(glm::vec3{10,-10,0},
+    											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
+    											glm::vec3{1,1,1}));
+    
+    for(auto it=gtMissile.begin() ; it<gtMissile.end() ; ++it){
+    	missile->addParentTransformKeyframe(*it,t);
+    	t+=0.5;
+    }	
+    
+}
+
+void missile5Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
+	
+    std::vector<GeometricTransformation> gtMissile;
+    float t=26.0;
+    														
+   gtMissile.push_back(GeometricTransformation(glm::vec3{160,-5,0},
+    											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
+    											glm::vec3{1,1,1}));			
+   gtMissile.push_back(GeometricTransformation(glm::vec3{10,-5,0},
+    											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
+    											glm::vec3{1,1,1}));
+    
+    for(auto it=gtMissile.begin() ; it<gtMissile.end() ; ++it){
+    	missile->addParentTransformKeyframe(*it,t);
+    	t+=0.5;
+    }	
+    
+}
+
+void missile6Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
+	
+    std::vector<GeometricTransformation> gtMissile;
+    float t=26.5;
+    														
+   gtMissile.push_back(GeometricTransformation(glm::vec3{160,-2,0},
+    											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
+    											glm::vec3{1,1,1}));			
+   gtMissile.push_back(GeometricTransformation(glm::vec3{10,-2,0},
+    											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
+    											glm::vec3{1,1,1}));
+    
+    for(auto it=gtMissile.begin() ; it<gtMissile.end() ; ++it){
+    	missile->addParentTransformKeyframe(*it,t);
+    	t+=0.5;
+    }	
     
 }
 
