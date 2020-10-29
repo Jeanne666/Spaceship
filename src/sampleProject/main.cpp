@@ -27,6 +27,7 @@ void missile5Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile);
 void missile6Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile);
 void missileFAnimation(KeyFramedTexturedLightedMeshRenderablePtr& missile);
 void sphereMFAnimation(TexturedMeshPointLightRenderablePtr& sphere);
+void flashAnimation(TexturedMeshPointLightRenderablePtr& flash, float d);
 //float CalcGauss( float x, float sigma );
 
 
@@ -238,12 +239,46 @@ void initialize_scene( Viewer& viewer )
     viewer.addRenderable(sphereMF);
     sphereMFAnimation(sphereMF);
     
+    //Explosion
+    //FlashPlanes
+    //Flash1
+    PointLightPtr flash1Light = std::make_shared<PointLight>(glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.1,0.1,0.1), glm::vec3(0.1,0.1,0.1), glm::vec3(0.1,0.1,0.1), 1.0, 5e-1, 0);
+    viewer.addPointLight(flash1Light);
+    TexturedMeshPointLightRenderablePtr flash1 = std::make_shared<TexturedMeshPointLightRenderable>(unlightedTextureShader, "../../../model/explosion/plane.obj", "../../../model/explosion/flash1tb.png", flash1Light);
+    flash1->setLocalTransform(GeometricTransformation(glm::vec3{0,0,0}, glm::angleAxis(glm::radians(90.f), glm::vec3(0, 0, 1)), glm::vec3{1,1,1}).toMatrix());
+    viewer.addRenderable(flash1);
+    flashAnimation(flash1, 0.0);
+    
+    //Flash2
+    PointLightPtr flash2Light = std::make_shared<PointLight>(glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.1,0.1,0.1), glm::vec3(0.1,0.1,0.1), glm::vec3(0.1,0.1,0.1), 1.0, 5e-1, 0);
+    viewer.addPointLight(flash2Light);
+    TexturedMeshPointLightRenderablePtr flash2 = std::make_shared<TexturedMeshPointLightRenderable>(unlightedTextureShader, "../../../model/explosion/plane.obj", "../../../model/explosion/flash2tb.png", flash2Light);
+    flash2->setLocalTransform(GeometricTransformation(glm::vec3{0,0,0}, glm::angleAxis(glm::radians(90.f), glm::vec3(0, 0, 1)), glm::vec3{1,1,1}).toMatrix());
+    viewer.addRenderable(flash2);
+    flashAnimation(flash2, 0.03);
+    
+    //Flash3
+    PointLightPtr flash3Light = std::make_shared<PointLight>(glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.1,0.1,0.1), glm::vec3(0.1,0.1,0.1), glm::vec3(0.1,0.1,0.1), 1.0, 5e-1, 0);
+    viewer.addPointLight(flash3Light);
+    TexturedMeshPointLightRenderablePtr flash3 = std::make_shared<TexturedMeshPointLightRenderable>(unlightedTextureShader, "../../../model/explosion/plane.obj", "../../../model/explosion/flash3tb.png", flash3Light);
+    flash3->setLocalTransform(GeometricTransformation(glm::vec3{0,0,0}, glm::angleAxis(glm::radians(90.f), glm::vec3(0, 0, 1)), glm::vec3{1,1,1}).toMatrix());
+    viewer.addRenderable(flash3);
+    flashAnimation(flash3, 0.06);
+    
+    //Flash4
+    PointLightPtr flash4Light = std::make_shared<PointLight>(glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.1,0.1,0.1), glm::vec3(0.1,0.1,0.1), glm::vec3(0.1,0.1,0.1), 1.0, 5e-1, 0);
+    viewer.addPointLight(flash4Light);
+    TexturedMeshPointLightRenderablePtr flash4 = std::make_shared<TexturedMeshPointLightRenderable>(unlightedTextureShader, "../../../model/explosion/plane.obj", "../../../model/explosion/flash4tb.png", flash4Light);
+    flash4->setLocalTransform(GeometricTransformation(glm::vec3{0,0,0}, glm::angleAxis(glm::radians(90.f), glm::vec3(0, 0, 1)), glm::vec3{1,1,1}).toMatrix());
+    viewer.addRenderable(flash4);
+    flashAnimation(flash4, 0.09);
+    
     
     //Is the camera moving
     viewer.getCamera().setAnimation(true);
 
     viewer.startAnimation();
-    viewer.setAnimationLoop(true, t);
+    viewer.setAnimationLoop(true, 33);
 }
 
 int main() 
@@ -774,7 +809,33 @@ void missileFAnimation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
     for(auto it=gtMissile.begin() ; it<gtMissile.end() ; ++it){
     	missile->addParentTransformKeyframe(*it,t);
     	t+=0.5;
-    }	
+    }	 				
+   
+   /*
+   gitMissile.clear();
+   				
+   gtMissile.push_back(GeometricTransformation(glm::vec3{125,-0.4,0},
+    											glm::angleAxis(glm::radians(-23.5f), glm::vec3(0, 0, 1)),
+    											glm::vec3{0.06,0.04,0.04}));
+   
+   for(auto it=gtMissile.begin() ; it<gtMissile.end() ; ++it){
+    	missile->addParentTransformKeyframe(*it,t);
+    	t+=0.5;
+    }*/
+    
+   gtMissile.clear();
+   
+   gtMissile.push_back(GeometricTransformation(glm::vec3{125,-0.4,0},
+    											glm::angleAxis(glm::radians(-23.5f), glm::vec3(0, 0, 1)),
+    											glm::vec3{0.0001,0.0001,0.0001})); 								
+   gtMissile.push_back(GeometricTransformation(glm::vec3{160,-0.4,0},
+    											glm::angleAxis(glm::radians(-23.5f), glm::vec3(0, 0, 1)),
+    											glm::vec3{0.001,0.001,0.001}));
+    
+    for(auto it=gtMissile.begin() ; it<gtMissile.end() ; ++it){
+    	missile->addParentTransformKeyframe(*it,t);
+    	t+=0.5;
+    }
     
 }
 
@@ -821,6 +882,56 @@ void sphereMFAnimation(TexturedMeshPointLightRenderablePtr& sphere){
     	t+=0.01;
     }
     
+}
+
+void flashAnimation(TexturedMeshPointLightRenderablePtr& flash, float d){
+	
+    std::vector<GeometricTransformation> gtFlash;
+    float t=0.0;
+    														
+   gtFlash.push_back(GeometricTransformation(glm::vec3{140,-0.4,-10},
+    											glm::angleAxis(glm::radians(90.f), glm::vec3(0, 0, 1)),
+    											glm::vec3{0.00001,0.00001,0.00001}));
+   
+   for(auto it=gtFlash.begin() ; it<gtFlash.end() ; ++it){
+    	flash->addParentTransformKeyframe(*it,t);
+    	t+= (28 + d);
+    }
+    
+   gtFlash.clear();
+   
+   gtFlash.push_back(GeometricTransformation(glm::vec3{140,-0.4,-10},
+    											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
+    											glm::vec3{0.00001,0.00001,0.00001}));
+   gtFlash.push_back(GeometricTransformation(glm::vec3{111,6,0},
+    											glm::angleAxis(glm::radians(45.f), glm::vec3(0, 0, 1)),
+    											glm::vec3{0.0001,0.0001,0.0001}));
+   
+   for(auto it=gtFlash.begin() ; it<gtFlash.end() ; ++it){
+    	flash->addParentTransformKeyframe(*it,t);
+    	t+= 0.1;
+    }
+    
+   gtFlash.clear();
+   
+   gtFlash.push_back(GeometricTransformation(glm::vec3{110,5,0},
+    											glm::angleAxis(glm::radians(45.f), glm::vec3(0, 0, 1)),
+    											glm::vec3{0.4,0.4,0.4}));
+   gtFlash.push_back(GeometricTransformation(glm::vec3{110,5,0},
+    											glm::angleAxis(glm::radians(45.f), glm::vec3(0, 0, 1)),
+    											glm::vec3{0.01,0.01,0.01}));
+   gtFlash.push_back(GeometricTransformation(glm::vec3{110,5,0},
+    											glm::angleAxis(glm::radians(45.f), glm::vec3(0, 0, 1)),
+    											glm::vec3{0.00001,0.00001,0.00001}));
+   gtFlash.push_back(GeometricTransformation(glm::vec3{160,6,0},
+    											glm::angleAxis(glm::radians(45.f), glm::vec3(0, 0, 1)),
+    											glm::vec3{0.00001,0.00001,0.00001}));
+   
+   for(auto it=gtFlash.begin() ; it<gtFlash.end() ; ++it){
+    	flash->addParentTransformKeyframe(*it,t);
+    	t+= 0.2;
+    }
+   
 }
 
 /*
