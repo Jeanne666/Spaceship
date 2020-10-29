@@ -6,7 +6,7 @@ Animer missiles - DONE
 Animer missile final - DONE
 Faire le feu d'un réacteur (pb avec la transparence et les sources de lumières) - DONE mais voir si good enough
 Faire briller les missiles et la sphere de chargement - DONE mais voir si good enough
-Animer explosion 
+Animer explosion - particule system compliqué, je vais commencer avec une image simple
 Trouver modèle chat - on en a plein mais voir si on les utilise
 Resoudre pb asteroid - pb1 DONE (ça tourne), pb2 texture à voir en bonus
 Bonus : moon, planetes, scene fin avec chat etc
