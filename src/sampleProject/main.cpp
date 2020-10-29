@@ -27,12 +27,13 @@ void missile5Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile);
 void missile6Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile);
 void missileFAnimation(KeyFramedTexturedLightedMeshRenderablePtr& missile);
 void sphereMFAnimation(TexturedMeshPointLightRenderablePtr& sphere);
-float CalcGauss( float x, float sigma );
+//float CalcGauss( float x, float sigma );
 
 
 
 void initialize_scene( Viewer& viewer )
 {  
+
     //Default shader
     ShaderProgramPtr flatShader = std::make_shared<ShaderProgram>(  "../../sfmlGraphicsPipeline/shaders/flatVertex.glsl","../../sfmlGraphicsPipeline/shaders/flatFragment.glsl");
     viewer.addShaderProgram( flatShader );
@@ -87,6 +88,8 @@ void initialize_scene( Viewer& viewer )
     viewer.addShaderProgram( textureShader );
     ShaderProgramPtr unlightedTextureShader = std::make_shared<ShaderProgram>( "../../sfmlGraphicsPipeline/shaders/unlightedTextureVertex.glsl","../../sfmlGraphicsPipeline/shaders/unlightedTextureFragment.glsl");
     viewer.addShaderProgram( unlightedTextureShader );
+    ShaderProgramPtr glowingTextureShader = std::make_shared<ShaderProgram>( "../../sfmlGraphicsPipeline/shaders/glowingTextureVertex.glsl","../../sfmlGraphicsPipeline/shaders/glowingTextureFragment.glsl");
+    viewer.addShaderProgram( glowingTextureShader );
     
         
     //Moon
@@ -221,7 +224,7 @@ void initialize_scene( Viewer& viewer )
     missile6Animation(missile6);
     
     //Final Missile
-    KeyFramedTexturedLightedMeshRenderablePtr missileF = std::make_shared<KeyFramedTexturedLightedMeshRenderable>(textureShader, "../../../model/missile/finalMissileX.obj", "../../../model/missile/fireblue3.png");
+    KeyFramedTexturedLightedMeshRenderablePtr missileF = std::make_shared<KeyFramedTexturedLightedMeshRenderable>(unlightedTextureShader, "../../../model/missile/finalMissileX.obj", "../../../model/missile/fireblueTransp2.png");
     missileF->setLocalTransform(GeometricTransformation(glm::vec3{0,0,0}, glm::angleAxis(glm::radians(-90.f), glm::vec3(0, 0, 1)), glm::vec3{1,1,1}).toMatrix());
     missileF->setMaterial(MaterialPtr(new Material(ambientMissile, diffuseMissile, specularMissile, shininessMissile)));
     //glMaterialfv(gl_emission, glow_color);
@@ -229,12 +232,9 @@ void initialize_scene( Viewer& viewer )
     missileFAnimation(missileF);
     
     //Final Missile Charging Sphere
-    PointLightPtr sphereLight = std::make_shared<PointLight>(glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0,0.0,0.0), glm::vec3(1.0,1,1), glm::vec3(1.0,1,1), 1.0, 5e-1, 0);
+    PointLightPtr sphereLight = std::make_shared<PointLight>(glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.6,0.6,0.9), glm::vec3(0.6,0.6,0.9), glm::vec3(0.6,0.6,0.9), 0.4, 5e-1, 0);
     viewer.addPointLight(sphereLight);
-    TexturedMeshPointLightRenderablePtr sphereMF = std::make_shared<TexturedMeshPointLightRenderable>(unlightedTextureShader, "../../../model/missile/sphere.obj", "../../../model/missile/fireblueSquare3.png", sphereLight);
-    //sphereMF->setLocalTransform(GeometricTransformation(glm::vec3{0,0,0}, glm::angleAxis(glm::radians(90.f), glm::vec3(0, 0, 1)), glm::vec3{1,1,1}).toMatrix());
-    //sphereMF->setMaterial(MaterialPtr(new Material(ambientMissile, diffuseMissile, specularMissile, shininessMissile)));
-    //glMaterialfv(gl_emission, glow_color); 
+    TexturedMeshPointLightRenderablePtr sphereMF = std::make_shared<TexturedMeshPointLightRenderable>(unlightedTextureShader, "../../../model/missile/sphere.obj", "../../../model/missile/fireblueSquareTransp2.png", sphereLight);
     viewer.addRenderable(sphereMF);
     sphereMFAnimation(sphereMF);
     
@@ -759,7 +759,7 @@ void missileFAnimation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
    
    for(auto it=gtMissile.begin() ; it<gtMissile.end() ; ++it){
     	missile->addParentTransformKeyframe(*it,t);
-    	t+=28;
+    	t+=27.9;
     }
     
    gtMissile.clear();
@@ -783,7 +783,7 @@ void sphereMFAnimation(TexturedMeshPointLightRenderablePtr& sphere){
     std::vector<GeometricTransformation> gtSphere;
     float t=0.0;
     														
-   gtSphere.push_back(GeometricTransformation(glm::vec3{125,-0.4,0},
+   gtSphere.push_back(GeometricTransformation(glm::vec3{120,-0.4,0},
     											glm::angleAxis(glm::radians(90.f), glm::vec3(0, 0, 1)),
     											glm::vec3{0.00001,0.00001,0.00001}));
    
@@ -794,6 +794,9 @@ void sphereMFAnimation(TexturedMeshPointLightRenderablePtr& sphere){
     
    gtSphere.clear();
    
+   gtSphere.push_back(GeometricTransformation(glm::vec3{120,-0.4,0},
+    											glm::angleAxis(glm::radians(90.f), glm::vec3(0, 0, 1)),
+    											glm::vec3{0.00001,0.00001,0.00001}));
    gtSphere.push_back(GeometricTransformation(glm::vec3{125,-0.4,0},
     											glm::angleAxis(glm::radians(90.f), glm::vec3(0, 0, 1)),
     											glm::vec3{0.00001,0.00001,0.00001})); 								
@@ -802,7 +805,7 @@ void sphereMFAnimation(TexturedMeshPointLightRenderablePtr& sphere){
     											glm::vec3{0.001,0.001,0.001}));
     for(auto it=gtSphere.begin() ; it<gtSphere.end() ; ++it){
     	sphere->addParentTransformKeyframe(*it,t);
-    	t+=0.5;
+    	t+=0.3;
     }	
     
     gtSphere.clear();
@@ -810,7 +813,7 @@ void sphereMFAnimation(TexturedMeshPointLightRenderablePtr& sphere){
     gtSphere.push_back(GeometricTransformation(glm::vec3{125,-0.4,0},
     											glm::angleAxis(glm::radians(90.f), glm::vec3(0, 0, 1)),
     											glm::vec3{0.001,0.001,0.001})); 								
-    gtSphere.push_back(GeometricTransformation(glm::vec3{125,-0.4,0},
+    gtSphere.push_back(GeometricTransformation(glm::vec3{111,6,0},
     											glm::angleAxis(glm::radians(90.f), glm::vec3(0, 0, 1)),
     											glm::vec3{0.00001,0.00001,0.00001}));
     for(auto it=gtSphere.begin() ; it<gtSphere.end() ; ++it){
@@ -820,11 +823,12 @@ void sphereMFAnimation(TexturedMeshPointLightRenderablePtr& sphere){
     
 }
 
+/*
 float CalcGauss( float x, float sigma ) 
 {
   float coeff = 1.0 / (2.0 * 3.14157 * sigma);
   float expon = -(x*x) / (2.0 * sigma);
   return (coeff*exp(expon));
-}
+}*/
 
 
