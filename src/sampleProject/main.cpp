@@ -29,6 +29,7 @@ void missileFAnimation(KeyFramedTexturedLightedMeshRenderablePtr& missile);
 void sphereMFAnimation(TexturedMeshPointLightRenderablePtr& sphere);
 void flashAnimation(TexturedMeshPointLightRenderablePtr& flash, float d);
 void flashRAnimation(TexturedMeshPointLightRenderablePtr& flash);
+void moonAnimation(AsteroidRenderablePtr& moon);
 //float CalcGauss( float x, float sigma );
 
 
@@ -95,8 +96,9 @@ void initialize_scene( Viewer& viewer )
     
         
     //Moon
-    /*AsteroidRenderablePtr moon = std::make_shared<AsteroidRenderable>(textureShader, "../../../model/asteroid/Moon_3D_Model/moon.obj", "../../../model/asteroid/Moon_3D_Model/MoonMap2_2500x1250.jpg", 0.1);
-    viewer.addRenderable(moon);*/
+    AsteroidRenderablePtr moon = std::make_shared<AsteroidRenderable>(textureShader, "../../../model/asteroid/Moon_3D_Model/moon.obj", "../../../model/asteroid/Moon_3D_Model/MoonMap2_2500x1250.jpg", 0.2);
+    viewer.addRenderable(moon);
+    moonAnimation(moon);
     
     //Asteroid1
     AsteroidRenderablePtr asteroid1 = std::make_shared<AsteroidRenderable>(textureShader, "../../../model/asteroid/L3/asteroid.obj", "../../../model/asteroid/L3/10464_Asteroid_v1_diffuse.jpg", 0.017);
@@ -291,7 +293,7 @@ void initialize_scene( Viewer& viewer )
     viewer.getCamera().setAnimation(true);
 
     viewer.startAnimation();
-    viewer.setAnimationLoop(true, 33);
+    viewer.setAnimationLoop(true, 30);
 }
 
 int main() 
@@ -1007,6 +1009,33 @@ void flashRAnimation(TexturedMeshPointLightRenderablePtr& flash){
     }
    
 }
+
+void moonAnimation(AsteroidRenderablePtr& moon){
+    std::vector<GeometricTransformation> gtMoon;
+    float t=0.0;
+    
+    gtMoon.push_back(GeometricTransformation(glm::vec3{85,35,5},
+    											glm::angleAxis(glm::radians(0.f), glm::vec3(0.7, 0, 0.7)),
+    											glm::vec3{1,1,1}));
+    gtMoon.push_back(GeometricTransformation(glm::vec3{85,35,5},
+    											glm::angleAxis(glm::radians(72.f), glm::vec3(0.7, 0, 0.7)),
+    											glm::vec3{1,1,1}));
+    gtMoon.push_back(GeometricTransformation(glm::vec3{85,35,5},
+    											glm::angleAxis(glm::radians(144.f), glm::vec3(0.7, 0, 0.7)),
+    											glm::vec3{1,1,1}));
+    gtMoon.push_back(GeometricTransformation(glm::vec3{85,35,5},
+    											glm::angleAxis(glm::radians(216.f), glm::vec3(0.7, 0, 0.7)),
+    											glm::vec3{1,1,1}));
+    gtMoon.push_back(GeometricTransformation(glm::vec3{85,35,5},
+    											glm::angleAxis(glm::radians(360.f), glm::vec3(0.7, 0, 0.7)),
+    											glm::vec3{1,1,1}));
+    
+    for(auto it=gtMoon.begin() ; it<gtMoon.end() ; ++it){
+    	moon->addParentTransformKeyframe(*it,t);
+    	t+=8;
+    }
+}
+
 
 /*
 float CalcGauss( float x, float sigma ) 
