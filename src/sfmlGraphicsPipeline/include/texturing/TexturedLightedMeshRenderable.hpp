@@ -18,6 +18,7 @@ class TexturedLightedMeshRenderable : public HierarchicalRenderable
             const std::string& mesh_filename,
             const std::string& texture_filename );
         void setMaterial(const MaterialPtr& material);
+        void setAlpha(const float alpha);
 
     private:
         void do_draw();

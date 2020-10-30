@@ -17,6 +17,7 @@ public:
             const std::string& texture_filename, PointLightPtr light);
     void addLocalTransformKeyframe( const GeometricTransformation& transformation, float time );
     void addParentTransformKeyframe( const GeometricTransformation& transformation, float time );
+    //void setAlpha( const float alpha );
 
 private:
     void do_draw();

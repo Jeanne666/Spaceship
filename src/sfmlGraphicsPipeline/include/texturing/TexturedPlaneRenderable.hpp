@@ -12,6 +12,7 @@ public :
     ~TexturedPlaneRenderable();
     TexturedPlaneRenderable(ShaderProgramPtr shaderProgram, const std::string& filename);
     void setMaterial(const MaterialPtr& material);
+    void setAlpha(const float alpha);
 
 private:
     void do_draw();

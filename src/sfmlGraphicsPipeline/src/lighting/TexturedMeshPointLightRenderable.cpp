@@ -171,3 +171,11 @@ TexturedMeshPointLightRenderable::~TexturedMeshPointLightRenderable()
     glcheck(glDeleteBuffers(1, &m_tBuffer));
     glcheck(glDeleteTextures(1, &m_texId));
 }
+
+/*
+void TexturedMeshPointLightRenderable::setAlpha(const float alpha)
+{
+    for( glm::vec4 color : m_colors) {
+        color.a = alpha;
+    }
+}*/
