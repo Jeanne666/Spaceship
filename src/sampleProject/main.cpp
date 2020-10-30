@@ -30,6 +30,7 @@ void sphereMFAnimation(TexturedMeshPointLightRenderablePtr& sphere);
 void flashAnimation(TexturedMeshPointLightRenderablePtr& flash, float d);
 void flashRAnimation(TexturedMeshPointLightRenderablePtr& flash);
 void moonAnimation(AsteroidRenderablePtr& moon);
+void sceneFinAnimation(TexturedMeshPointLightRenderablePtr& fin);
 //float CalcGauss( float x, float sigma );
 
 
@@ -286,6 +287,14 @@ void initialize_scene( Viewer& viewer )
     flashR->setLocalTransform(GeometricTransformation(glm::vec3{0,0,0}, glm::angleAxis(glm::radians(90.f), glm::vec3(0, 0, 1)), glm::vec3{1,1,1}).toMatrix());
     viewer.addRenderable(flashR);
     flashRAnimation(flashR);
+    
+    //FinScene
+    PointLightPtr lumNoire = std::make_shared<PointLight>(glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0, 0.0, 0.0), 1.0, 5e-1, 0);
+    viewer.addPointLight(lumNoire);
+    TexturedMeshPointLightRenderablePtr flashFin = std::make_shared<TexturedMeshPointLightRenderable>(unlightedTextureShader, "../../../model/explosion/plane.obj", "../../../model/explosion/try.png", lumNoire);
+    flashFin->setLocalTransform(GeometricTransformation(glm::vec3{0,0,0}, glm::angleAxis(glm::radians(90.f), glm::vec3(0, 0, 1)), glm::vec3{1,1,1}).toMatrix());
+    viewer.addRenderable(flashFin);
+    sceneFinAnimation(flashFin);
     
     
     
@@ -1034,6 +1043,50 @@ void moonAnimation(AsteroidRenderablePtr& moon){
     	moon->addParentTransformKeyframe(*it,t);
     	t+=8;
     }
+}
+
+void sceneFinAnimation(TexturedMeshPointLightRenderablePtr& fin){
+	
+    std::vector<GeometricTransformation> gtFin;
+    float t=0.0;
+    														
+   gtFin.push_back(GeometricTransformation(glm::vec3{140,-0.4,-10},
+    											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
+    											glm::vec3{0.00001,0.00001,0.00001}));
+   
+   for(auto it=gtFin.begin() ; it<gtFin.end() ; ++it){
+    	fin->addParentTransformKeyframe(*it,t);
+    	t+= 29.f;
+    }
+    
+   gtFin.clear();
+   
+   gtFin.push_back(GeometricTransformation(glm::vec3{140,-0.4,-10},
+    											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
+    											glm::vec3{0.00001,0.00001,0.00001}));
+   gtFin.push_back(GeometricTransformation(glm::vec3{105,0,0},
+    											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
+    											glm::vec3{0.0001,0.0001,0.0001}));
+   
+   for(auto it=gtFin.begin() ; it<gtFin.end() ; ++it){
+    	fin->addParentTransformKeyframe(*it,t);
+    	t+= 0.1;
+    }
+    
+   gtFin.clear();
+   
+   gtFin.push_back(GeometricTransformation(glm::vec3{105,0,0},
+    											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
+    											glm::vec3{0.01,0.01,0.01}));
+   gtFin.push_back(GeometricTransformation(glm::vec3{105,0,0},
+    											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
+    											glm::vec3{10,10,10}));
+   
+   for(auto it=gtFin.begin() ; it<gtFin.end() ; ++it){
+    	fin->addParentTransformKeyframe(*it,t);
+    	t+= 2.5;
+    }
+   
 }
 
 
