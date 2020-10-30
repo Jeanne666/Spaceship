@@ -2,13 +2,15 @@ Trouver un modèle de shuttle - DONE
 Trouver vaisseau de mechant - DONE
 Trouver modèle chat
 Animer shuttle - DONE
-Animer vaisseau méchant - DONE mais à voir pour améliorer
+Animer vaisseau méchant - DONE
 Animer missiles - DONE
 Animer missile final - DONE
 Ajout + Animation Moon - DONE
 Faire le feu d'un réacteur (pb avec la transparence et les sources de lumières) - DONE mais voir si good enough
 Faire briller les missiles et la sphere de chargement - DONE mais voir si good enough
 Animer explosion - DONE mais seulement image simple, voir pour utiliser particule system
-Finir scène - WIP
-Resoudre pb asteroid - pb1 DONE (ça tourne), pb2 texture à voir en bonus
+Finir scène - DONE, voir si ok
+Resoudre pb asteroid - pb1 DONE (ça tourne)
+Resoudre pb2 asteroid texture à voir en bonus
+Animer les palettes du bad guy séparemment
 Bonus : planetes, scene fin avec chat etc
