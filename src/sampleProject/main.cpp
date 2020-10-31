@@ -328,6 +328,9 @@ int shuttleAnimation(KeyFramedTexturedLightedMeshRenderablePtr& shuttle, Viewer&
     std::vector<GeometricTransformation> gtShuttle;
     float t=0.0;
     
+    //fix camera in place while waiting for shuttle
+    viewer.getCamera().setPosition(glm::vec3(0,-3,0));
+    
     //-3s
     gtShuttle.push_back(GeometricTransformation(glm::vec3{-25,0,0},
     											glm::quat{0,0,0,0},
@@ -341,10 +344,20 @@ int shuttleAnimation(KeyFramedTexturedLightedMeshRenderablePtr& shuttle, Viewer&
     gtShuttle.push_back(GeometricTransformation(glm::vec3{-10,0,0},
     											glm::quat{0,0,0,0},
     											glm::vec3{1,1,1}));
+    											
+    
     //0s
     gtShuttle.push_back(GeometricTransformation(glm::vec3{-5,0,0},
     											glm::quat{0,0,0,0},
     											glm::vec3{1,1,1}));
+    											
+    for(auto it=gtShuttle.begin() ; it<gtShuttle.end() ; ++it){
+    	shuttle->addParentTransformKeyframe(*it,t);
+    	t+=0.75;
+    }
+    gtShuttle.clear();
+    				
+    //shuttle comes into screen, goes to the left											
     gtShuttle.push_back(GeometricTransformation(glm::vec3{0,0,0},
     											glm::angleAxis(glm::radians(-15.f), glm::vec3(1, 0, 0)),
     											glm::vec3{1,1,1}));
@@ -372,7 +385,9 @@ int shuttleAnimation(KeyFramedTexturedLightedMeshRenderablePtr& shuttle, Viewer&
     											glm::vec3{1,1,1}));
     gtShuttle.push_back(GeometricTransformation(glm::vec3{15,30,-3},
     											glm::angleAxis(glm::radians(10.f), glm::vec3(0, 0, 1)) * glm::angleAxis(glm::radians(45.f), glm::vec3(1, 0, 0)),
+    	
     											glm::vec3{1,1,1}));
+    //around first asteroid
     //7.5s
     gtShuttle.push_back(GeometricTransformation(glm::vec3{19.5,28.5,-3.7},
     											glm::angleAxis(glm::radians(-20.f), glm::vec3(0, 0, 1)) * glm::angleAxis(glm::radians(45.f), glm::vec3(1, 0, 0)),
@@ -388,7 +403,9 @@ int shuttleAnimation(KeyFramedTexturedLightedMeshRenderablePtr& shuttle, Viewer&
     											glm::vec3{1,1,1}));
     gtShuttle.push_back(GeometricTransformation(glm::vec3{23.5,14,0},
     											glm::angleAxis(glm::radians(-105.f), glm::vec3(0, 0, 1)) * glm::angleAxis(glm::radians(15.f), glm::vec3(1, 0, 0)),
+    	
     											glm::vec3{1,1,1}));
+    //goes to second one
     //11.25s
     gtShuttle.push_back(GeometricTransformation(glm::vec3{20,10,0.5},
     											glm::angleAxis(glm::radians(-115.f), glm::vec3(0, 0, 1)) * glm::angleAxis(glm::radians(5.f), glm::vec3(1, 0, 0)),
@@ -405,6 +422,8 @@ int shuttleAnimation(KeyFramedTexturedLightedMeshRenderablePtr& shuttle, Viewer&
     gtShuttle.push_back(GeometricTransformation(glm::vec3{21.4,-7.4,4.5},
     											glm::angleAxis(glm::radians(-30.f), glm::vec3(0, 0, 1)) * glm::angleAxis(glm::radians(-40.f), glm::vec3(1, 0, 0)),
     											glm::vec3{1,1,1}));
+    
+    //around second one
     //15s
     gtShuttle.push_back(GeometricTransformation(glm::vec3{26.9,-8.5,5.5},
     											glm::angleAxis(glm::radians(-10.f), glm::vec3(0, 0, 1)) * glm::angleAxis(glm::radians(-30.f), glm::vec3(1, 0, 0)),
@@ -412,6 +431,7 @@ int shuttleAnimation(KeyFramedTexturedLightedMeshRenderablePtr& shuttle, Viewer&
     gtShuttle.push_back(GeometricTransformation(glm::vec3{31.3,-6.5,5},
     											glm::angleAxis(glm::radians(15.f), glm::vec3(0, 0, 1)) * glm::angleAxis(glm::radians(-20.f), glm::vec3(1, 0, 0)),
     											glm::vec3{1,1,1}));
+    //transitioning towards missiles
     gtShuttle.push_back(GeometricTransformation(glm::vec3{35.1,-2.3,4},
     											glm::angleAxis(glm::radians(30.f), glm::vec3(0, 0, 1)) * glm::angleAxis(glm::radians(-10.f), glm::vec3(1, 0, 0)),
     											glm::vec3{1,1,1}));
@@ -421,6 +441,7 @@ int shuttleAnimation(KeyFramedTexturedLightedMeshRenderablePtr& shuttle, Viewer&
     gtShuttle.push_back(GeometricTransformation(glm::vec3{45.3,3.7,1.5},
     											glm::angleAxis(glm::radians(10.f), glm::vec3(0, 0, 1)) * glm::angleAxis(glm::radians(-3.f), glm::vec3(1, 0, 0)),
     											glm::vec3{1,1,1}));
+    											
     //18.75s
     gtShuttle.push_back(GeometricTransformation(glm::vec3{50,5,0},
     											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
@@ -444,6 +465,7 @@ int shuttleAnimation(KeyFramedTexturedLightedMeshRenderablePtr& shuttle, Viewer&
     gtShuttle.push_back(GeometricTransformation(glm::vec3{72.5,-1,0},
     											glm::angleAxis(glm::radians(10.f), glm::vec3(1, 0, 0)),
     											glm::vec3{1,1,1}));
+    //first  missile
     gtShuttle.push_back(GeometricTransformation(glm::vec3{80,-1,0},
     											glm::angleAxis(glm::radians(0.f), glm::vec3(1, 0, 0)),
     											glm::vec3{1,1,1}));
@@ -462,10 +484,10 @@ int shuttleAnimation(KeyFramedTexturedLightedMeshRenderablePtr& shuttle, Viewer&
     }
     gtShuttle.clear();
 
-	gtShuttle.push_back(GeometricTransformation(glm::vec3{92,0,0},
+    gtShuttle.push_back(GeometricTransformation(glm::vec3{92,0,0},
     											glm::angleAxis(glm::radians(0.f), glm::vec3(1, 0, 0)),
     											glm::vec3{1,1,1}));
-	gtShuttle.push_back(GeometricTransformation(glm::vec3{96,2,0},
+    gtShuttle.push_back(GeometricTransformation(glm::vec3{96,2,0},
     											glm::angleAxis(glm::radians(-120.f), glm::vec3(1, 0, 0)),
     											glm::vec3{1,1,1}));
     gtShuttle.push_back(GeometricTransformation(glm::vec3{99,4,0},
@@ -493,6 +515,7 @@ int shuttleAnimation(KeyFramedTexturedLightedMeshRenderablePtr& shuttle, Viewer&
     }
     gtShuttle.clear();
     
+    //final missile
     gtShuttle.push_back(GeometricTransformation(glm::vec3{111,6,0},
     											glm::angleAxis(glm::radians(0.f), glm::vec3(1, 0, 0)),
     											glm::vec3{1,1,1}));
@@ -520,6 +543,7 @@ int shuttleAnimation(KeyFramedTexturedLightedMeshRenderablePtr& shuttle, Viewer&
     
     gtShuttle.clear();
     
+    //destruction
     gtShuttle.push_back(GeometricTransformation(glm::vec3{111,6,0},
     											glm::angleAxis(glm::radians(0.f), glm::vec3(1, 0, 0)),
     											glm::vec3{1,1,1}));
@@ -917,6 +941,7 @@ void flashAnimation(TexturedMeshPointLightRenderablePtr& flash, float d){
     std::vector<GeometricTransformation> gtFlash;
     float t=0.0;
     														
+   
    gtFlash.push_back(GeometricTransformation(glm::vec3{140,-0.4,-10},
     											glm::angleAxis(glm::radians(90.f), glm::vec3(0, 0, 1)),
     											glm::vec3{0.00001,0.00001,0.00001}));
@@ -1050,6 +1075,34 @@ void sceneFinAnimation(TexturedMeshPointLightRenderablePtr& fin){
 	
     std::vector<GeometricTransformation> gtFin;
     float t=0.0;
+    
+    
+   gtFin.push_back(GeometricTransformation(glm::vec3{0,0,0},
+    											glm::angleAxis(glm::radians(-45.f), glm::vec3(0, 0, 1)),
+    											glm::vec3{7,7,7}));
+   gtFin.push_back(GeometricTransformation(glm::vec3{0,0,0},
+    											glm::angleAxis(glm::radians(-45.f), glm::vec3(0, 0, 1)),
+    											glm::vec3{0.001,0.001,0.001}));
+   for(auto it=gtFin.begin() ; it<gtFin.end() ; ++it){
+    	fin->addParentTransformKeyframe(*it,t);
+    	t+= 3.f;
+    }
+    
+   gtFin.clear();
+   
+   gtFin.push_back(GeometricTransformation(glm::vec3{0,0,0},
+    											glm::angleAxis(glm::radians(-45.f), glm::vec3(0, 0, 1)),
+    											glm::vec3{0.001,0.001,0.001}));										
+   gtFin.push_back(GeometricTransformation(glm::vec3{140,-0.4,-10},
+    											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
+    											glm::vec3{0.00001,0.00001,0.00001}));
+   
+   for(auto it=gtFin.begin() ; it<gtFin.end() ; ++it){
+    	fin->addParentTransformKeyframe(*it,t);
+    	t+= 0.1;
+    }
+    
+   gtFin.clear();
     														
    gtFin.push_back(GeometricTransformation(glm::vec3{140,-0.4,-10},
     											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
@@ -1057,7 +1110,7 @@ void sceneFinAnimation(TexturedMeshPointLightRenderablePtr& fin){
    
    for(auto it=gtFin.begin() ; it<gtFin.end() ; ++it){
     	fin->addParentTransformKeyframe(*it,t);
-    	t+= 29.f;
+    	t+= 22.8;
     }
     
    gtFin.clear();

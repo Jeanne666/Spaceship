@@ -9,9 +9,12 @@ Ajout + Animation Moon - DONE
 Faire le feu d'un réacteur (pb avec la transparence et les sources de lumières) - DONE
 Faire briller les missiles et la sphere de chargement - DONE
 Animer explosion - DONE
-Resoudre pb asteroid - pb1 DONE (ça tourne)
+Resoudre pb asteroid - pb1 DONE
+Animation de début - DONE
+Fixer caméra au début - DONE
 
-Améliorer déplacemement caméra (fixer + traveling)
+Traveling de la caméra
+Voir le soleil
 Améliorer transition astéroïd/missiles
 Rendre soleil visible
 Rajouter des planètes et astéroïdes in the distance
