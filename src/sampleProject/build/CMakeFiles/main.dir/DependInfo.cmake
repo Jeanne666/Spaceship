@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/jeanne/Documents/INSA-4A/Infographie/project-spaceship/src/sampleProject/main.cpp" "/home/jeanne/Documents/INSA-4A/Infographie/project-spaceship/src/sampleProject/build/CMakeFiles/main.dir/main.cpp.o"
+  "/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sampleProject/main.cpp" "/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sampleProject/build/CMakeFiles/main.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -15,7 +15,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../../sfmlGraphicsPipeline/extlib/glew-1.13.0/include"
   "/usr/include/SFML"
   "../../sfmlGraphicsPipeline/extlib/freetype-2.5.5/include"
-  "//home/jeanne/Documents/INSA-4A/Infographie/project-spaceship/src/sampleProject/../sfmlGraphicsPipeline/extlib/tinyobjloader"
+  "../../sfmlGraphicsPipeline/extlib/tinyobjloader"
   )
 
 # Targets to which this target links.

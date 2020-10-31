@@ -55,14 +55,16 @@ void initialize_scene( Viewer& viewer )
     viewer.addShaderProgram( skyBoxShader );
     
     SkyBoxPtr skybox = std::make_shared<SkyBox>(skyBoxShader,"../../../model/skybox/skymap.png");
-    skybox->setParentTransform(glm::scale( glm::mat4(1.0), glm::vec3(100.0,100.0,100.0) ));
+    skybox->setParentTransform(GeometricTransformation(glm::vec3{0,0,0},
+    											glm::angleAxis(glm::radians(-90.f), glm::vec3(0, 0, 1)),
+    											glm::vec3{100,100,100}).toMatrix());
     viewer.addRenderable( skybox );
 
     //Define a transformation
     glm::mat4 parentTransformation, localTransformation;
 
     //Define a directional light for the whole scene
-    glm::vec3 d_direction = glm::normalize(glm::vec3(1.0,0.63,-1.0));
+    glm::vec3 d_direction = glm::normalize(glm::vec3(0.63,-1.0,-1.0));
     glm::vec3 d_ambient(0.3,0.3,0.3), d_diffuse(0.7,0.7,0.7), d_specular(0.7,0.7,0.7);
     DirectionalLightPtr directionalLight = std::make_shared<DirectionalLight>(d_direction, d_ambient, d_diffuse, d_specular);
     viewer.setDirectionalLight(directionalLight);
@@ -297,9 +299,8 @@ void initialize_scene( Viewer& viewer )
     sceneFinAnimation(flashFin);
     
     
-    
     //Is the camera moving
-    viewer.getCamera().setAnimation(true);
+    viewer.getCamera().setAnimation(false);
 
     viewer.startAnimation();
     viewer.setAnimationLoop(true, 30);
