@@ -1,4 +1,4 @@
-# Install script for directory: /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline
+# Install script for directory: /home/jeanne/Documents/INSA-4A/Infographie/project-spaceship/src/sfmlGraphicsPipeline
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sfmlGraphicsPipeline/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/jeanne/Documents/INSA-4A/Infographie/project-spaceship/src/sfmlGraphicsPipeline/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

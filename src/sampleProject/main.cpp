@@ -300,7 +300,7 @@ void initialize_scene( Viewer& viewer )
     
     
     //Is the camera moving
-    viewer.getCamera().setAnimation(false);
+    viewer.getCamera().setAnimation(true);
 
     viewer.startAnimation();
     viewer.setAnimationLoop(true, 30);
@@ -944,7 +944,7 @@ void flashAnimation(TexturedMeshPointLightRenderablePtr& flash, float d){
    
    gtFlash.push_back(GeometricTransformation(glm::vec3{110,5,0},
     											glm::angleAxis(glm::radians(45.f), glm::vec3(0, 0, 1)),
-    											glm::vec3{0.3,0.3,0.3}));
+    											glm::vec3{0.5,0.5,0.5}));
    gtFlash.push_back(GeometricTransformation(glm::vec3{110,5,0},
     											glm::angleAxis(glm::radians(45.f), glm::vec3(0, 0, 1)),
     											glm::vec3{0.01,0.01,0.01}));
@@ -1062,10 +1062,10 @@ void sceneFinAnimation(TexturedMeshPointLightRenderablePtr& fin){
     
    gtFin.clear();
    
-   gtFin.push_back(GeometricTransformation(glm::vec3{140,-0.4,-10},
+   gtFin.push_back(GeometricTransformation(glm::vec3{140,-0.4,10},
     											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
     											glm::vec3{0.00001,0.00001,0.00001}));
-   gtFin.push_back(GeometricTransformation(glm::vec3{105,0,0},
+   gtFin.push_back(GeometricTransformation(glm::vec3{110,0,0},
     											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
     											glm::vec3{0.0001,0.0001,0.0001}));
    
@@ -1076,12 +1076,12 @@ void sceneFinAnimation(TexturedMeshPointLightRenderablePtr& fin){
     
    gtFin.clear();
    
-   gtFin.push_back(GeometricTransformation(glm::vec3{105,0,0},
+   gtFin.push_back(GeometricTransformation(glm::vec3{110,0,0},
     											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
     											glm::vec3{0.01,0.01,0.01}));
-   gtFin.push_back(GeometricTransformation(glm::vec3{105,0,0},
+   gtFin.push_back(GeometricTransformation(glm::vec3{110,0,0},
     											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
-    											glm::vec3{10,10,10}));
+    											glm::vec3{15,15,15}));
    
    for(auto it=gtFin.begin() ; it<gtFin.end() ; ++it){
     	fin->addParentTransformKeyframe(*it,t);
