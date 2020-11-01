@@ -56,8 +56,9 @@ void initialize_scene( Viewer& viewer )
     
     SkyBoxPtr skybox = std::make_shared<SkyBox>(skyBoxShader,"../../../model/skybox/skymap.png");
     skybox->setParentTransform(GeometricTransformation(glm::vec3{0,0,0},
-    											glm::angleAxis(glm::radians(-90.f), glm::vec3(0, 0, 1)),
-    											glm::vec3{100,100,100}).toMatrix());
+    											glm::angleAxis(glm::radians(90.f), glm::vec3(0, 1, 1)),
+    											glm::vec3{60,60,60}).toMatrix());
+    											
     viewer.addRenderable( skybox );
 
     //Define a transformation
