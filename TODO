@@ -12,14 +12,12 @@ Animer explosion - DONE
 Resoudre pb asteroid - pb1 DONE
 Animation de début - DONE
 Fixer caméra au début - DONE
+Ecran titre début et fin - DONE
+Voir le soleil - DONE
 
+Musique de fond / effets sonores - :/
 Traveling de la caméra
-Voir le soleil
 Améliorer transition astéroïd/missiles
-Rendre soleil visible
 Rajouter des planètes et astéroïdes in the distance
-Ecran titre début et fin
-Musique de fond / effets sonores
-Resoudre pb2 asteroid texture à voir en bonus
-Animer les palettes du bad guy séparemment
-Finir scène
+Resoudre pb2 asteroid texture (à voir en bonus)
+Animer les palettes du bad guy séparemment (au final je pense pas nécessaire)
