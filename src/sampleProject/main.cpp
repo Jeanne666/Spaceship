@@ -79,7 +79,7 @@ void initialize_scene( Viewer& viewer )
     glm::mat4 parentTransformation, localTransformation;
 
     //Define a directional light for the whole scene
-    glm::vec3 d_direction = glm::normalize(glm::vec3(0.63,-1.0,-1.0));
+    glm::vec3 d_direction = glm::normalize(glm::vec3(-1.0,-0.63,-1.0));
     glm::vec3 d_ambient(0.3,0.3,0.3), d_diffuse(0.7,0.7,0.7), d_specular(0.7,0.7,0.7);
     DirectionalLightPtr directionalLight = std::make_shared<DirectionalLight>(d_direction, d_ambient, d_diffuse, d_specular);
     viewer.setDirectionalLight(directionalLight);
@@ -318,8 +318,7 @@ void initialize_scene( Viewer& viewer )
     PointLightPtr lumStart = std::make_shared<PointLight>(glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0, 0.0, 0.0), 1.0, 5e-1, 0);
     viewer.addPointLight(lumStart);
     TexturedMeshPointLightRenderablePtr titreDebut = std::make_shared<TexturedMeshPointLightRenderable>(unlightedTextureShader, "../../../model/explosion/plane.obj", "../../../model/titre/titreDT.png", lumStart);
-    //titreDebut->setLocalTransform(GeometricTransformation(glm::vec3{0,0,0}, glm::angleAxis(glm::radians(-45.f), glm::vec3(0, 1,0)), glm::vec3{1,1,1}).toMatrix());
-    titreDebut->setLocalTransform(GeometricTransformation(glm::vec3{0,0,0}, glm::angleAxis(glm::radians(135.f), glm::vec3(0, 0, 1)), glm::vec3{1,1,1}).toMatrix());
+    titreDebut->setLocalTransform(GeometricTransformation(glm::vec3{0,0,0}, glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)), glm::vec3{1,1,1}).toMatrix());
     viewer.addRenderable(titreDebut);
     titreDebutAnimation(titreDebut);
     
@@ -362,9 +361,36 @@ int shuttleAnimation(KeyFramedTexturedLightedMeshRenderablePtr& shuttle, Viewer&
     float t=0.0;
     
     //fix camera in place while waiting for shuttle
-    viewer.getCamera().setPosition(glm::vec3(0,-3,0));
+    viewer.getCamera().setPosition(glm::vec3(0,3,-0.5));
     
-    //-3s
+    
+    viewer.getCamera().addKeyframe(glm::vec3(-4,3.5,5),glm::vec3(-12,12,0),0);
+    viewer.getCamera().addKeyframe(glm::vec3(-4,3.5,5),glm::vec3(-12,12,0),3);
+    viewer.getCamera().addKeyframe(glm::vec3(-3.5,3,3),glm::vec3(-6,0,0),5);
+    viewer.getCamera().addKeyframe(glm::vec3(-3,3,2),glm::vec3(0,0,0),6);
+    
+    //-4s
+    gtShuttle.push_back(GeometricTransformation(glm::vec3{-40,0,0},
+    											glm::quat{0,0,0,0},
+    											glm::vec3{1,1,1}));
+    gtShuttle.push_back(GeometricTransformation(glm::vec3{-40,0,0},
+    											glm::quat{0,0,0,0},
+    											glm::vec3{1,1,1}));
+    gtShuttle.push_back(GeometricTransformation(glm::vec3{-40,0,0},
+    											glm::quat{0,0,0,0},
+    											glm::vec3{1,1,1}));
+    gtShuttle.push_back(GeometricTransformation(glm::vec3{-40,0,0},
+    											glm::quat{0,0,0,0},
+    											glm::vec3{1,1,1}));
+    gtShuttle.push_back(GeometricTransformation(glm::vec3{-40,0,0},
+    											glm::quat{0,0,0,0},
+    											glm::vec3{1,1,1}));
+    gtShuttle.push_back(GeometricTransformation(glm::vec3{-35,0,0},
+    											glm::quat{0,0,0,0},
+    											glm::vec3{1,1,1}));
+    gtShuttle.push_back(GeometricTransformation(glm::vec3{-30,0,0},
+    											glm::quat{0,0,0,0},
+    											glm::vec3{1,1,1}));
     gtShuttle.push_back(GeometricTransformation(glm::vec3{-25,0,0},
     											glm::quat{0,0,0,0},
     											glm::vec3{1,1,1}));
@@ -386,7 +412,7 @@ int shuttleAnimation(KeyFramedTexturedLightedMeshRenderablePtr& shuttle, Viewer&
     											
     for(auto it=gtShuttle.begin() ; it<gtShuttle.end() ; ++it){
     	shuttle->addParentTransformKeyframe(*it,t);
-    	t+=0.75;
+    	t+=0.5;
     }
     gtShuttle.clear();
     				
@@ -1204,17 +1230,17 @@ void titreDebutAnimation(TexturedMeshPointLightRenderablePtr& titre){
     float t=0.0;
     
     
-   gtDebut.push_back(GeometricTransformation(glm::vec3{-1,1,0},
-    											glm::angleAxis(glm::radians(180.f), glm::vec3(1, 0, 0)),
+   gtDebut.push_back(GeometricTransformation(glm::vec3{-7,7,5},
+    											glm::angleAxis(glm::radians(-67.f), glm::vec3(0, 0, 1)) * glm::angleAxis(glm::radians(180.f), glm::vec3(1, 1, 0)),
     											glm::vec3{0.35,0.35,0.35}));
-   gtDebut.push_back(GeometricTransformation(glm::vec3{0,0,0},
-    											glm::angleAxis(glm::radians(180.f), glm::vec3(1, 0, 0)),
+   gtDebut.push_back(GeometricTransformation(glm::vec3{-7,7,5},
+    											glm::angleAxis(glm::radians(-67.f), glm::vec3(0, 0, 1)) *  glm::angleAxis(glm::radians(180.f), glm::vec3(1, 1, 0)),
     											glm::vec3{0.2,0.2,0.2}));
-   gtDebut.push_back(GeometricTransformation(glm::vec3{0,0,0},
-    											glm::angleAxis(glm::radians(180.f), glm::vec3(1, 0, 0)),
+   gtDebut.push_back(GeometricTransformation(glm::vec3{-7,7,5},
+    											glm::angleAxis(glm::radians(-67.f), glm::vec3(0, 0, 1)) *  glm::angleAxis(glm::radians(180.f), glm::vec3(1, 1, 0)),
     											glm::vec3{0.001,0.001,0.001}));
-   gtDebut.push_back(GeometricTransformation(glm::vec3{0,0,0},
-    											glm::angleAxis(glm::radians(-45.f), glm::vec3(0, 0, 1)),
+   gtDebut.push_back(GeometricTransformation(glm::vec3{-7,7,5},
+    											glm::angleAxis(glm::radians(-67.f), glm::vec3(0, 0, 1)) *  glm::angleAxis(glm::radians(180.f), glm::vec3(1, 1, 0)),
     											glm::vec3{0.00001,0.00001,0.00001}));
    for(auto it=gtDebut.begin() ; it<gtDebut.end() ; ++it){
     	titre->addParentTransformKeyframe(*it,t);
