@@ -369,7 +369,7 @@ int shuttleAnimation(KeyFramedTexturedLightedMeshRenderablePtr& shuttle, Viewer&
     viewer.getCamera().addKeyframe(glm::vec3(-3.5,3,3),glm::vec3(-6,0,0),5);
     viewer.getCamera().addKeyframe(glm::vec3(-3,3,2),glm::vec3(0,0,0),6);
     
-    //-4s
+    //-6s
     gtShuttle.push_back(GeometricTransformation(glm::vec3{-40,0,0},
     											glm::quat{0,0,0,0},
     											glm::vec3{1,1,1}));
@@ -796,7 +796,7 @@ void missile0Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
 void missile1Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
 	
     std::vector<GeometricTransformation> gtMissile;
-    float t=22.0;
+    float t=24.25;
     														
    gtMissile.push_back(GeometricTransformation(glm::vec3{160,0,0},
     											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
@@ -815,7 +815,7 @@ void missile1Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
 void missile2Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
 	
     std::vector<GeometricTransformation> gtMissile;
-    float t=23.0;
+    float t=25.25;
     														
    gtMissile.push_back(GeometricTransformation(glm::vec3{160,0,0},
     											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
@@ -834,7 +834,7 @@ void missile2Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
 void missile3Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
 	
     std::vector<GeometricTransformation> gtMissile;
-    float t=25.0;
+    float t=27.25;
     														
    gtMissile.push_back(GeometricTransformation(glm::vec3{160,-10,0},
     											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
@@ -853,7 +853,7 @@ void missile3Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
 void missile4Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
 	
     std::vector<GeometricTransformation> gtMissile;
-    float t=25.5;
+    float t=27.75;
     														
    gtMissile.push_back(GeometricTransformation(glm::vec3{160,-10,0},
     											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
@@ -872,7 +872,7 @@ void missile4Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
 void missile5Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
 	
     std::vector<GeometricTransformation> gtMissile;
-    float t=26.0;
+    float t=28.25;
     														
    gtMissile.push_back(GeometricTransformation(glm::vec3{160,-5,0},
     											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
@@ -891,7 +891,7 @@ void missile5Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
 void missile6Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
 	
     std::vector<GeometricTransformation> gtMissile;
-    float t=26.5;
+    float t=28.75;
     														
    gtMissile.push_back(GeometricTransformation(glm::vec3{160,-2,0},
     											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
@@ -918,7 +918,7 @@ void missileFAnimation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
    
    for(auto it=gtMissile.begin() ; it<gtMissile.end() ; ++it){
     	missile->addParentTransformKeyframe(*it,t);
-    	t+=27.9;
+    	t+=30.15;
     }
     
    gtMissile.clear();
@@ -974,9 +974,9 @@ void sphereMFAnimation(TexturedMeshPointLightRenderablePtr& sphere){
    
    for(auto it=gtSphere.begin() ; it<gtSphere.end() ; ++it){
     	sphere->addParentTransformKeyframe(*it,t);
-    	t+=27;
-    }
-    
+    	t+=29.25;
+   }
+   
    gtSphere.clear();
    
    gtSphere.push_back(GeometricTransformation(glm::vec3{120,-0.4,0},
@@ -1020,7 +1020,7 @@ void flashAnimation(TexturedMeshPointLightRenderablePtr& flash, float d){
    
    for(auto it=gtFlash.begin() ; it<gtFlash.end() ; ++it){
     	flash->addParentTransformKeyframe(*it,t);
-    	t+= (27.9 + d);
+    	t+= (30.15 + d);
     }
     
    gtFlash.clear();
@@ -1072,7 +1072,7 @@ void flashRAnimation(TexturedMeshPointLightRenderablePtr& flash){
    
    for(auto it=gtFlash.begin() ; it<gtFlash.end() ; ++it){
     	flash->addParentTransformKeyframe(*it,t);
-    	t+= 28.f;
+    	t+= 30.25;
     }
     
    gtFlash.clear();
@@ -1191,7 +1191,7 @@ void sceneFinAnimation(TexturedMeshPointLightRenderablePtr& fin){
    
    for(auto it=gtFin.begin() ; it<gtFin.end() ; ++it){
     	fin->addParentTransformKeyframe(*it,t);
-    	t+= 32;
+    	t+= 34.25;
     }
     
    gtFin.clear();
@@ -1230,16 +1230,16 @@ void titreDebutAnimation(TexturedMeshPointLightRenderablePtr& titre){
     float t=0.0;
     
     
-   gtDebut.push_back(GeometricTransformation(glm::vec3{-7,7,5},
+   gtDebut.push_back(GeometricTransformation(glm::vec3{-7,7,2},
     											glm::angleAxis(glm::radians(-67.f), glm::vec3(0, 0, 1)) * glm::angleAxis(glm::radians(180.f), glm::vec3(1, 1, 0)),
     											glm::vec3{0.35,0.35,0.35}));
-   gtDebut.push_back(GeometricTransformation(glm::vec3{-7,7,5},
+   gtDebut.push_back(GeometricTransformation(glm::vec3{-7,7,2},
     											glm::angleAxis(glm::radians(-67.f), glm::vec3(0, 0, 1)) *  glm::angleAxis(glm::radians(180.f), glm::vec3(1, 1, 0)),
     											glm::vec3{0.2,0.2,0.2}));
-   gtDebut.push_back(GeometricTransformation(glm::vec3{-7,7,5},
+   gtDebut.push_back(GeometricTransformation(glm::vec3{-7,7,2},
     											glm::angleAxis(glm::radians(-67.f), glm::vec3(0, 0, 1)) *  glm::angleAxis(glm::radians(180.f), glm::vec3(1, 1, 0)),
     											glm::vec3{0.001,0.001,0.001}));
-   gtDebut.push_back(GeometricTransformation(glm::vec3{-7,7,5},
+   gtDebut.push_back(GeometricTransformation(glm::vec3{-7,7,2},
     											glm::angleAxis(glm::radians(-67.f), glm::vec3(0, 0, 1)) *  glm::angleAxis(glm::radians(180.f), glm::vec3(1, 1, 0)),
     											glm::vec3{0.00001,0.00001,0.00001}));
    for(auto it=gtDebut.begin() ; it<gtDebut.end() ; ++it){
@@ -1274,7 +1274,7 @@ void titreFinAnimation(TexturedMeshPointLightRenderablePtr& titre){
     											glm::vec3{0.00001,0.00001,0.00001}));
    for(auto it=gtFin.begin() ; it<gtFin.end() ; ++it){
     	titre->addParentTransformKeyframe(*it,t);
-    	t+= 28.5f;
+    	t+= 30.75;
     }
     
    gtFin.clear();
@@ -1305,13 +1305,5 @@ void titreFinAnimation(TexturedMeshPointLightRenderablePtr& titre){
    
 }
 
-
-/*
-float CalcGauss( float x, float sigma ) 
-{
-  float coeff = 1.0 / (2.0 * 3.14157 * sigma);
-  float expon = -(x*x) / (2.0 * sigma);
-  return (coeff*exp(expon));
-}*/
 
 

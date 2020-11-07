@@ -1,6 +1,6 @@
 Trouver un modèle de shuttle - DONE
 Trouver vaisseau de mechant - DONE
-Trouver modèle chat
+Trouver modèle chat - ABANDON
 Animer shuttle - DONE
 Animer vaisseau méchant - DONE
 Animer missiles - DONE
@@ -14,10 +14,14 @@ Animation de début - DONE
 Fixer caméra au début - DONE
 Ecran titre début et fin - DONE
 Voir le soleil - DONE
+Traveling de la caméra - DONE
+Animer les palettes du bad guy séparemment (au final je pense pas nécessaire) - ABANDON
 
-Musique de fond / effets sonores - :/
-Traveling de la caméra
-Améliorer transition astéroïd/missiles
+
+PAR ORDRE D'IMPORTANCE :
+
 Rajouter des planètes et astéroïdes in the distance
+Améliorer transition astéroïd/missiles
+Musique de fond / effets sonores - :/
 Resoudre pb2 asteroid texture (à voir en bonus)
-Animer les palettes du bad guy séparemment (au final je pense pas nécessaire)
+
