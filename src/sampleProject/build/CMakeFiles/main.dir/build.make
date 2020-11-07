@@ -83,6 +83,7 @@ main: ../../sfmlGraphicsPipeline/build/libSFML_GRAPHICS_PIPELINE.a
 main: /usr/lib/x86_64-linux-gnu/libsfml-system.so
 main: /usr/lib/x86_64-linux-gnu/libsfml-window.so
 main: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so
+main: /usr/lib/x86_64-linux-gnu/libsfml-audio.so
 main: /usr/lib/x86_64-linux-gnu/libGLEW.so.1.13.0
 main: ../../sfmlGraphicsPipeline/extlib/freetype-2.5.5/build/libfreetype.a
 main: ../../sfmlGraphicsPipeline/extlib/tinyobjloader/build/libtinyobjloader.a

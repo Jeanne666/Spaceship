@@ -225,6 +225,12 @@ GLEW_LIBRARIES:FILEPATH=/usr/lib/x86_64-linux-gnu/libGLEW.so.1.13.0
 GLM_INCLUDE_DIRS:PATH=/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sampleProject/../sfmlGraphicsPipeline/extlib/glm-0.9.7.1
 
 //Path to a file.
+OPENAL_INCLUDE_DIR:PATH=/usr/include/AL
+
+//Path to a library.
+OPENAL_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libopenal.so
+
+//Path to a file.
 OPENGL_EGL_INCLUDE_DIR:PATH=/usr/include
 
 //Path to a file.
@@ -250,6 +256,9 @@ OPENGL_opengl_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libOpenGL.so
 
 //Path to a file.
 OPENGL_xmesa_INCLUDE_DIR:PATH=OPENGL_xmesa_INCLUDE_DIR-NOTFOUND
+
+//sfml
+SFML_AUDIO_LIBRARIES:FILEPATH=/usr/lib/x86_64-linux-gnu/libsfml-audio.so
 
 //sfml
 SFML_GRAPHICS_LIBRARIES:FILEPATH=/usr/lib/x86_64-linux-gnu/libsfml-graphics.so
@@ -429,8 +438,14 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding OpenAL
+FIND_PACKAGE_MESSAGE_DETAILS_OpenAL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libopenal.so][/usr/include/AL][v()]
 //Details about finding OpenGL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libOpenGL.so][/usr/lib/x86_64-linux-gnu/libGLX.so][/usr/include][c ][v()]
+//ADVANCED property for variable: OPENAL_INCLUDE_DIR
+OPENAL_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENAL_LIBRARY
+OPENAL_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENGL_EGL_INCLUDE_DIR
 OPENGL_EGL_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENGL_GLX_INCLUDE_DIR

@@ -11,8 +11,7 @@
 #include <lighting/LightedMeshRenderable.hpp>
 #include <texturing/KeyFramedTexturedLightedMeshRenderable.hpp>
 #include <texturing/AsteroidRenderable.hpp>
-//#include <SFML/Audio.hpp>
-//#include <SFML/Audio/SoundBuffer.hpp>
+#include <SFML/Audio.hpp>
 
 
 
@@ -342,6 +341,19 @@ int main()
 {
 	Viewer viewer(1280,720);
 	initialize_scene(viewer);
+
+	/*sf::SoundBuffer buffer;
+    if (!buffer.loadFromFile("../../../music/Apollo13-wehaveaproblem.ogg"))
+        return -1;
+		
+	sf::Sound sound;
+	sound.setBuffer(buffer);
+	sound.play();*/
+	
+	sf::Music music;
+	if (!music.openFromFile("../../../music/star_wars_kazoo.ogg"))
+		return -1; // error
+	music.play();
 
 	while( viewer.isRunning() )
 	{
