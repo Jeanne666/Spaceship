@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/extlib/tinyobjloader/tiny_obj_loader.cc
+/home/jeanne/Documents/INSA-4A/Infographie/projet/src/sfmlGraphicsPipeline/extlib/tinyobjloader/tiny_obj_loader.cc
 tiny_obj_loader.h
-/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/extlib/tinyobjloader/tiny_obj_loader.h
+/home/jeanne/Documents/INSA-4A/Infographie/projet/src/sfmlGraphicsPipeline/extlib/tinyobjloader/tiny_obj_loader.h
 
-/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/extlib/tinyobjloader/tiny_obj_loader.h
+/home/jeanne/Documents/INSA-4A/Infographie/projet/src/sfmlGraphicsPipeline/extlib/tinyobjloader/tiny_obj_loader.h
 string
 -
 vector
@@ -40,5 +40,5 @@ fstream
 sstream
 -
 tiny_obj_loader.h
-/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/extlib/tinyobjloader/tiny_obj_loader.h
+/home/jeanne/Documents/INSA-4A/Infographie/projet/src/sfmlGraphicsPipeline/extlib/tinyobjloader/tiny_obj_loader.h
 

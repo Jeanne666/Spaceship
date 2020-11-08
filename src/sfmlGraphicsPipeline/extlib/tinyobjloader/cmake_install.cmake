@@ -1,4 +1,4 @@
-# Install script for directory: /home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/extlib/tinyobjloader
+# Install script for directory: /home/jeanne/Documents/INSA-4A/Infographie/projet/src/sfmlGraphicsPipeline/extlib/tinyobjloader
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,11 +38,11 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/extlib/tinyobjloader/libtinyobjloader.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/jeanne/Documents/INSA-4A/Infographie/projet/src/sfmlGraphicsPipeline/extlib/tinyobjloader/libtinyobjloader.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES "/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/extlib/tinyobjloader/tiny_obj_loader.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES "/home/jeanne/Documents/INSA-4A/Infographie/projet/src/sfmlGraphicsPipeline/extlib/tinyobjloader/tiny_obj_loader.h")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -53,5 +53,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/projet/src/sfmlGraphicsPipeline/extlib/tinyobjloader/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/jeanne/Documents/INSA-4A/Infographie/projet/src/sfmlGraphicsPipeline/extlib/tinyobjloader/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
