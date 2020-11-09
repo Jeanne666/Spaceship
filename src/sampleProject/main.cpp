@@ -3,8 +3,6 @@
 #include <Viewer.hpp>
 #include <ShaderProgram.hpp>
 
-//#include <lighting/SpotLightRenderable.hpp>
-
 #include <lighting/TexturedMeshPointLightRenderable.hpp>
 #include <FrameRenderable.hpp>
 #include <texturing/SkyBox.hpp>
@@ -44,18 +42,9 @@ void astAnimation(AsteroidRenderablePtr& asteroid, glm::vec3 dist, float tdiff);
 
 void initialize_scene( Viewer& viewer )
 {  
-
-    //Default shader
-    ShaderProgramPtr flatShader = std::make_shared<ShaderProgram>(  "../../sfmlGraphicsPipeline/shaders/flatVertex.glsl","../../sfmlGraphicsPipeline/shaders/flatFragment.glsl");
-    viewer.addShaderProgram( flatShader );
-
     //Define a shader that encode an illumination model
     ShaderProgramPtr phongShader = std::make_shared<ShaderProgram>( "../../sfmlGraphicsPipeline/shaders/phongVertex.glsl","../../sfmlGraphicsPipeline/shaders/phongFragment.glsl");
     viewer.addShaderProgram( phongShader );
-
-    //Add a 3D frame to the viewer
-    FrameRenderablePtr frame = std::make_shared<FrameRenderable>(flatShader);
-    //viewer.addRenderable(frame);
 
     //Skybox Cube
     ShaderProgramPtr skyBoxShader = std::make_shared<ShaderProgram>("../../sfmlGraphicsPipeline/shaders/skyBoxTextureVertex.glsl","../../sfmlGraphicsPipeline/shaders/skyBoxTextureFragment.glsl");
@@ -64,12 +53,8 @@ void initialize_scene( Viewer& viewer )
     SkyBoxPtr skybox = std::make_shared<SkyBox>(skyBoxShader,"../../../model/skybox/skymap.png");
     skybox->setParentTransform(GeometricTransformation(glm::vec3{0,0,0},
     											glm::angleAxis(glm::radians(90.f), glm::vec3(0, 1, 1)),
-    											glm::vec3{60,60,60}).toMatrix());
-    											
+    											glm::vec3{60,60,60}).toMatrix());							
     viewer.addRenderable( skybox );
-
-    //Define a transformation
-    glm::mat4 parentTransformation, localTransformation;
 
     //Define a directional light for the whole scene
     glm::vec3 d_direction = glm::normalize(glm::vec3(-1.0,-0.63,-1.0));
@@ -77,26 +62,6 @@ void initialize_scene( Viewer& viewer )
     DirectionalLightPtr directionalLight = std::make_shared<DirectionalLight>(d_direction, d_ambient, d_diffuse, d_specular);
     viewer.setDirectionalLight(directionalLight);
 
-
-    
-
-/*  //Define a spot light
-    glm::vec3 s_position(0.0,5.0,-8.0), s_spotDirection = glm::normalize(glm::vec3(0.0,-1.0,1.0));
-    //glm::vec3 s_ambient(0.0,0.0,0.0), s_diffuse(0.0,0.0,0.0), s_specular(0.0,0.0,0.0);
-    glm::vec3 s_ambient(0.0,0.0,0.0), s_diffuse(0.5,0.5,0.5), s_specular(0.5,0.5,0.5);
-    float s_constant=1.0, s_linear=0.0, s_quadratic=0.0;
-    float s_innerCutOff=std::cos(glm::radians(20.0f)), s_outerCutOff=std::cos(glm::radians(40.0f));
-    SpotLightPtr spotLight = std::make_shared<SpotLight>(s_position, s_spotDirection,
-                                                         s_ambient, s_diffuse, s_specular,
-                                                         s_constant, s_linear, s_quadratic,
-                                                         s_innerCutOff, s_outerCutOff);
-    SpotLightRenderablePtr spotLightRenderable = std::make_shared<SpotLightRenderable>(flatShader, spotLight);
-    localTransformation = glm::scale(glm::mat4(1.0), glm::vec3(0.5,0.5,0.5));
-    spotLightRenderable->setLocalTransform(localTransformation);
-    viewer.addSpotLight(spotLight);
-    viewer.addRenderable(spotLightRenderable);
-*/
-    
     //Define a shader for textured renderables
     ShaderProgramPtr textureShader = std::make_shared<ShaderProgram>( "../../sfmlGraphicsPipeline/shaders/textureVertex.glsl","../../sfmlGraphicsPipeline/shaders/textureFragment.glsl");
     viewer.addShaderProgram( textureShader );
@@ -105,7 +70,6 @@ void initialize_scene( Viewer& viewer )
     ShaderProgramPtr transpTextureShader = std::make_shared<ShaderProgram>( "../../sfmlGraphicsPipeline/shaders/unlightedTextureVertex.glsl","../../sfmlGraphicsPipeline/shaders/unlightedTextureTransparentFragment.glsl");
     viewer.addShaderProgram( transpTextureShader );
     
-        
     //Moon
     AsteroidRenderablePtr moon = std::make_shared<AsteroidRenderable>(textureShader, "../../../model/asteroid/Moon_3D_Model/moon.obj", "../../../model/asteroid/Moon_3D_Model/MoonMap2_2500x1250.jpg", 0.3);
     viewer.addRenderable(moon);
@@ -130,17 +94,15 @@ void initialize_scene( Viewer& viewer )
     asteroid3Animation(asteroid3);
     
     //Shuttle
-    //KeyFramedTexturedLightedMeshRenderablePtr shuttle = std::make_shared<KeyFramedTexturedLightedMeshRenderable>(textureShader, "../../../model/Orbiter_Space_Shuttle/shuttle.obj", "../../../model/Orbiter_Space_Shuttle/Orbiter_Space_Shuttle_OV-103_Discovery-150k-4096-diffuse.jpg");
-    //shuttle->setLocalTransform(glm::scale(glm::mat4(1.0f),glm::vec3(0.1,0.1,0.1)));
     KeyFramedTexturedLightedMeshRenderablePtr shuttle = std::make_shared<KeyFramedTexturedLightedMeshRenderable>(textureShader, "../../../model/shuttle_test/test2.obj", "../../../model/shuttle_test/texture/texture-0.png");
     shuttle->setLocalTransform(glm::scale(glm::mat4(1.0f),glm::vec3(0.05,0.05,0.05)));
     shuttle->setMaterial(Material::Pearl());
     viewer.addRenderable(shuttle);
     
-    int t=0;
+    int t=0;//entire travel time of the shuttle
     t=shuttleAnimation(shuttle, viewer);
     
-    //FireUp
+    //FireUp (child of shuttle)
     PointLightPtr fireLightUp = std::make_shared<PointLight>(glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0,0.0,0.0), glm::vec3(1.0,0.8,0.8), glm::vec3(1.0,0.8,0.8), 1.0, 5e-1, 0);
     viewer.addPointLight(fireLightUp);
     TexturedMeshPointLightRenderablePtr fireUp = std::make_shared<TexturedMeshPointLightRenderable>(unlightedTextureShader, "../../../model/fire/fire.obj", "../../../model/fire/fire5.png", fireLightUp);
@@ -150,7 +112,7 @@ void initialize_scene( Viewer& viewer )
     HierarchicalRenderable::addChild(shuttle, fireUp);
     fireAnimation(fireUp, t);
     
-    //FireLeft
+    //FireLeft (child of shuttle)
     PointLightPtr fireLightLeft = std::make_shared<PointLight>(glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0,0.0,0.0), glm::vec3(1.0,0.8,0.8), glm::vec3(1.0,0.8,0.8), 1.0, 5e-1, 0);
     viewer.addPointLight(fireLightLeft);
     TexturedMeshPointLightRenderablePtr fireLeft = std::make_shared<TexturedMeshPointLightRenderable>(unlightedTextureShader, "../../../model/fire/fire.obj", "../../../model/fire/fire5.png", fireLightLeft);
@@ -160,7 +122,7 @@ void initialize_scene( Viewer& viewer )
     HierarchicalRenderable::addChild(shuttle, fireLeft);
     fireAnimation(fireLeft, t);
     
-    //FireRight
+    //FireRight (child of shuttle)
     PointLightPtr fireLightRight = std::make_shared<PointLight>(glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0,0.0,0.0), glm::vec3(1.0,0.8,0.8), glm::vec3(1.0,0.8,0.8), 1.0, 5e-1, 0);
     viewer.addPointLight(fireLightRight);
     TexturedMeshPointLightRenderablePtr fireRight = std::make_shared<TexturedMeshPointLightRenderable>(unlightedTextureShader, "../../../model/fire/fire.obj", "../../../model/fire/fire5.png", fireLightRight);
@@ -465,7 +427,7 @@ void initialize_scene( Viewer& viewer )
     viewer.addRenderable(ast15);
     astAnimation(ast15, diff15, tdiff15);
     
-    //Is the camera moving
+    //Is the camera animated
     viewer.getCamera().setAnimation(true);
 
     viewer.startAnimation();
@@ -477,11 +439,13 @@ int main()
 	Viewer viewer(1280,720);
 	initialize_scene(viewer);
 	
+	//Start ambient music
 	sf::Music music;
 	if (!music.openFromFile("../../../music/star_wars_kazoo5.ogg"))
 		return -1; // error
 	music.play();
 
+	//Initialize sound effect
 	sf::Sound soundMissile;
 	sf::SoundBuffer bufferMissile;
 	if (!bufferMissile.loadFromFile("../../../music/missile.ogg"))
@@ -509,6 +473,7 @@ int main()
 		viewer.draw();
 		viewer.display();
 		
+		//Play sound effect
 		playSoundAt(&soundPassingShip,viewer.getTime(),6.0,&soundPlayed);
 		
 		playSoundAt(&soundMissile,viewer.getTime(),26.25,&soundPlayed);
@@ -525,6 +490,7 @@ int main()
 	return EXIT_SUCCESS;
 }
 
+//Play a sound at "currentTime" seconds
 void playSoundAt(sf::Sound *sound, float currentTime, float atTime, bool *played){
 	if(!*played && currentTime>=atTime && currentTime<atTime+sound->getBuffer()->getDuration().asSeconds()){
 		sound->play();
@@ -535,9 +501,8 @@ void playSoundAt(sf::Sound *sound, float currentTime, float atTime, bool *played
 	}
 }
 
-int shuttleAnimation(KeyFramedTexturedLightedMeshRenderablePtr& shuttle, Viewer& viewer){
-	//NOTE: To combine 2 rotations: (2nd rot quaternion) * (1st rot quaternion)
-	
+//Define the shuttle's keyframes
+int shuttleAnimation(KeyFramedTexturedLightedMeshRenderablePtr& shuttle, Viewer& viewer){	
     std::vector<GeometricTransformation> gtShuttle;
     float t=0.0;
     
@@ -817,6 +782,7 @@ int shuttleAnimation(KeyFramedTexturedLightedMeshRenderablePtr& shuttle, Viewer&
         
 }
 
+//Define the fires' keyframes
 void fireAnimation(TexturedMeshPointLightRenderablePtr& fireRenderable, const float TIME_MAX){  
     for(float t=0.0;t<TIME_MAX;t+=0.2){
     	fireRenderable->addParentTransformKeyframe(GeometricTransformation(glm::vec3{0,0,0},
@@ -828,6 +794,7 @@ void fireAnimation(TexturedMeshPointLightRenderablePtr& fireRenderable, const fl
     }
 }
 
+//Define the asteroid1's keyframes
 void asteroid1Animation(AsteroidRenderablePtr& asteroid){
     std::vector<GeometricTransformation> gt;
     float t=0.0;
@@ -854,6 +821,7 @@ void asteroid1Animation(AsteroidRenderablePtr& asteroid){
     }
 }
 
+//Define the asteroid2's keyframes
 void asteroid2Animation(AsteroidRenderablePtr& asteroid){
     std::vector<GeometricTransformation> gt;
     float t=0.0;
@@ -880,7 +848,7 @@ void asteroid2Animation(AsteroidRenderablePtr& asteroid){
     }
 }
 
-
+//Define the asteroid3's keyframes
 void asteroid3Animation(AsteroidRenderablePtr& asteroid){
     std::vector<GeometricTransformation> gt;
     float t=0.0;
@@ -907,7 +875,7 @@ void asteroid3Animation(AsteroidRenderablePtr& asteroid){
     }
 }
 
-
+//Define the enemy ship's keyframes
 void meanGuyAnimation(KeyFramedTexturedLightedMeshRenderablePtr& meanie){
 	
     std::vector<GeometricTransformation> gtMeanGuy;
@@ -967,8 +935,8 @@ void meanGuyAnimation(KeyFramedTexturedLightedMeshRenderablePtr& meanie){
     
 }
 
+//Define the missile0's keyframes
 void missile0Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
-	//start at 21s when intro dure 6s
     std::vector<GeometricTransformation> gtMissile;
     float t=26.25;
     														
@@ -986,6 +954,7 @@ void missile0Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
     
 }
 
+//Define the missile1's keyframes
 void missile1Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
 	
     std::vector<GeometricTransformation> gtMissile;
@@ -1005,6 +974,7 @@ void missile1Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
     
 }
 
+//Define the missile2's keyframes
 void missile2Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
 	
     std::vector<GeometricTransformation> gtMissile;
@@ -1024,6 +994,7 @@ void missile2Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
     
 }
 
+//Define the missile3's keyframes
 void missile3Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
 	
     std::vector<GeometricTransformation> gtMissile;
@@ -1043,6 +1014,7 @@ void missile3Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
     
 }
 
+//Define the missile4's keyframes
 void missile4Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
 	
     std::vector<GeometricTransformation> gtMissile;
@@ -1062,6 +1034,7 @@ void missile4Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
     
 }
 
+//Define the missile5's keyframes
 void missile5Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
 	
     std::vector<GeometricTransformation> gtMissile;
@@ -1081,6 +1054,7 @@ void missile5Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
     
 }
 
+//Define the missile6's keyframes
 void missile6Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
 	
     std::vector<GeometricTransformation> gtMissile;
@@ -1100,6 +1074,7 @@ void missile6Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
     
 }
 
+//Define the final missile's keyframes
 void missileFAnimation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
 	
     std::vector<GeometricTransformation> gtMissile;
@@ -1128,18 +1103,6 @@ void missileFAnimation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
     	t+=0.5;
     }	 				
    
-   /*
-   gitMissile.clear();
-   				
-   gtMissile.push_back(GeometricTransformation(glm::vec3{125,-0.4,0},
-    											glm::angleAxis(glm::radians(-23.5f), glm::vec3(0, 0, 1)),
-    											glm::vec3{0.06,0.04,0.04}));
-   
-   for(auto it=gtMissile.begin() ; it<gtMissile.end() ; ++it){
-    	missile->addParentTransformKeyframe(*it,t);
-    	t+=0.5;
-    }*/
-    
    gtMissile.clear();
    
    gtMissile.push_back(GeometricTransformation(glm::vec3{125,-0.4,0},
@@ -1156,6 +1119,7 @@ void missileFAnimation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
     
 }
 
+//Define the charging sphere's keyframes
 void sphereMFAnimation(TexturedMeshPointLightRenderablePtr& sphere){
 	
     std::vector<GeometricTransformation> gtSphere;
@@ -1341,46 +1305,9 @@ void moonAnimation(AsteroidRenderablePtr& moon){
 
 void sceneFinAnimation(TexturedMeshPointLightRenderablePtr& fin){
 	
-    std::vector<GeometricTransformation> gtFin;
-    float t=0.0;
-    
-   /* 
-   gtFin.push_back(GeometricTransformation(glm::vec3{0,0,0},
-    											glm::angleAxis(glm::radians(-45.f), glm::vec3(0, 0, 1)),
-    											glm::vec3{7,7,7}));
-   gtFin.push_back(GeometricTransformation(glm::vec3{0,0,0},
-    											glm::angleAxis(glm::radians(-45.f), glm::vec3(0, 0, 1)),
-    											glm::vec3{0.001,0.001,0.001}));
-   for(auto it=gtFin.begin() ; it<gtFin.end() ; ++it){
-    	fin->addParentTransformKeyframe(*it,t);
-    	t+= 3.f;
-    }
-    
-   gtFin.clear();
-   
-   gtFin.push_back(GeometricTransformation(glm::vec3{0,0,0},
-    											glm::angleAxis(glm::radians(-45.f), glm::vec3(0, 0, 1)),
-    											glm::vec3{0.001,0.001,0.001}));										
-   gtFin.push_back(GeometricTransformation(glm::vec3{140,-0.4,-10},
-    											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
-    											glm::vec3{0.00001,0.00001,0.00001}));
-   
-   for(auto it=gtFin.begin() ; it<gtFin.end() ; ++it){
-    	fin->addParentTransformKeyframe(*it,t);
-    	t+= 0.1;
-    }
-    
-   gtFin.clear();
-    														
-   gtFin.push_back(GeometricTransformation(glm::vec3{140,-0.4,-10},
-    											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
-    											glm::vec3{0.00001,0.00001,0.00001}));
-   
-   for(auto it=gtFin.begin() ; it<gtFin.end() ; ++it){
-    	fin->addParentTransformKeyframe(*it,t);
-    	t+= 22.8;
-    }*/
-    														
+   std::vector<GeometricTransformation> gtFin;
+   float t=0.0;
+       														
    gtFin.push_back(GeometricTransformation(glm::vec3{140,-0.4,-10},
     											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
     											glm::vec3{0.00001,0.00001,0.00001}));
@@ -1416,7 +1343,7 @@ void sceneFinAnimation(TexturedMeshPointLightRenderablePtr& fin){
    for(auto it=gtFin.begin() ; it<gtFin.end() ; ++it){
     	fin->addParentTransformKeyframe(*it,t);
     	t+= 2.5;
-    }
+   }
    
 }
 
@@ -1482,12 +1409,6 @@ void titreFinAnimation(TexturedMeshPointLightRenderablePtr& titre){
    gtFin.push_back(GeometricTransformation(glm::vec3{112,0,0},
     											glm::angleAxis(glm::radians(180.f), glm::vec3(1, 0, 0)),
     											glm::vec3{0.001,0.001,0.001}));
-   //gtFin.push_back(GeometricTransformation(glm::vec3{110,0,0},
-   // 											glm::angleAxis(glm::radians(180.f), glm::vec3(1, 0, 0)),
-   // 											glm::vec3{0.2,0.2,0.2}));
-   //gtFin.push_back(GeometricTransformation(glm::vec3{110,0,0},
-   // 											glm::angleAxis(glm::radians(180.f), glm::vec3(1, 0, 0)),
-   // 											glm::vec3{0.35,0.35,0.35}));
    gtFin.push_back(GeometricTransformation(glm::vec3{112,0,0},
     											glm::angleAxis(glm::radians(180.f), glm::vec3(1, 0, 0)),
     											glm::vec3{0.7,0.7,0.7}));
