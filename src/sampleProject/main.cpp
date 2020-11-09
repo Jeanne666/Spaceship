@@ -482,27 +482,35 @@ int main()
 		return -1; // error
 	music.play();
 
-	sf::SoundBuffer bufferBigMissile;
-	sf::SoundBuffer bufferMissile;
-	sf::Sound soundBigMissile;
 	sf::Sound soundMissile;
-	bool soundPlayed=false;
-	
-    if (!bufferBigMissile.loadFromFile("../../../music/big_missile.ogg"))
-        return -1;
+	sf::SoundBuffer bufferMissile;
 	if (!bufferMissile.loadFromFile("../../../music/missile.ogg"))
         return -1;
+    soundMissile.setBuffer(bufferMissile);
 	
-	soundBigMissile.setBuffer(bufferBigMissile);
-	soundMissile.setBuffer(bufferMissile);
+	sf::Sound soundBigMissile;
+	sf::SoundBuffer bufferBigMissile;
+	if (!bufferBigMissile.loadFromFile("../../../music/big_missile.ogg"))
+        return -1;
+    soundBigMissile.setBuffer(bufferBigMissile);
+    
+    sf::Sound soundPassingShip;
+	sf::SoundBuffer bufferPassingShip;
+	if (!bufferPassingShip.loadFromFile("../../../music/passing_ship3.ogg"))
+        return -1;
+    soundPassingShip.setBuffer(bufferPassingShip);
 	
+	bool soundPlayed=false;
+		
 	while( viewer.isRunning() )
 	{
 		viewer.handleEvent();
 		viewer.animate();
 		viewer.draw();
 		viewer.display();
-				
+		
+		playSoundAt(&soundPassingShip,viewer.getTime(),6.0,&soundPlayed);
+		
 		playSoundAt(&soundMissile,viewer.getTime(),26.25,&soundPlayed);
 		playSoundAt(&soundMissile,viewer.getTime(),27.0,&soundPlayed);
 		playSoundAt(&soundMissile,viewer.getTime(),27.75,&soundPlayed);
@@ -510,6 +518,7 @@ int main()
 		playSoundAt(&soundMissile,viewer.getTime(),29.75,&soundPlayed);
 		playSoundAt(&soundMissile,viewer.getTime(),30.25,&soundPlayed);
 		playSoundAt(&soundMissile,viewer.getTime(),30.75,&soundPlayed);
+		
 		playSoundAt(&soundBigMissile,viewer.getTime(),32.15,&soundPlayed);
 	}	
 
