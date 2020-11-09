@@ -346,7 +346,7 @@ void initialize_scene( Viewer& viewer )
     
     //Asteroid cloud
     //Asteroid1
-    AsteroidRenderablePtr ast = std::make_shared<AsteroidRenderable>(textureShader, "../../../model/asteroid/asteroidBonus/asteroidSmol.obj", "../../../model/asteroid/asteroidBonus/ast2TextLow.png", 1.f);
+    AsteroidRenderablePtr ast = std::make_shared<AsteroidRenderable>(textureShader, "../../../model/asteroid/asteroidBonus/asteroidSmolLow.obj", "../../../model/asteroid/asteroidBonus/ast2TextLow.png", 1.f);
     ast->setLocalTransform(GeometricTransformation(glm::vec3{0,0,0}, glm::angleAxis(glm::radians(0.f), glm::vec3(1, 1, 0)), glm::vec3{1,1,1}).toMatrix());
     glm::vec3 diff = glm::vec3{0,0,0};
     float tdiff = 0.0f;
@@ -354,7 +354,7 @@ void initialize_scene( Viewer& viewer )
     astAnimation(ast, diff, tdiff);
     
     //Asteroid2
-    AsteroidRenderablePtr ast2 = std::make_shared<AsteroidRenderable>(textureShader, "../../../model/asteroid/asteroidBonus/asteroidSmol.obj", "../../../model/asteroid/asteroidBonus/ast2TextLow.png", 1.f);
+    AsteroidRenderablePtr ast2 = std::make_shared<AsteroidRenderable>(textureShader, "../../../model/asteroid/asteroidBonus/asteroidSmolLow.obj", "../../../model/asteroid/asteroidBonus/ast2TextLow.png", 1.f);
     ast2->setLocalTransform(GeometricTransformation(glm::vec3{0,0,0}, glm::angleAxis(glm::radians(90.f), glm::vec3(1, 1, 0)), glm::vec3{1,1,1}).toMatrix());
     glm::vec3 diff2 = glm::vec3{0,-1,2};
     float tdiff2 = 1.0f;
@@ -362,7 +362,7 @@ void initialize_scene( Viewer& viewer )
     astAnimation(ast2, diff2, tdiff2);
     
     //Asteroid3
-    AsteroidRenderablePtr ast3 = std::make_shared<AsteroidRenderable>(textureShader, "../../../model/asteroid/asteroidBonus/asteroidSmol.obj", "../../../model/asteroid/asteroidBonus/ast2TextLow.png", 1.f);
+    AsteroidRenderablePtr ast3 = std::make_shared<AsteroidRenderable>(textureShader, "../../../model/asteroid/asteroidBonus/asteroidSmolLow.obj", "../../../model/asteroid/asteroidBonus/ast2TextLow.png", 1.f);
     ast3->setLocalTransform(GeometricTransformation(glm::vec3{0,0,0}, glm::angleAxis(glm::radians(-90.f), glm::vec3(1, 1, 1)), glm::vec3{1,1,1}).toMatrix());
     glm::vec3 diff3 = glm::vec3{0,2,0};
     float tdiff3 = 2.0f;
@@ -370,7 +370,7 @@ void initialize_scene( Viewer& viewer )
     astAnimation(ast3, diff3, tdiff3);
     
     //Asteroid4
-    AsteroidRenderablePtr ast4 = std::make_shared<AsteroidRenderable>(textureShader, "../../../model/asteroid/asteroidBonus/asteroidSmol.obj", "../../../model/asteroid/asteroidBonus/ast2TextLow.png", 1.f);
+    AsteroidRenderablePtr ast4 = std::make_shared<AsteroidRenderable>(textureShader, "../../../model/asteroid/asteroidBonus/asteroidSmolLow.obj", "../../../model/asteroid/asteroidBonus/ast2TextLow.png", 1.f);
     ast4->setLocalTransform(GeometricTransformation(glm::vec3{0,0,0}, glm::angleAxis(glm::radians(-45.f), glm::vec3(1, 1, 1)), glm::vec3{1,1,1}).toMatrix());
     glm::vec3 diff4 = glm::vec3{0,5.f,0};
     float tdiff4 = 3.0f;
@@ -378,7 +378,7 @@ void initialize_scene( Viewer& viewer )
     astAnimation(ast4, diff4, tdiff4);
     
     //Asteroid5
-    AsteroidRenderablePtr ast5 = std::make_shared<AsteroidRenderable>(textureShader, "../../../model/asteroid/asteroidBonus/asteroidSmol.obj", "../../../model/asteroid/asteroidBonus/ast2TextLow.png", 1.f);
+    AsteroidRenderablePtr ast5 = std::make_shared<AsteroidRenderable>(textureShader, "../../../model/asteroid/asteroidBonus/asteroidSmolLow.obj", "../../../model/asteroid/asteroidBonus/ast2TextLow.png", 1.f);
     ast5->setLocalTransform(GeometricTransformation(glm::vec3{0,0,0}, glm::angleAxis(glm::radians(50.f), glm::vec3(1, 1, 1)), glm::vec3{1,1,1}).toMatrix());
     glm::vec3 diff5 = glm::vec3{0,10,0};
     float tdiff5 = 5.0f;
@@ -386,7 +386,7 @@ void initialize_scene( Viewer& viewer )
     astAnimation(ast5, diff5, tdiff5);
     
     //Asteroid6
-    AsteroidRenderablePtr ast6 = std::make_shared<AsteroidRenderable>(textureShader, "../../../model/asteroid/asteroidBonus/asteroidSmol.obj", "../../../model/asteroid/asteroidBonus/ast2TextLow.png", 1.f);
+    AsteroidRenderablePtr ast6 = std::make_shared<AsteroidRenderable>(textureShader, "../../../model/asteroid/asteroidBonus/asteroidSmolLow.obj", "../../../model/asteroid/asteroidBonus/ast2TextLow.png", 1.f);
     ast6->setLocalTransform(GeometricTransformation(glm::vec3{0,0,0}, glm::angleAxis(glm::radians(-45.f), glm::vec3(1, 1, 1)), glm::vec3{1,1,1}).toMatrix());
     glm::vec3 diff6 = glm::vec3{0,-5,7};
     float tdiff6 = 0.5f;
@@ -394,7 +394,7 @@ void initialize_scene( Viewer& viewer )
     astAnimation(ast6, diff6, tdiff6);
     
     //Asteroid7
-    AsteroidRenderablePtr ast7 = std::make_shared<AsteroidRenderable>(textureShader, "../../../model/asteroid/asteroidBonus/asteroidSmol.obj", "../../../model/asteroid/asteroidBonus/ast2TextLow.png", 1.f);
+    AsteroidRenderablePtr ast7 = std::make_shared<AsteroidRenderable>(textureShader, "../../../model/asteroid/asteroidBonus/asteroidSmolLow.obj", "../../../model/asteroid/asteroidBonus/ast2TextLow.png", 1.f);
     ast7->setLocalTransform(GeometricTransformation(glm::vec3{0,0,0}, glm::angleAxis(glm::radians(180.f), glm::vec3(1, 1, 1)), glm::vec3{1,1,1}).toMatrix());
     glm::vec3 diff7 = glm::vec3{0,7,-3};
     float tdiff7 = 4.5f;
@@ -402,7 +402,7 @@ void initialize_scene( Viewer& viewer )
     astAnimation(ast7, diff7, tdiff7);
     
     //Asteroid8
-    AsteroidRenderablePtr ast8 = std::make_shared<AsteroidRenderable>(textureShader, "../../../model/asteroid/asteroidBonus/asteroidSmol.obj", "../../../model/asteroid/asteroidBonus/ast2TextLow.png", 1.f);
+    AsteroidRenderablePtr ast8 = std::make_shared<AsteroidRenderable>(textureShader, "../../../model/asteroid/asteroidBonus/asteroidSmolLow.obj", "../../../model/asteroid/asteroidBonus/ast2TextLow.png", 1.f);
     ast8->setLocalTransform(GeometricTransformation(glm::vec3{0,0,0}, glm::angleAxis(glm::radians(70.f), glm::vec3(1, 1, 1)), glm::vec3{1,1,1}).toMatrix());
     glm::vec3 diff8 = glm::vec3{0,12,3};
     float tdiff8 = 6.0f;
@@ -410,7 +410,7 @@ void initialize_scene( Viewer& viewer )
     astAnimation(ast8, diff8, tdiff8);
     
     //Asteroid9
-    AsteroidRenderablePtr ast9 = std::make_shared<AsteroidRenderable>(textureShader, "../../../model/asteroid/asteroidBonus/asteroidSmol.obj", "../../../model/asteroid/asteroidBonus/ast2TextLow.png", 1.f);
+    AsteroidRenderablePtr ast9 = std::make_shared<AsteroidRenderable>(textureShader, "../../../model/asteroid/asteroidBonus/asteroidSmolLow.obj", "../../../model/asteroid/asteroidBonus/ast2TextLow.png", 1.f);
     ast9->setLocalTransform(GeometricTransformation(glm::vec3{0,0,0}, glm::angleAxis(glm::radians(45.f), glm::vec3(1, 1, 1)), glm::vec3{1,1,1}).toMatrix());
     glm::vec3 diff9 = glm::vec3{0,0,3};
     float tdiff9 = 5.0f;
@@ -418,7 +418,7 @@ void initialize_scene( Viewer& viewer )
     astAnimation(ast9, diff9, tdiff9);
     
     //Asteroid10
-    AsteroidRenderablePtr ast10 = std::make_shared<AsteroidRenderable>(textureShader, "../../../model/asteroid/asteroidBonus/asteroidSmol.obj", "../../../model/asteroid/asteroidBonus/ast2TextLow.png", 1.f);
+    AsteroidRenderablePtr ast10 = std::make_shared<AsteroidRenderable>(textureShader, "../../../model/asteroid/asteroidBonus/asteroidSmolLow.obj", "../../../model/asteroid/asteroidBonus/ast2TextLow.png", 1.f);
     ast10->setLocalTransform(GeometricTransformation(glm::vec3{0,0,0}, glm::angleAxis(glm::radians(0.f), glm::vec3(1, 1, 1)), glm::vec3{1,1,1}).toMatrix());
     glm::vec3 diff10 = glm::vec3{0,12,-10};
     float tdiff10 = 4.0f;
@@ -426,7 +426,7 @@ void initialize_scene( Viewer& viewer )
     astAnimation(ast10, diff10, tdiff10);
     
     //Asteroid11
-    AsteroidRenderablePtr ast11 = std::make_shared<AsteroidRenderable>(textureShader, "../../../model/asteroid/asteroidBonus/asteroidSmol.obj", "../../../model/asteroid/asteroidBonus/ast2TextLow.png", 1.f);
+    AsteroidRenderablePtr ast11 = std::make_shared<AsteroidRenderable>(textureShader, "../../../model/asteroid/asteroidBonus/asteroidSmolLow.obj", "../../../model/asteroid/asteroidBonus/ast2TextLow.png", 1.f);
     ast11->setLocalTransform(GeometricTransformation(glm::vec3{0,0,0}, glm::angleAxis(glm::radians(-200.f), glm::vec3(1, 1, 1)), glm::vec3{1,1,1}).toMatrix());
     glm::vec3 diff11 = glm::vec3{0,15,-15};
     float tdiff11 = 2.0f;
@@ -434,7 +434,7 @@ void initialize_scene( Viewer& viewer )
     astAnimation(ast11, diff11, tdiff11);
     
     //Asteroid12
-    AsteroidRenderablePtr ast12 = std::make_shared<AsteroidRenderable>(textureShader, "../../../model/asteroid/asteroidBonus/asteroidSmol.obj", "../../../model/asteroid/asteroidBonus/ast2TextLow.png", 1.f);
+    AsteroidRenderablePtr ast12 = std::make_shared<AsteroidRenderable>(textureShader, "../../../model/asteroid/asteroidBonus/asteroidSmolLow.obj", "../../../model/asteroid/asteroidBonus/ast2TextLow.png", 1.f);
     ast12->setLocalTransform(GeometricTransformation(glm::vec3{0,0,0}, glm::angleAxis(glm::radians(150.f), glm::vec3(1, 1, 1)), glm::vec3{1,1,1}).toMatrix());
     glm::vec3 diff12 = glm::vec3{0,-15,15};
     float tdiff12 = -2.0f;
@@ -442,7 +442,7 @@ void initialize_scene( Viewer& viewer )
     astAnimation(ast12, diff12, tdiff12);
     
     //Asteroid13
-    AsteroidRenderablePtr ast13 = std::make_shared<AsteroidRenderable>(textureShader, "../../../model/asteroid/asteroidBonus/asteroidSmol.obj", "../../../model/asteroid/asteroidBonus/ast2TextLow.png", 1.f);
+    AsteroidRenderablePtr ast13 = std::make_shared<AsteroidRenderable>(textureShader, "../../../model/asteroid/asteroidBonus/asteroidSmolLow.obj", "../../../model/asteroid/asteroidBonus/ast2TextLow.png", 1.f);
     ast13->setLocalTransform(GeometricTransformation(glm::vec3{0,0,0}, glm::angleAxis(glm::radians(-150.f), glm::vec3(1, 1, 1)), glm::vec3{1,1,1}).toMatrix());
     glm::vec3 diff13 = glm::vec3{0,-25,3};
     float tdiff13 = -1.0f;
@@ -450,7 +450,7 @@ void initialize_scene( Viewer& viewer )
     astAnimation(ast13, diff13, tdiff13);
     
     //Asteroid14
-    AsteroidRenderablePtr ast14 = std::make_shared<AsteroidRenderable>(textureShader, "../../../model/asteroid/asteroidBonus/asteroidSmol.obj", "../../../model/asteroid/asteroidBonus/ast2TextLow.png", 1.f);
+    AsteroidRenderablePtr ast14 = std::make_shared<AsteroidRenderable>(textureShader, "../../../model/asteroid/asteroidBonus/asteroidSmolLow.obj", "../../../model/asteroid/asteroidBonus/ast2TextLow.png", 1.f);
     ast14->setLocalTransform(GeometricTransformation(glm::vec3{0,0,0}, glm::angleAxis(glm::radians(50.f), glm::vec3(1, 1, 1)), glm::vec3{1,1,1}).toMatrix());
     glm::vec3 diff14 = glm::vec3{0,-40,5};
     float tdiff14 = 1.5f;
@@ -458,7 +458,7 @@ void initialize_scene( Viewer& viewer )
     astAnimation(ast14, diff14, tdiff14);
     
     //Asteroid15
-    AsteroidRenderablePtr ast15 = std::make_shared<AsteroidRenderable>(textureShader, "../../../model/asteroid/asteroidBonus/asteroidSmol.obj", "../../../model/asteroid/asteroidBonus/ast2TextLow.png", 1.f);
+    AsteroidRenderablePtr ast15 = std::make_shared<AsteroidRenderable>(textureShader, "../../../model/asteroid/asteroidBonus/asteroidSmolLow.obj", "../../../model/asteroid/asteroidBonus/ast2TextLow.png", 1.f);
     ast15->setLocalTransform(GeometricTransformation(glm::vec3{0,0,0}, glm::angleAxis(glm::radians(50.f), glm::vec3(1, 1, 1)), glm::vec3{1,1,1}).toMatrix());
     glm::vec3 diff15 = glm::vec3{0,-20,0};
     float tdiff15 = -2.5f;
