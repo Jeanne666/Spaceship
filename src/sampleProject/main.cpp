@@ -503,9 +503,9 @@ int main()
 		viewer.draw();
 		viewer.display();
 				
-		playSoundAt(&soundMissile,viewer.getTime(),23.0,&soundPlayed);
 		playSoundAt(&soundMissile,viewer.getTime(),26.25,&soundPlayed);
-		playSoundAt(&soundMissile,viewer.getTime(),27.25,&soundPlayed);
+		playSoundAt(&soundMissile,viewer.getTime(),27.0,&soundPlayed);
+		playSoundAt(&soundMissile,viewer.getTime(),27.75,&soundPlayed);
 		playSoundAt(&soundMissile,viewer.getTime(),29.25,&soundPlayed);
 		playSoundAt(&soundMissile,viewer.getTime(),29.75,&soundPlayed);
 		playSoundAt(&soundMissile,viewer.getTime(),30.25,&soundPlayed);
@@ -961,7 +961,7 @@ void meanGuyAnimation(KeyFramedTexturedLightedMeshRenderablePtr& meanie){
 void missile0Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
 	//start at 21s when intro dure 6s
     std::vector<GeometricTransformation> gtMissile;
-    float t=23.0;
+    float t=26.25;
     														
    gtMissile.push_back(GeometricTransformation(glm::vec3{160,0,5},
     											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
@@ -980,9 +980,9 @@ void missile0Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
 void missile1Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
 	
     std::vector<GeometricTransformation> gtMissile;
-    float t=26.25;
+    float t=27.0;
     														
-   gtMissile.push_back(GeometricTransformation(glm::vec3{160,0,0},
+   gtMissile.push_back(GeometricTransformation(glm::vec3{160,-8,0},
     											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
     											glm::vec3{1,1,1}));			
    gtMissile.push_back(GeometricTransformation(glm::vec3{10,0,0},
@@ -999,9 +999,9 @@ void missile1Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
 void missile2Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile){
 	
     std::vector<GeometricTransformation> gtMissile;
-    float t=27.25;
+    float t=27.75;
     														
-   gtMissile.push_back(GeometricTransformation(glm::vec3{160,0,0},
+   gtMissile.push_back(GeometricTransformation(glm::vec3{160,-5,0},
     											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
     											glm::vec3{1,1,1}));			
    gtMissile.push_back(GeometricTransformation(glm::vec3{10,0,0},
