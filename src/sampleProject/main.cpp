@@ -13,7 +13,7 @@
 #include <texturing/AsteroidRenderable.hpp>
 #include <SFML/Audio.hpp>
 
-
+void playSoundAt(sf::Sound *sound, float currentTime, float atTime, bool *played);
 
 int shuttleAnimation(KeyFramedTexturedLightedMeshRenderablePtr& shuttle, Viewer& viewer);
 void fireAnimation(TexturedMeshPointLightRenderablePtr& fireRenderable, const float TIME_MAX);
@@ -476,29 +476,54 @@ int main()
 {
 	Viewer viewer(1280,720);
 	initialize_scene(viewer);
-
-	/*sf::SoundBuffer buffer;
-    if (!buffer.loadFromFile("../../../music/Apollo13-wehaveaproblem.ogg"))
-        return -1;
-		
-	sf::Sound sound;
-	sound.setBuffer(buffer);
-	sound.play();*/
 	
 	sf::Music music;
-	if (!music.openFromFile("../../../music/star_wars_kazoo4.ogg"))
+	if (!music.openFromFile("../../../music/star_wars_kazoo5.ogg"))
 		return -1; // error
 	music.play();
 
+	sf::SoundBuffer bufferBigMissile;
+	sf::SoundBuffer bufferMissile;
+	sf::Sound soundBigMissile;
+	sf::Sound soundMissile;
+	bool soundPlayed=false;
+	
+    if (!bufferBigMissile.loadFromFile("../../../music/big_missile.ogg"))
+        return -1;
+	if (!bufferMissile.loadFromFile("../../../music/missile.ogg"))
+        return -1;
+	
+	soundBigMissile.setBuffer(bufferBigMissile);
+	soundMissile.setBuffer(bufferMissile);
+	
 	while( viewer.isRunning() )
 	{
 		viewer.handleEvent();
 		viewer.animate();
 		viewer.draw();
 		viewer.display();
+				
+		playSoundAt(&soundMissile,viewer.getTime(),23.0,&soundPlayed);
+		playSoundAt(&soundMissile,viewer.getTime(),26.25,&soundPlayed);
+		playSoundAt(&soundMissile,viewer.getTime(),27.25,&soundPlayed);
+		playSoundAt(&soundMissile,viewer.getTime(),29.25,&soundPlayed);
+		playSoundAt(&soundMissile,viewer.getTime(),29.75,&soundPlayed);
+		playSoundAt(&soundMissile,viewer.getTime(),30.25,&soundPlayed);
+		playSoundAt(&soundMissile,viewer.getTime(),30.75,&soundPlayed);
+		playSoundAt(&soundBigMissile,viewer.getTime(),32.15,&soundPlayed);
 	}	
 
 	return EXIT_SUCCESS;
+}
+
+void playSoundAt(sf::Sound *sound, float currentTime, float atTime, bool *played){
+	if(!*played && currentTime>=atTime && currentTime<atTime+sound->getBuffer()->getDuration().asSeconds()){
+		sound->play();
+		*played=true;
+	}else if(*played && currentTime>=atTime+sound->getBuffer()->getDuration().asSeconds()){
+		sound->pause();
+		*played=false;
+	}
 }
 
 int shuttleAnimation(KeyFramedTexturedLightedMeshRenderablePtr& shuttle, Viewer& viewer){
