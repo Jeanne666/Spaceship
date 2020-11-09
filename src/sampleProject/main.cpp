@@ -427,18 +427,19 @@ int main()
 	sf::Music music;
 	if (!music.openFromFile("../../../music/star_wars_kazoo5.ogg"))
 		return -1; // error
+	music.setLoop(true);
 	music.play();
 
 	//Initialize sound effect
 	sf::Sound soundMissile;
 	sf::SoundBuffer bufferMissile;
-	if (!bufferMissile.loadFromFile("../../../music/missile.ogg"))
+	if (!bufferMissile.loadFromFile("../../../music/missile2.ogg"))
         return -1;
     soundMissile.setBuffer(bufferMissile);
 	
 	sf::Sound soundBigMissile;
 	sf::SoundBuffer bufferBigMissile;
-	if (!bufferBigMissile.loadFromFile("../../../music/big_missile.ogg"))
+	if (!bufferBigMissile.loadFromFile("../../../music/big_missile2.ogg"))
         return -1;
     soundBigMissile.setBuffer(bufferBigMissile);
     
@@ -480,7 +481,7 @@ void playSoundAt(sf::Sound *sound, float currentTime, float atTime, bool *played
 		sound->play();
 		*played=true;
 	}else if(*played && currentTime>=atTime+sound->getBuffer()->getDuration().asSeconds()){
-		sound->pause();
+		sound->stop();
 		*played=false;
 	}
 }
@@ -1452,5 +1453,6 @@ void astAnimation(AsteroidRenderablePtr& asteroid, glm::vec3 diff, float tdiff){
     	t+=8 + tdiff/2;
     }
 }
+
 
 
