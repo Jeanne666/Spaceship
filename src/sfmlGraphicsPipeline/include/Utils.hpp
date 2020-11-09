@@ -6,8 +6,6 @@
  */
 
 #include "GeometricTransformation.hpp"
-#include "Sphere.hpp"
-#include "Plane.hpp"
 
 #include <array>
 #include <vector>
@@ -37,13 +35,5 @@ glm::vec4 randomColor();
  * @param high The maximum expected value for the factor (will return a red color).
  * @return The generated color vector. */
 glm::vec4 getColor( const float& factor, const float& low, const float& high );
-
-void getUnitIndexedCube(std::vector<glm::vec3>& positions, std::vector<glm::vec3>& normals, std::vector<glm::ivec3>& indices);
-void getUnitPlane(std::vector<glm::vec3>& positions, std::vector<glm::vec3>& normals, std::vector<glm::vec2> &texCoords);
-void getUnitCube(std::vector<glm::vec3>& positions, std::vector<glm::vec3>& normals, std::vector<glm::vec2> &texCoords);
-void getUnitCylinder(std::vector<glm::vec3>& positions, std::vector<glm::vec3>& normals, const unsigned int& slices);
-void getUnitSphere(std::vector<glm::vec3>& positions, std::vector<glm::vec3>& normals, const unsigned int& strips, const unsigned int& slices);
-void getTorus(std::vector<glm::vec3>& positions, std::vector<glm::vec3>& normals, const float& a, const float& c, const unsigned int& strips, const unsigned int& slices);
-void getUnitCone(std::vector<glm::vec3>& positions, std::vector<glm::vec3>& normals, const unsigned int &strips, const unsigned int& slices);
 
 #endif //UTILS

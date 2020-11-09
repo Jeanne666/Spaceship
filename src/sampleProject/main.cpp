@@ -29,7 +29,6 @@ void missile6Animation(KeyFramedTexturedLightedMeshRenderablePtr& missile);
 void missileFAnimation(KeyFramedTexturedLightedMeshRenderablePtr& missile);
 void sphereMFAnimation(TexturedMeshPointLightRenderablePtr& sphere);
 void flashAnimation(TexturedMeshPointLightRenderablePtr& flash, float d);
-void flashRAnimation(TexturedMeshPointLightRenderablePtr& flash);
 void moonAnimation(AsteroidRenderablePtr& moon);
 void sceneFinAnimation(TexturedMeshPointLightRenderablePtr& fin);
 void titreDebutAnimation(TexturedMeshPointLightRenderablePtr& fin);
@@ -42,10 +41,6 @@ void astAnimation(AsteroidRenderablePtr& asteroid, glm::vec3 dist, float tdiff);
 
 void initialize_scene( Viewer& viewer )
 {  
-    //Define a shader that encode an illumination model
-    ShaderProgramPtr phongShader = std::make_shared<ShaderProgram>( "../../sfmlGraphicsPipeline/shaders/phongVertex.glsl","../../sfmlGraphicsPipeline/shaders/phongFragment.glsl");
-    viewer.addShaderProgram( phongShader );
-
     //Skybox Cube
     ShaderProgramPtr skyBoxShader = std::make_shared<ShaderProgram>("../../sfmlGraphicsPipeline/shaders/skyBoxTextureVertex.glsl","../../sfmlGraphicsPipeline/shaders/skyBoxTextureFragment.glsl");
     viewer.addShaderProgram( skyBoxShader );
@@ -67,8 +62,6 @@ void initialize_scene( Viewer& viewer )
     viewer.addShaderProgram( textureShader );
     ShaderProgramPtr unlightedTextureShader = std::make_shared<ShaderProgram>( "../../sfmlGraphicsPipeline/shaders/unlightedTextureVertex.glsl","../../sfmlGraphicsPipeline/shaders/unlightedTextureFragment.glsl");
     viewer.addShaderProgram( unlightedTextureShader );
-    ShaderProgramPtr transpTextureShader = std::make_shared<ShaderProgram>( "../../sfmlGraphicsPipeline/shaders/unlightedTextureVertex.glsl","../../sfmlGraphicsPipeline/shaders/unlightedTextureTransparentFragment.glsl");
-    viewer.addShaderProgram( transpTextureShader );
     
     //Moon
     AsteroidRenderablePtr moon = std::make_shared<AsteroidRenderable>(textureShader, "../../../model/asteroid/Moon_3D_Model/moon.obj", "../../../model/asteroid/Moon_3D_Model/MoonMap2_2500x1250.jpg", 0.3);
@@ -134,7 +127,6 @@ void initialize_scene( Viewer& viewer )
     
     //MeanSpaceship
     KeyFramedTexturedLightedMeshRenderablePtr meanguy = std::make_shared<KeyFramedTexturedLightedMeshRenderable>(textureShader, "../../../model/meanSpaceship/usable/meanScaleUp.obj", "../../../model/meanSpaceship/texture/test.png");
-    //../../../model/meanSpaceship/usable/meanScaleUp.mtl
     meanguy->setLocalTransform(glm::scale(glm::mat4(1.0f),glm::vec3(0.05,0.05,0.05)));
     //custom material : chrome
     const glm::vec3 ambient = glm::vec3(0.25f);	
@@ -251,15 +243,7 @@ void initialize_scene( Viewer& viewer )
     flash4->setLocalTransform(GeometricTransformation(glm::vec3{0,0,0}, glm::angleAxis(glm::radians(135.f), glm::vec3(1, 0, 0)), glm::vec3{1,1,1}).toMatrix());
     viewer.addRenderable(flash4);
     flashAnimation(flash4, 0.015);
-    
-    //FlashRond
-    PointLightPtr flashRLight = std::make_shared<PointLight>(glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.1,0.1,0.1), glm::vec3(0.1,0.1,0.1), glm::vec3(0.1,0.1,0.1), 1.0, 5e-1, 0);
-    viewer.addPointLight(flashRLight);
-    TexturedMeshPointLightRenderablePtr flashR = std::make_shared<TexturedMeshPointLightRenderable>(transpTextureShader, "../../../model/explosion/plane.obj", "../../../model/explosion/fRt.png", flashRLight);
-    flashR->setLocalTransform(GeometricTransformation(glm::vec3{0,0,0}, glm::angleAxis(glm::radians(90.f), glm::vec3(0, 0, 1)), glm::vec3{1,1,1}).toMatrix());
-    viewer.addRenderable(flashR);
-    flashRAnimation(flashR);
-    
+        
     //FinScene
     PointLightPtr lumNoire = std::make_shared<PointLight>(glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0, 0.0, 0.0), glm::vec3(0.0, 0.0, 0.0), 1.0, 5e-1, 0);
     viewer.addPointLight(lumNoire);
@@ -1216,63 +1200,6 @@ void flashAnimation(TexturedMeshPointLightRenderablePtr& flash, float d){
    
 }
 
-
-
-void flashRAnimation(TexturedMeshPointLightRenderablePtr& flash){
-	
-    std::vector<GeometricTransformation> gtFlash;
-    float t=0.0;
-    														
-   gtFlash.push_back(GeometricTransformation(glm::vec3{140,-0.4,-10},
-    											glm::angleAxis(glm::radians(90.f), glm::vec3(0, 0, 1)),
-    											glm::vec3{0.00001,0.00001,0.00001}));
-   
-   for(auto it=gtFlash.begin() ; it<gtFlash.end() ; ++it){
-    	flash->addParentTransformKeyframe(*it,t);
-    	t+= 32.25;
-    }
-    
-   gtFlash.clear();
-   
-   gtFlash.push_back(GeometricTransformation(glm::vec3{140,-0.4,-10},
-    											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
-    											glm::vec3{0.00001,0.00001,0.00001}));
-   gtFlash.push_back(GeometricTransformation(glm::vec3{111,6,0},
-    											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
-    											glm::vec3{0.0001,0.0001,0.0001}));
-   
-   for(auto it=gtFlash.begin() ; it<gtFlash.end() ; ++it){
-    	flash->addParentTransformKeyframe(*it,t);
-    	t+= 0.1;
-    }
-    
-   gtFlash.clear();
-   
-   gtFlash.push_back(GeometricTransformation(glm::vec3{110,5,0},
-    											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
-    											glm::vec3{0.01,0.01,0.01}));
-   gtFlash.push_back(GeometricTransformation(glm::vec3{110,5,0},
-    											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
-    											glm::vec3{0.4,0.4,0.4}));
-   gtFlash.push_back(GeometricTransformation(glm::vec3{110,5,0},
-    											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
-    											glm::vec3{0.6,0.6,0.6}));
-   gtFlash.push_back(GeometricTransformation(glm::vec3{110,5,0},
-    											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
-    											glm::vec3{0.8,0.8,0.8}));
-   gtFlash.push_back(GeometricTransformation(glm::vec3{110,5,0},
-    											glm::angleAxis(glm::radians(0.f), glm::vec3(0, 0, 1)),
-   											glm::vec3{1.0,1.0,1.0}));
-   //gtFlash.push_back(GeometricTransformation(glm::vec3{160,5,0},
-   // 											glm::angleAxis(glm::radians(45.f), glm::vec3(0, 0, 1)),
-   // 											glm::vec3{0.01,0.01,0.01}));
-   
-   for(auto it=gtFlash.begin() ; it<gtFlash.end() ; ++it){
-    	flash->addParentTransformKeyframe(*it,t);
-    	t+= 0.5;
-    }
-   
-}
 
 void moonAnimation(AsteroidRenderablePtr& moon){
     std::vector<GeometricTransformation> gtMoon;

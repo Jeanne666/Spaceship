@@ -1,7 +1,0 @@
-ctrl h 
-find : cdufourg/Bureau/cours_INSA/INFO 4A/IG
-replace with : jeanne/Documents/INSA-4A/Infographie
-
-ou l'inverse pour toi :p
-
-find ./ -type f -exec sed -i -e 's/cdufourg\/Bureau\/cours_INSA\/INFO 4A\/IG/jeanne\/Documents\/INSA-4A\/Infographie/g' {} \;

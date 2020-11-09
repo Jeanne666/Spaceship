@@ -97,7 +97,7 @@ set(
     main.cpp
     )
     
-set(EXECUTABLE_NAME main)
+set(EXECUTABLE_NAME star_warz)
 
 #==============================================
 #Project executable definition

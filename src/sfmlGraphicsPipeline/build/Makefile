@@ -150,60 +150,6 @@ src/Camera.cpp.s:
 	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Camera.cpp.s
 .PHONY : src/Camera.cpp.s
 
-src/CubeRenderable.o: src/CubeRenderable.cpp.o
-
-.PHONY : src/CubeRenderable.o
-
-# target to build an object file
-src/CubeRenderable.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/CubeRenderable.cpp.o
-.PHONY : src/CubeRenderable.cpp.o
-
-src/CubeRenderable.i: src/CubeRenderable.cpp.i
-
-.PHONY : src/CubeRenderable.i
-
-# target to preprocess a source file
-src/CubeRenderable.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/CubeRenderable.cpp.i
-.PHONY : src/CubeRenderable.cpp.i
-
-src/CubeRenderable.s: src/CubeRenderable.cpp.s
-
-.PHONY : src/CubeRenderable.s
-
-# target to generate assembly for a file
-src/CubeRenderable.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/CubeRenderable.cpp.s
-.PHONY : src/CubeRenderable.cpp.s
-
-src/CylinderRenderable.o: src/CylinderRenderable.cpp.o
-
-.PHONY : src/CylinderRenderable.o
-
-# target to build an object file
-src/CylinderRenderable.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/CylinderRenderable.cpp.o
-.PHONY : src/CylinderRenderable.cpp.o
-
-src/CylinderRenderable.i: src/CylinderRenderable.cpp.i
-
-.PHONY : src/CylinderRenderable.i
-
-# target to preprocess a source file
-src/CylinderRenderable.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/CylinderRenderable.cpp.i
-.PHONY : src/CylinderRenderable.cpp.i
-
-src/CylinderRenderable.s: src/CylinderRenderable.cpp.s
-
-.PHONY : src/CylinderRenderable.s
-
-# target to generate assembly for a file
-src/CylinderRenderable.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/CylinderRenderable.cpp.s
-.PHONY : src/CylinderRenderable.cpp.s
-
 src/FPSCounter.o: src/FPSCounter.cpp.o
 
 .PHONY : src/FPSCounter.o
@@ -285,60 +231,6 @@ src/GeometricTransformation.cpp.s:
 	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/GeometricTransformation.cpp.s
 .PHONY : src/GeometricTransformation.cpp.s
 
-src/HierarchicalCylinderRenderable.o: src/HierarchicalCylinderRenderable.cpp.o
-
-.PHONY : src/HierarchicalCylinderRenderable.o
-
-# target to build an object file
-src/HierarchicalCylinderRenderable.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/HierarchicalCylinderRenderable.cpp.o
-.PHONY : src/HierarchicalCylinderRenderable.cpp.o
-
-src/HierarchicalCylinderRenderable.i: src/HierarchicalCylinderRenderable.cpp.i
-
-.PHONY : src/HierarchicalCylinderRenderable.i
-
-# target to preprocess a source file
-src/HierarchicalCylinderRenderable.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/HierarchicalCylinderRenderable.cpp.i
-.PHONY : src/HierarchicalCylinderRenderable.cpp.i
-
-src/HierarchicalCylinderRenderable.s: src/HierarchicalCylinderRenderable.cpp.s
-
-.PHONY : src/HierarchicalCylinderRenderable.s
-
-# target to generate assembly for a file
-src/HierarchicalCylinderRenderable.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/HierarchicalCylinderRenderable.cpp.s
-.PHONY : src/HierarchicalCylinderRenderable.cpp.s
-
-src/HierarchicalMeshRenderable.o: src/HierarchicalMeshRenderable.cpp.o
-
-.PHONY : src/HierarchicalMeshRenderable.o
-
-# target to build an object file
-src/HierarchicalMeshRenderable.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/HierarchicalMeshRenderable.cpp.o
-.PHONY : src/HierarchicalMeshRenderable.cpp.o
-
-src/HierarchicalMeshRenderable.i: src/HierarchicalMeshRenderable.cpp.i
-
-.PHONY : src/HierarchicalMeshRenderable.i
-
-# target to preprocess a source file
-src/HierarchicalMeshRenderable.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/HierarchicalMeshRenderable.cpp.i
-.PHONY : src/HierarchicalMeshRenderable.cpp.i
-
-src/HierarchicalMeshRenderable.s: src/HierarchicalMeshRenderable.cpp.s
-
-.PHONY : src/HierarchicalMeshRenderable.s
-
-# target to generate assembly for a file
-src/HierarchicalMeshRenderable.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/HierarchicalMeshRenderable.cpp.s
-.PHONY : src/HierarchicalMeshRenderable.cpp.s
-
 src/HierarchicalRenderable.o: src/HierarchicalRenderable.cpp.o
 
 .PHONY : src/HierarchicalRenderable.o
@@ -365,60 +257,6 @@ src/HierarchicalRenderable.s: src/HierarchicalRenderable.cpp.s
 src/HierarchicalRenderable.cpp.s:
 	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/HierarchicalRenderable.cpp.s
 .PHONY : src/HierarchicalRenderable.cpp.s
-
-src/HierarchicalSphereRenderable.o: src/HierarchicalSphereRenderable.cpp.o
-
-.PHONY : src/HierarchicalSphereRenderable.o
-
-# target to build an object file
-src/HierarchicalSphereRenderable.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/HierarchicalSphereRenderable.cpp.o
-.PHONY : src/HierarchicalSphereRenderable.cpp.o
-
-src/HierarchicalSphereRenderable.i: src/HierarchicalSphereRenderable.cpp.i
-
-.PHONY : src/HierarchicalSphereRenderable.i
-
-# target to preprocess a source file
-src/HierarchicalSphereRenderable.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/HierarchicalSphereRenderable.cpp.i
-.PHONY : src/HierarchicalSphereRenderable.cpp.i
-
-src/HierarchicalSphereRenderable.s: src/HierarchicalSphereRenderable.cpp.s
-
-.PHONY : src/HierarchicalSphereRenderable.s
-
-# target to generate assembly for a file
-src/HierarchicalSphereRenderable.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/HierarchicalSphereRenderable.cpp.s
-.PHONY : src/HierarchicalSphereRenderable.cpp.s
-
-src/IndexedCubeRenderable.o: src/IndexedCubeRenderable.cpp.o
-
-.PHONY : src/IndexedCubeRenderable.o
-
-# target to build an object file
-src/IndexedCubeRenderable.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/IndexedCubeRenderable.cpp.o
-.PHONY : src/IndexedCubeRenderable.cpp.o
-
-src/IndexedCubeRenderable.i: src/IndexedCubeRenderable.cpp.i
-
-.PHONY : src/IndexedCubeRenderable.i
-
-# target to preprocess a source file
-src/IndexedCubeRenderable.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/IndexedCubeRenderable.cpp.i
-.PHONY : src/IndexedCubeRenderable.cpp.i
-
-src/IndexedCubeRenderable.s: src/IndexedCubeRenderable.cpp.s
-
-.PHONY : src/IndexedCubeRenderable.s
-
-# target to generate assembly for a file
-src/IndexedCubeRenderable.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/IndexedCubeRenderable.cpp.s
-.PHONY : src/IndexedCubeRenderable.cpp.s
 
 src/Io.o: src/Io.cpp.o
 
@@ -474,60 +312,6 @@ src/KeyframeCollection.cpp.s:
 	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/KeyframeCollection.cpp.s
 .PHONY : src/KeyframeCollection.cpp.s
 
-src/MeshRenderable.o: src/MeshRenderable.cpp.o
-
-.PHONY : src/MeshRenderable.o
-
-# target to build an object file
-src/MeshRenderable.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/MeshRenderable.cpp.o
-.PHONY : src/MeshRenderable.cpp.o
-
-src/MeshRenderable.i: src/MeshRenderable.cpp.i
-
-.PHONY : src/MeshRenderable.i
-
-# target to preprocess a source file
-src/MeshRenderable.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/MeshRenderable.cpp.i
-.PHONY : src/MeshRenderable.cpp.i
-
-src/MeshRenderable.s: src/MeshRenderable.cpp.s
-
-.PHONY : src/MeshRenderable.s
-
-# target to generate assembly for a file
-src/MeshRenderable.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/MeshRenderable.cpp.s
-.PHONY : src/MeshRenderable.cpp.s
-
-src/Plane.o: src/Plane.cpp.o
-
-.PHONY : src/Plane.o
-
-# target to build an object file
-src/Plane.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Plane.cpp.o
-.PHONY : src/Plane.cpp.o
-
-src/Plane.i: src/Plane.cpp.i
-
-.PHONY : src/Plane.i
-
-# target to preprocess a source file
-src/Plane.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Plane.cpp.i
-.PHONY : src/Plane.cpp.i
-
-src/Plane.s: src/Plane.cpp.s
-
-.PHONY : src/Plane.s
-
-# target to generate assembly for a file
-src/Plane.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Plane.cpp.s
-.PHONY : src/Plane.cpp.s
-
 src/Renderable.o: src/Renderable.cpp.o
 
 .PHONY : src/Renderable.o
@@ -581,33 +365,6 @@ src/ShaderProgram.s: src/ShaderProgram.cpp.s
 src/ShaderProgram.cpp.s:
 	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/ShaderProgram.cpp.s
 .PHONY : src/ShaderProgram.cpp.s
-
-src/Sphere.o: src/Sphere.cpp.o
-
-.PHONY : src/Sphere.o
-
-# target to build an object file
-src/Sphere.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Sphere.cpp.o
-.PHONY : src/Sphere.cpp.o
-
-src/Sphere.i: src/Sphere.cpp.i
-
-.PHONY : src/Sphere.i
-
-# target to preprocess a source file
-src/Sphere.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Sphere.cpp.i
-.PHONY : src/Sphere.cpp.i
-
-src/Sphere.s: src/Sphere.cpp.s
-
-.PHONY : src/Sphere.s
-
-# target to generate assembly for a file
-src/Sphere.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Sphere.cpp.s
-.PHONY : src/Sphere.cpp.s
 
 src/Texture.o: src/Texture.cpp.o
 
@@ -690,492 +447,6 @@ src/Viewer.cpp.s:
 	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Viewer.cpp.s
 .PHONY : src/Viewer.cpp.s
 
-src/dynamics/Collision.o: src/dynamics/Collision.cpp.o
-
-.PHONY : src/dynamics/Collision.o
-
-# target to build an object file
-src/dynamics/Collision.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Collision.cpp.o
-.PHONY : src/dynamics/Collision.cpp.o
-
-src/dynamics/Collision.i: src/dynamics/Collision.cpp.i
-
-.PHONY : src/dynamics/Collision.i
-
-# target to preprocess a source file
-src/dynamics/Collision.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Collision.cpp.i
-.PHONY : src/dynamics/Collision.cpp.i
-
-src/dynamics/Collision.s: src/dynamics/Collision.cpp.s
-
-.PHONY : src/dynamics/Collision.s
-
-# target to generate assembly for a file
-src/dynamics/Collision.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Collision.cpp.s
-.PHONY : src/dynamics/Collision.cpp.s
-
-src/dynamics/ConstantForceField.o: src/dynamics/ConstantForceField.cpp.o
-
-.PHONY : src/dynamics/ConstantForceField.o
-
-# target to build an object file
-src/dynamics/ConstantForceField.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ConstantForceField.cpp.o
-.PHONY : src/dynamics/ConstantForceField.cpp.o
-
-src/dynamics/ConstantForceField.i: src/dynamics/ConstantForceField.cpp.i
-
-.PHONY : src/dynamics/ConstantForceField.i
-
-# target to preprocess a source file
-src/dynamics/ConstantForceField.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ConstantForceField.cpp.i
-.PHONY : src/dynamics/ConstantForceField.cpp.i
-
-src/dynamics/ConstantForceField.s: src/dynamics/ConstantForceField.cpp.s
-
-.PHONY : src/dynamics/ConstantForceField.s
-
-# target to generate assembly for a file
-src/dynamics/ConstantForceField.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ConstantForceField.cpp.s
-.PHONY : src/dynamics/ConstantForceField.cpp.s
-
-src/dynamics/ConstantForceFieldRenderable.o: src/dynamics/ConstantForceFieldRenderable.cpp.o
-
-.PHONY : src/dynamics/ConstantForceFieldRenderable.o
-
-# target to build an object file
-src/dynamics/ConstantForceFieldRenderable.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ConstantForceFieldRenderable.cpp.o
-.PHONY : src/dynamics/ConstantForceFieldRenderable.cpp.o
-
-src/dynamics/ConstantForceFieldRenderable.i: src/dynamics/ConstantForceFieldRenderable.cpp.i
-
-.PHONY : src/dynamics/ConstantForceFieldRenderable.i
-
-# target to preprocess a source file
-src/dynamics/ConstantForceFieldRenderable.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ConstantForceFieldRenderable.cpp.i
-.PHONY : src/dynamics/ConstantForceFieldRenderable.cpp.i
-
-src/dynamics/ConstantForceFieldRenderable.s: src/dynamics/ConstantForceFieldRenderable.cpp.s
-
-.PHONY : src/dynamics/ConstantForceFieldRenderable.s
-
-# target to generate assembly for a file
-src/dynamics/ConstantForceFieldRenderable.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ConstantForceFieldRenderable.cpp.s
-.PHONY : src/dynamics/ConstantForceFieldRenderable.cpp.s
-
-src/dynamics/ControlledForceFieldRenderable.o: src/dynamics/ControlledForceFieldRenderable.cpp.o
-
-.PHONY : src/dynamics/ControlledForceFieldRenderable.o
-
-# target to build an object file
-src/dynamics/ControlledForceFieldRenderable.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ControlledForceFieldRenderable.cpp.o
-.PHONY : src/dynamics/ControlledForceFieldRenderable.cpp.o
-
-src/dynamics/ControlledForceFieldRenderable.i: src/dynamics/ControlledForceFieldRenderable.cpp.i
-
-.PHONY : src/dynamics/ControlledForceFieldRenderable.i
-
-# target to preprocess a source file
-src/dynamics/ControlledForceFieldRenderable.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ControlledForceFieldRenderable.cpp.i
-.PHONY : src/dynamics/ControlledForceFieldRenderable.cpp.i
-
-src/dynamics/ControlledForceFieldRenderable.s: src/dynamics/ControlledForceFieldRenderable.cpp.s
-
-.PHONY : src/dynamics/ControlledForceFieldRenderable.s
-
-# target to generate assembly for a file
-src/dynamics/ControlledForceFieldRenderable.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ControlledForceFieldRenderable.cpp.s
-.PHONY : src/dynamics/ControlledForceFieldRenderable.cpp.s
-
-src/dynamics/DampingForceField.o: src/dynamics/DampingForceField.cpp.o
-
-.PHONY : src/dynamics/DampingForceField.o
-
-# target to build an object file
-src/dynamics/DampingForceField.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DampingForceField.cpp.o
-.PHONY : src/dynamics/DampingForceField.cpp.o
-
-src/dynamics/DampingForceField.i: src/dynamics/DampingForceField.cpp.i
-
-.PHONY : src/dynamics/DampingForceField.i
-
-# target to preprocess a source file
-src/dynamics/DampingForceField.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DampingForceField.cpp.i
-.PHONY : src/dynamics/DampingForceField.cpp.i
-
-src/dynamics/DampingForceField.s: src/dynamics/DampingForceField.cpp.s
-
-.PHONY : src/dynamics/DampingForceField.s
-
-# target to generate assembly for a file
-src/dynamics/DampingForceField.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DampingForceField.cpp.s
-.PHONY : src/dynamics/DampingForceField.cpp.s
-
-src/dynamics/DynamicSystem.o: src/dynamics/DynamicSystem.cpp.o
-
-.PHONY : src/dynamics/DynamicSystem.o
-
-# target to build an object file
-src/dynamics/DynamicSystem.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystem.cpp.o
-.PHONY : src/dynamics/DynamicSystem.cpp.o
-
-src/dynamics/DynamicSystem.i: src/dynamics/DynamicSystem.cpp.i
-
-.PHONY : src/dynamics/DynamicSystem.i
-
-# target to preprocess a source file
-src/dynamics/DynamicSystem.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystem.cpp.i
-.PHONY : src/dynamics/DynamicSystem.cpp.i
-
-src/dynamics/DynamicSystem.s: src/dynamics/DynamicSystem.cpp.s
-
-.PHONY : src/dynamics/DynamicSystem.s
-
-# target to generate assembly for a file
-src/dynamics/DynamicSystem.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystem.cpp.s
-.PHONY : src/dynamics/DynamicSystem.cpp.s
-
-src/dynamics/DynamicSystemRenderable.o: src/dynamics/DynamicSystemRenderable.cpp.o
-
-.PHONY : src/dynamics/DynamicSystemRenderable.o
-
-# target to build an object file
-src/dynamics/DynamicSystemRenderable.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystemRenderable.cpp.o
-.PHONY : src/dynamics/DynamicSystemRenderable.cpp.o
-
-src/dynamics/DynamicSystemRenderable.i: src/dynamics/DynamicSystemRenderable.cpp.i
-
-.PHONY : src/dynamics/DynamicSystemRenderable.i
-
-# target to preprocess a source file
-src/dynamics/DynamicSystemRenderable.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystemRenderable.cpp.i
-.PHONY : src/dynamics/DynamicSystemRenderable.cpp.i
-
-src/dynamics/DynamicSystemRenderable.s: src/dynamics/DynamicSystemRenderable.cpp.s
-
-.PHONY : src/dynamics/DynamicSystemRenderable.s
-
-# target to generate assembly for a file
-src/dynamics/DynamicSystemRenderable.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystemRenderable.cpp.s
-.PHONY : src/dynamics/DynamicSystemRenderable.cpp.s
-
-src/dynamics/EulerExplicitSolver.o: src/dynamics/EulerExplicitSolver.cpp.o
-
-.PHONY : src/dynamics/EulerExplicitSolver.o
-
-# target to build an object file
-src/dynamics/EulerExplicitSolver.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/EulerExplicitSolver.cpp.o
-.PHONY : src/dynamics/EulerExplicitSolver.cpp.o
-
-src/dynamics/EulerExplicitSolver.i: src/dynamics/EulerExplicitSolver.cpp.i
-
-.PHONY : src/dynamics/EulerExplicitSolver.i
-
-# target to preprocess a source file
-src/dynamics/EulerExplicitSolver.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/EulerExplicitSolver.cpp.i
-.PHONY : src/dynamics/EulerExplicitSolver.cpp.i
-
-src/dynamics/EulerExplicitSolver.s: src/dynamics/EulerExplicitSolver.cpp.s
-
-.PHONY : src/dynamics/EulerExplicitSolver.s
-
-# target to generate assembly for a file
-src/dynamics/EulerExplicitSolver.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/EulerExplicitSolver.cpp.s
-.PHONY : src/dynamics/EulerExplicitSolver.cpp.s
-
-src/dynamics/ForceField.o: src/dynamics/ForceField.cpp.o
-
-.PHONY : src/dynamics/ForceField.o
-
-# target to build an object file
-src/dynamics/ForceField.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ForceField.cpp.o
-.PHONY : src/dynamics/ForceField.cpp.o
-
-src/dynamics/ForceField.i: src/dynamics/ForceField.cpp.i
-
-.PHONY : src/dynamics/ForceField.i
-
-# target to preprocess a source file
-src/dynamics/ForceField.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ForceField.cpp.i
-.PHONY : src/dynamics/ForceField.cpp.i
-
-src/dynamics/ForceField.s: src/dynamics/ForceField.cpp.s
-
-.PHONY : src/dynamics/ForceField.s
-
-# target to generate assembly for a file
-src/dynamics/ForceField.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ForceField.cpp.s
-.PHONY : src/dynamics/ForceField.cpp.s
-
-src/dynamics/Particle.o: src/dynamics/Particle.cpp.o
-
-.PHONY : src/dynamics/Particle.o
-
-# target to build an object file
-src/dynamics/Particle.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Particle.cpp.o
-.PHONY : src/dynamics/Particle.cpp.o
-
-src/dynamics/Particle.i: src/dynamics/Particle.cpp.i
-
-.PHONY : src/dynamics/Particle.i
-
-# target to preprocess a source file
-src/dynamics/Particle.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Particle.cpp.i
-.PHONY : src/dynamics/Particle.cpp.i
-
-src/dynamics/Particle.s: src/dynamics/Particle.cpp.s
-
-.PHONY : src/dynamics/Particle.s
-
-# target to generate assembly for a file
-src/dynamics/Particle.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Particle.cpp.s
-.PHONY : src/dynamics/Particle.cpp.s
-
-src/dynamics/ParticleListRenderable.o: src/dynamics/ParticleListRenderable.cpp.o
-
-.PHONY : src/dynamics/ParticleListRenderable.o
-
-# target to build an object file
-src/dynamics/ParticleListRenderable.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleListRenderable.cpp.o
-.PHONY : src/dynamics/ParticleListRenderable.cpp.o
-
-src/dynamics/ParticleListRenderable.i: src/dynamics/ParticleListRenderable.cpp.i
-
-.PHONY : src/dynamics/ParticleListRenderable.i
-
-# target to preprocess a source file
-src/dynamics/ParticleListRenderable.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleListRenderable.cpp.i
-.PHONY : src/dynamics/ParticleListRenderable.cpp.i
-
-src/dynamics/ParticleListRenderable.s: src/dynamics/ParticleListRenderable.cpp.s
-
-.PHONY : src/dynamics/ParticleListRenderable.s
-
-# target to generate assembly for a file
-src/dynamics/ParticleListRenderable.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleListRenderable.cpp.s
-.PHONY : src/dynamics/ParticleListRenderable.cpp.s
-
-src/dynamics/ParticleParticleCollision.o: src/dynamics/ParticleParticleCollision.cpp.o
-
-.PHONY : src/dynamics/ParticleParticleCollision.o
-
-# target to build an object file
-src/dynamics/ParticleParticleCollision.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleParticleCollision.cpp.o
-.PHONY : src/dynamics/ParticleParticleCollision.cpp.o
-
-src/dynamics/ParticleParticleCollision.i: src/dynamics/ParticleParticleCollision.cpp.i
-
-.PHONY : src/dynamics/ParticleParticleCollision.i
-
-# target to preprocess a source file
-src/dynamics/ParticleParticleCollision.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleParticleCollision.cpp.i
-.PHONY : src/dynamics/ParticleParticleCollision.cpp.i
-
-src/dynamics/ParticleParticleCollision.s: src/dynamics/ParticleParticleCollision.cpp.s
-
-.PHONY : src/dynamics/ParticleParticleCollision.s
-
-# target to generate assembly for a file
-src/dynamics/ParticleParticleCollision.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleParticleCollision.cpp.s
-.PHONY : src/dynamics/ParticleParticleCollision.cpp.s
-
-src/dynamics/ParticlePlaneCollision.o: src/dynamics/ParticlePlaneCollision.cpp.o
-
-.PHONY : src/dynamics/ParticlePlaneCollision.o
-
-# target to build an object file
-src/dynamics/ParticlePlaneCollision.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticlePlaneCollision.cpp.o
-.PHONY : src/dynamics/ParticlePlaneCollision.cpp.o
-
-src/dynamics/ParticlePlaneCollision.i: src/dynamics/ParticlePlaneCollision.cpp.i
-
-.PHONY : src/dynamics/ParticlePlaneCollision.i
-
-# target to preprocess a source file
-src/dynamics/ParticlePlaneCollision.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticlePlaneCollision.cpp.i
-.PHONY : src/dynamics/ParticlePlaneCollision.cpp.i
-
-src/dynamics/ParticlePlaneCollision.s: src/dynamics/ParticlePlaneCollision.cpp.s
-
-.PHONY : src/dynamics/ParticlePlaneCollision.s
-
-# target to generate assembly for a file
-src/dynamics/ParticlePlaneCollision.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticlePlaneCollision.cpp.s
-.PHONY : src/dynamics/ParticlePlaneCollision.cpp.s
-
-src/dynamics/ParticleRenderable.o: src/dynamics/ParticleRenderable.cpp.o
-
-.PHONY : src/dynamics/ParticleRenderable.o
-
-# target to build an object file
-src/dynamics/ParticleRenderable.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleRenderable.cpp.o
-.PHONY : src/dynamics/ParticleRenderable.cpp.o
-
-src/dynamics/ParticleRenderable.i: src/dynamics/ParticleRenderable.cpp.i
-
-.PHONY : src/dynamics/ParticleRenderable.i
-
-# target to preprocess a source file
-src/dynamics/ParticleRenderable.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleRenderable.cpp.i
-.PHONY : src/dynamics/ParticleRenderable.cpp.i
-
-src/dynamics/ParticleRenderable.s: src/dynamics/ParticleRenderable.cpp.s
-
-.PHONY : src/dynamics/ParticleRenderable.s
-
-# target to generate assembly for a file
-src/dynamics/ParticleRenderable.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleRenderable.cpp.s
-.PHONY : src/dynamics/ParticleRenderable.cpp.s
-
-src/dynamics/Solver.o: src/dynamics/Solver.cpp.o
-
-.PHONY : src/dynamics/Solver.o
-
-# target to build an object file
-src/dynamics/Solver.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Solver.cpp.o
-.PHONY : src/dynamics/Solver.cpp.o
-
-src/dynamics/Solver.i: src/dynamics/Solver.cpp.i
-
-.PHONY : src/dynamics/Solver.i
-
-# target to preprocess a source file
-src/dynamics/Solver.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Solver.cpp.i
-.PHONY : src/dynamics/Solver.cpp.i
-
-src/dynamics/Solver.s: src/dynamics/Solver.cpp.s
-
-.PHONY : src/dynamics/Solver.s
-
-# target to generate assembly for a file
-src/dynamics/Solver.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Solver.cpp.s
-.PHONY : src/dynamics/Solver.cpp.s
-
-src/dynamics/SpringForceField.o: src/dynamics/SpringForceField.cpp.o
-
-.PHONY : src/dynamics/SpringForceField.o
-
-# target to build an object file
-src/dynamics/SpringForceField.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringForceField.cpp.o
-.PHONY : src/dynamics/SpringForceField.cpp.o
-
-src/dynamics/SpringForceField.i: src/dynamics/SpringForceField.cpp.i
-
-.PHONY : src/dynamics/SpringForceField.i
-
-# target to preprocess a source file
-src/dynamics/SpringForceField.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringForceField.cpp.i
-.PHONY : src/dynamics/SpringForceField.cpp.i
-
-src/dynamics/SpringForceField.s: src/dynamics/SpringForceField.cpp.s
-
-.PHONY : src/dynamics/SpringForceField.s
-
-# target to generate assembly for a file
-src/dynamics/SpringForceField.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringForceField.cpp.s
-.PHONY : src/dynamics/SpringForceField.cpp.s
-
-src/dynamics/SpringForceFieldRenderable.o: src/dynamics/SpringForceFieldRenderable.cpp.o
-
-.PHONY : src/dynamics/SpringForceFieldRenderable.o
-
-# target to build an object file
-src/dynamics/SpringForceFieldRenderable.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringForceFieldRenderable.cpp.o
-.PHONY : src/dynamics/SpringForceFieldRenderable.cpp.o
-
-src/dynamics/SpringForceFieldRenderable.i: src/dynamics/SpringForceFieldRenderable.cpp.i
-
-.PHONY : src/dynamics/SpringForceFieldRenderable.i
-
-# target to preprocess a source file
-src/dynamics/SpringForceFieldRenderable.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringForceFieldRenderable.cpp.i
-.PHONY : src/dynamics/SpringForceFieldRenderable.cpp.i
-
-src/dynamics/SpringForceFieldRenderable.s: src/dynamics/SpringForceFieldRenderable.cpp.s
-
-.PHONY : src/dynamics/SpringForceFieldRenderable.s
-
-# target to generate assembly for a file
-src/dynamics/SpringForceFieldRenderable.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringForceFieldRenderable.cpp.s
-.PHONY : src/dynamics/SpringForceFieldRenderable.cpp.s
-
-src/dynamics/SpringListRenderable.o: src/dynamics/SpringListRenderable.cpp.o
-
-.PHONY : src/dynamics/SpringListRenderable.o
-
-# target to build an object file
-src/dynamics/SpringListRenderable.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringListRenderable.cpp.o
-.PHONY : src/dynamics/SpringListRenderable.cpp.o
-
-src/dynamics/SpringListRenderable.i: src/dynamics/SpringListRenderable.cpp.i
-
-.PHONY : src/dynamics/SpringListRenderable.i
-
-# target to preprocess a source file
-src/dynamics/SpringListRenderable.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringListRenderable.cpp.i
-.PHONY : src/dynamics/SpringListRenderable.cpp.i
-
-src/dynamics/SpringListRenderable.s: src/dynamics/SpringListRenderable.cpp.s
-
-.PHONY : src/dynamics/SpringListRenderable.s
-
-# target to generate assembly for a file
-src/dynamics/SpringListRenderable.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringListRenderable.cpp.s
-.PHONY : src/dynamics/SpringListRenderable.cpp.s
-
 src/gl_helper.o: src/gl_helper.cpp.o
 
 .PHONY : src/gl_helper.o
@@ -1203,33 +474,6 @@ src/gl_helper.cpp.s:
 	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/gl_helper.cpp.s
 .PHONY : src/gl_helper.cpp.s
 
-src/lighting/DirectionalLightRenderable.o: src/lighting/DirectionalLightRenderable.cpp.o
-
-.PHONY : src/lighting/DirectionalLightRenderable.o
-
-# target to build an object file
-src/lighting/DirectionalLightRenderable.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/DirectionalLightRenderable.cpp.o
-.PHONY : src/lighting/DirectionalLightRenderable.cpp.o
-
-src/lighting/DirectionalLightRenderable.i: src/lighting/DirectionalLightRenderable.cpp.i
-
-.PHONY : src/lighting/DirectionalLightRenderable.i
-
-# target to preprocess a source file
-src/lighting/DirectionalLightRenderable.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/DirectionalLightRenderable.cpp.i
-.PHONY : src/lighting/DirectionalLightRenderable.cpp.i
-
-src/lighting/DirectionalLightRenderable.s: src/lighting/DirectionalLightRenderable.cpp.s
-
-.PHONY : src/lighting/DirectionalLightRenderable.s
-
-# target to generate assembly for a file
-src/lighting/DirectionalLightRenderable.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/DirectionalLightRenderable.cpp.s
-.PHONY : src/lighting/DirectionalLightRenderable.cpp.s
-
 src/lighting/Light.o: src/lighting/Light.cpp.o
 
 .PHONY : src/lighting/Light.o
@@ -1256,60 +500,6 @@ src/lighting/Light.s: src/lighting/Light.cpp.s
 src/lighting/Light.cpp.s:
 	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/Light.cpp.s
 .PHONY : src/lighting/Light.cpp.s
-
-src/lighting/LightedCubeRenderable.o: src/lighting/LightedCubeRenderable.cpp.o
-
-.PHONY : src/lighting/LightedCubeRenderable.o
-
-# target to build an object file
-src/lighting/LightedCubeRenderable.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedCubeRenderable.cpp.o
-.PHONY : src/lighting/LightedCubeRenderable.cpp.o
-
-src/lighting/LightedCubeRenderable.i: src/lighting/LightedCubeRenderable.cpp.i
-
-.PHONY : src/lighting/LightedCubeRenderable.i
-
-# target to preprocess a source file
-src/lighting/LightedCubeRenderable.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedCubeRenderable.cpp.i
-.PHONY : src/lighting/LightedCubeRenderable.cpp.i
-
-src/lighting/LightedCubeRenderable.s: src/lighting/LightedCubeRenderable.cpp.s
-
-.PHONY : src/lighting/LightedCubeRenderable.s
-
-# target to generate assembly for a file
-src/lighting/LightedCubeRenderable.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedCubeRenderable.cpp.s
-.PHONY : src/lighting/LightedCubeRenderable.cpp.s
-
-src/lighting/LightedCylinderRenderable.o: src/lighting/LightedCylinderRenderable.cpp.o
-
-.PHONY : src/lighting/LightedCylinderRenderable.o
-
-# target to build an object file
-src/lighting/LightedCylinderRenderable.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedCylinderRenderable.cpp.o
-.PHONY : src/lighting/LightedCylinderRenderable.cpp.o
-
-src/lighting/LightedCylinderRenderable.i: src/lighting/LightedCylinderRenderable.cpp.i
-
-.PHONY : src/lighting/LightedCylinderRenderable.i
-
-# target to preprocess a source file
-src/lighting/LightedCylinderRenderable.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedCylinderRenderable.cpp.i
-.PHONY : src/lighting/LightedCylinderRenderable.cpp.i
-
-src/lighting/LightedCylinderRenderable.s: src/lighting/LightedCylinderRenderable.cpp.s
-
-.PHONY : src/lighting/LightedCylinderRenderable.s
-
-# target to generate assembly for a file
-src/lighting/LightedCylinderRenderable.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedCylinderRenderable.cpp.s
-.PHONY : src/lighting/LightedCylinderRenderable.cpp.s
 
 src/lighting/LightedMeshRenderable.o: src/lighting/LightedMeshRenderable.cpp.o
 
@@ -1364,60 +554,6 @@ src/lighting/Material.s: src/lighting/Material.cpp.s
 src/lighting/Material.cpp.s:
 	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/Material.cpp.s
 .PHONY : src/lighting/Material.cpp.s
-
-src/lighting/PointLightRenderable.o: src/lighting/PointLightRenderable.cpp.o
-
-.PHONY : src/lighting/PointLightRenderable.o
-
-# target to build an object file
-src/lighting/PointLightRenderable.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/PointLightRenderable.cpp.o
-.PHONY : src/lighting/PointLightRenderable.cpp.o
-
-src/lighting/PointLightRenderable.i: src/lighting/PointLightRenderable.cpp.i
-
-.PHONY : src/lighting/PointLightRenderable.i
-
-# target to preprocess a source file
-src/lighting/PointLightRenderable.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/PointLightRenderable.cpp.i
-.PHONY : src/lighting/PointLightRenderable.cpp.i
-
-src/lighting/PointLightRenderable.s: src/lighting/PointLightRenderable.cpp.s
-
-.PHONY : src/lighting/PointLightRenderable.s
-
-# target to generate assembly for a file
-src/lighting/PointLightRenderable.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/PointLightRenderable.cpp.s
-.PHONY : src/lighting/PointLightRenderable.cpp.s
-
-src/lighting/SpotLightRenderable.o: src/lighting/SpotLightRenderable.cpp.o
-
-.PHONY : src/lighting/SpotLightRenderable.o
-
-# target to build an object file
-src/lighting/SpotLightRenderable.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/SpotLightRenderable.cpp.o
-.PHONY : src/lighting/SpotLightRenderable.cpp.o
-
-src/lighting/SpotLightRenderable.i: src/lighting/SpotLightRenderable.cpp.i
-
-.PHONY : src/lighting/SpotLightRenderable.i
-
-# target to preprocess a source file
-src/lighting/SpotLightRenderable.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/SpotLightRenderable.cpp.i
-.PHONY : src/lighting/SpotLightRenderable.cpp.i
-
-src/lighting/SpotLightRenderable.s: src/lighting/SpotLightRenderable.cpp.s
-
-.PHONY : src/lighting/SpotLightRenderable.s
-
-# target to generate assembly for a file
-src/lighting/SpotLightRenderable.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/SpotLightRenderable.cpp.s
-.PHONY : src/lighting/SpotLightRenderable.cpp.s
 
 src/lighting/TexturedMeshPointLightRenderable.o: src/lighting/TexturedMeshPointLightRenderable.cpp.o
 
@@ -1527,33 +663,6 @@ src/texturing/AsteroidRenderable.cpp.s:
 	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/AsteroidRenderable.cpp.s
 .PHONY : src/texturing/AsteroidRenderable.cpp.s
 
-src/texturing/BillBoardPlaneRenderable.o: src/texturing/BillBoardPlaneRenderable.cpp.o
-
-.PHONY : src/texturing/BillBoardPlaneRenderable.o
-
-# target to build an object file
-src/texturing/BillBoardPlaneRenderable.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/BillBoardPlaneRenderable.cpp.o
-.PHONY : src/texturing/BillBoardPlaneRenderable.cpp.o
-
-src/texturing/BillBoardPlaneRenderable.i: src/texturing/BillBoardPlaneRenderable.cpp.i
-
-.PHONY : src/texturing/BillBoardPlaneRenderable.i
-
-# target to preprocess a source file
-src/texturing/BillBoardPlaneRenderable.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/BillBoardPlaneRenderable.cpp.i
-.PHONY : src/texturing/BillBoardPlaneRenderable.cpp.i
-
-src/texturing/BillBoardPlaneRenderable.s: src/texturing/BillBoardPlaneRenderable.cpp.s
-
-.PHONY : src/texturing/BillBoardPlaneRenderable.s
-
-# target to generate assembly for a file
-src/texturing/BillBoardPlaneRenderable.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/BillBoardPlaneRenderable.cpp.s
-.PHONY : src/texturing/BillBoardPlaneRenderable.cpp.s
-
 src/texturing/KeyFramedTexturedLightedMeshRenderable.o: src/texturing/KeyFramedTexturedLightedMeshRenderable.cpp.o
 
 .PHONY : src/texturing/KeyFramedTexturedLightedMeshRenderable.o
@@ -1580,60 +689,6 @@ src/texturing/KeyFramedTexturedLightedMeshRenderable.s: src/texturing/KeyFramedT
 src/texturing/KeyFramedTexturedLightedMeshRenderable.cpp.s:
 	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/KeyFramedTexturedLightedMeshRenderable.cpp.s
 .PHONY : src/texturing/KeyFramedTexturedLightedMeshRenderable.cpp.s
-
-src/texturing/MipMapCubeRenderable.o: src/texturing/MipMapCubeRenderable.cpp.o
-
-.PHONY : src/texturing/MipMapCubeRenderable.o
-
-# target to build an object file
-src/texturing/MipMapCubeRenderable.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MipMapCubeRenderable.cpp.o
-.PHONY : src/texturing/MipMapCubeRenderable.cpp.o
-
-src/texturing/MipMapCubeRenderable.i: src/texturing/MipMapCubeRenderable.cpp.i
-
-.PHONY : src/texturing/MipMapCubeRenderable.i
-
-# target to preprocess a source file
-src/texturing/MipMapCubeRenderable.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MipMapCubeRenderable.cpp.i
-.PHONY : src/texturing/MipMapCubeRenderable.cpp.i
-
-src/texturing/MipMapCubeRenderable.s: src/texturing/MipMapCubeRenderable.cpp.s
-
-.PHONY : src/texturing/MipMapCubeRenderable.s
-
-# target to generate assembly for a file
-src/texturing/MipMapCubeRenderable.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MipMapCubeRenderable.cpp.s
-.PHONY : src/texturing/MipMapCubeRenderable.cpp.s
-
-src/texturing/MultiTexturedCubeRenderable.o: src/texturing/MultiTexturedCubeRenderable.cpp.o
-
-.PHONY : src/texturing/MultiTexturedCubeRenderable.o
-
-# target to build an object file
-src/texturing/MultiTexturedCubeRenderable.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MultiTexturedCubeRenderable.cpp.o
-.PHONY : src/texturing/MultiTexturedCubeRenderable.cpp.o
-
-src/texturing/MultiTexturedCubeRenderable.i: src/texturing/MultiTexturedCubeRenderable.cpp.i
-
-.PHONY : src/texturing/MultiTexturedCubeRenderable.i
-
-# target to preprocess a source file
-src/texturing/MultiTexturedCubeRenderable.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MultiTexturedCubeRenderable.cpp.i
-.PHONY : src/texturing/MultiTexturedCubeRenderable.cpp.i
-
-src/texturing/MultiTexturedCubeRenderable.s: src/texturing/MultiTexturedCubeRenderable.cpp.s
-
-.PHONY : src/texturing/MultiTexturedCubeRenderable.s
-
-# target to generate assembly for a file
-src/texturing/MultiTexturedCubeRenderable.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MultiTexturedCubeRenderable.cpp.s
-.PHONY : src/texturing/MultiTexturedCubeRenderable.cpp.s
 
 src/texturing/SkyBox.o: src/texturing/SkyBox.cpp.o
 
@@ -1662,114 +717,6 @@ src/texturing/SkyBox.cpp.s:
 	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/SkyBox.cpp.s
 .PHONY : src/texturing/SkyBox.cpp.s
 
-src/texturing/TexturedCubeRenderable.o: src/texturing/TexturedCubeRenderable.cpp.o
-
-.PHONY : src/texturing/TexturedCubeRenderable.o
-
-# target to build an object file
-src/texturing/TexturedCubeRenderable.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedCubeRenderable.cpp.o
-.PHONY : src/texturing/TexturedCubeRenderable.cpp.o
-
-src/texturing/TexturedCubeRenderable.i: src/texturing/TexturedCubeRenderable.cpp.i
-
-.PHONY : src/texturing/TexturedCubeRenderable.i
-
-# target to preprocess a source file
-src/texturing/TexturedCubeRenderable.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedCubeRenderable.cpp.i
-.PHONY : src/texturing/TexturedCubeRenderable.cpp.i
-
-src/texturing/TexturedCubeRenderable.s: src/texturing/TexturedCubeRenderable.cpp.s
-
-.PHONY : src/texturing/TexturedCubeRenderable.s
-
-# target to generate assembly for a file
-src/texturing/TexturedCubeRenderable.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedCubeRenderable.cpp.s
-.PHONY : src/texturing/TexturedCubeRenderable.cpp.s
-
-src/texturing/TexturedLightedMeshRenderable.o: src/texturing/TexturedLightedMeshRenderable.cpp.o
-
-.PHONY : src/texturing/TexturedLightedMeshRenderable.o
-
-# target to build an object file
-src/texturing/TexturedLightedMeshRenderable.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedLightedMeshRenderable.cpp.o
-.PHONY : src/texturing/TexturedLightedMeshRenderable.cpp.o
-
-src/texturing/TexturedLightedMeshRenderable.i: src/texturing/TexturedLightedMeshRenderable.cpp.i
-
-.PHONY : src/texturing/TexturedLightedMeshRenderable.i
-
-# target to preprocess a source file
-src/texturing/TexturedLightedMeshRenderable.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedLightedMeshRenderable.cpp.i
-.PHONY : src/texturing/TexturedLightedMeshRenderable.cpp.i
-
-src/texturing/TexturedLightedMeshRenderable.s: src/texturing/TexturedLightedMeshRenderable.cpp.s
-
-.PHONY : src/texturing/TexturedLightedMeshRenderable.s
-
-# target to generate assembly for a file
-src/texturing/TexturedLightedMeshRenderable.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedLightedMeshRenderable.cpp.s
-.PHONY : src/texturing/TexturedLightedMeshRenderable.cpp.s
-
-src/texturing/TexturedPlaneRenderable.o: src/texturing/TexturedPlaneRenderable.cpp.o
-
-.PHONY : src/texturing/TexturedPlaneRenderable.o
-
-# target to build an object file
-src/texturing/TexturedPlaneRenderable.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedPlaneRenderable.cpp.o
-.PHONY : src/texturing/TexturedPlaneRenderable.cpp.o
-
-src/texturing/TexturedPlaneRenderable.i: src/texturing/TexturedPlaneRenderable.cpp.i
-
-.PHONY : src/texturing/TexturedPlaneRenderable.i
-
-# target to preprocess a source file
-src/texturing/TexturedPlaneRenderable.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedPlaneRenderable.cpp.i
-.PHONY : src/texturing/TexturedPlaneRenderable.cpp.i
-
-src/texturing/TexturedPlaneRenderable.s: src/texturing/TexturedPlaneRenderable.cpp.s
-
-.PHONY : src/texturing/TexturedPlaneRenderable.s
-
-# target to generate assembly for a file
-src/texturing/TexturedPlaneRenderable.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedPlaneRenderable.cpp.s
-.PHONY : src/texturing/TexturedPlaneRenderable.cpp.s
-
-src/texturing/TexturedTriangleRenderable.o: src/texturing/TexturedTriangleRenderable.cpp.o
-
-.PHONY : src/texturing/TexturedTriangleRenderable.o
-
-# target to build an object file
-src/texturing/TexturedTriangleRenderable.cpp.o:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedTriangleRenderable.cpp.o
-.PHONY : src/texturing/TexturedTriangleRenderable.cpp.o
-
-src/texturing/TexturedTriangleRenderable.i: src/texturing/TexturedTriangleRenderable.cpp.i
-
-.PHONY : src/texturing/TexturedTriangleRenderable.i
-
-# target to preprocess a source file
-src/texturing/TexturedTriangleRenderable.cpp.i:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedTriangleRenderable.cpp.i
-.PHONY : src/texturing/TexturedTriangleRenderable.cpp.i
-
-src/texturing/TexturedTriangleRenderable.s: src/texturing/TexturedTriangleRenderable.cpp.s
-
-.PHONY : src/texturing/TexturedTriangleRenderable.s
-
-# target to generate assembly for a file
-src/texturing/TexturedTriangleRenderable.cpp.s:
-	$(MAKE) -f CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedTriangleRenderable.cpp.s
-.PHONY : src/texturing/TexturedTriangleRenderable.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1782,12 +729,6 @@ help:
 	@echo "... src/Camera.o"
 	@echo "... src/Camera.i"
 	@echo "... src/Camera.s"
-	@echo "... src/CubeRenderable.o"
-	@echo "... src/CubeRenderable.i"
-	@echo "... src/CubeRenderable.s"
-	@echo "... src/CylinderRenderable.o"
-	@echo "... src/CylinderRenderable.i"
-	@echo "... src/CylinderRenderable.s"
 	@echo "... src/FPSCounter.o"
 	@echo "... src/FPSCounter.i"
 	@echo "... src/FPSCounter.s"
@@ -1797,42 +738,21 @@ help:
 	@echo "... src/GeometricTransformation.o"
 	@echo "... src/GeometricTransformation.i"
 	@echo "... src/GeometricTransformation.s"
-	@echo "... src/HierarchicalCylinderRenderable.o"
-	@echo "... src/HierarchicalCylinderRenderable.i"
-	@echo "... src/HierarchicalCylinderRenderable.s"
-	@echo "... src/HierarchicalMeshRenderable.o"
-	@echo "... src/HierarchicalMeshRenderable.i"
-	@echo "... src/HierarchicalMeshRenderable.s"
 	@echo "... src/HierarchicalRenderable.o"
 	@echo "... src/HierarchicalRenderable.i"
 	@echo "... src/HierarchicalRenderable.s"
-	@echo "... src/HierarchicalSphereRenderable.o"
-	@echo "... src/HierarchicalSphereRenderable.i"
-	@echo "... src/HierarchicalSphereRenderable.s"
-	@echo "... src/IndexedCubeRenderable.o"
-	@echo "... src/IndexedCubeRenderable.i"
-	@echo "... src/IndexedCubeRenderable.s"
 	@echo "... src/Io.o"
 	@echo "... src/Io.i"
 	@echo "... src/Io.s"
 	@echo "... src/KeyframeCollection.o"
 	@echo "... src/KeyframeCollection.i"
 	@echo "... src/KeyframeCollection.s"
-	@echo "... src/MeshRenderable.o"
-	@echo "... src/MeshRenderable.i"
-	@echo "... src/MeshRenderable.s"
-	@echo "... src/Plane.o"
-	@echo "... src/Plane.i"
-	@echo "... src/Plane.s"
 	@echo "... src/Renderable.o"
 	@echo "... src/Renderable.i"
 	@echo "... src/Renderable.s"
 	@echo "... src/ShaderProgram.o"
 	@echo "... src/ShaderProgram.i"
 	@echo "... src/ShaderProgram.s"
-	@echo "... src/Sphere.o"
-	@echo "... src/Sphere.i"
-	@echo "... src/Sphere.s"
 	@echo "... src/Texture.o"
 	@echo "... src/Texture.i"
 	@echo "... src/Texture.s"
@@ -1842,87 +762,18 @@ help:
 	@echo "... src/Viewer.o"
 	@echo "... src/Viewer.i"
 	@echo "... src/Viewer.s"
-	@echo "... src/dynamics/Collision.o"
-	@echo "... src/dynamics/Collision.i"
-	@echo "... src/dynamics/Collision.s"
-	@echo "... src/dynamics/ConstantForceField.o"
-	@echo "... src/dynamics/ConstantForceField.i"
-	@echo "... src/dynamics/ConstantForceField.s"
-	@echo "... src/dynamics/ConstantForceFieldRenderable.o"
-	@echo "... src/dynamics/ConstantForceFieldRenderable.i"
-	@echo "... src/dynamics/ConstantForceFieldRenderable.s"
-	@echo "... src/dynamics/ControlledForceFieldRenderable.o"
-	@echo "... src/dynamics/ControlledForceFieldRenderable.i"
-	@echo "... src/dynamics/ControlledForceFieldRenderable.s"
-	@echo "... src/dynamics/DampingForceField.o"
-	@echo "... src/dynamics/DampingForceField.i"
-	@echo "... src/dynamics/DampingForceField.s"
-	@echo "... src/dynamics/DynamicSystem.o"
-	@echo "... src/dynamics/DynamicSystem.i"
-	@echo "... src/dynamics/DynamicSystem.s"
-	@echo "... src/dynamics/DynamicSystemRenderable.o"
-	@echo "... src/dynamics/DynamicSystemRenderable.i"
-	@echo "... src/dynamics/DynamicSystemRenderable.s"
-	@echo "... src/dynamics/EulerExplicitSolver.o"
-	@echo "... src/dynamics/EulerExplicitSolver.i"
-	@echo "... src/dynamics/EulerExplicitSolver.s"
-	@echo "... src/dynamics/ForceField.o"
-	@echo "... src/dynamics/ForceField.i"
-	@echo "... src/dynamics/ForceField.s"
-	@echo "... src/dynamics/Particle.o"
-	@echo "... src/dynamics/Particle.i"
-	@echo "... src/dynamics/Particle.s"
-	@echo "... src/dynamics/ParticleListRenderable.o"
-	@echo "... src/dynamics/ParticleListRenderable.i"
-	@echo "... src/dynamics/ParticleListRenderable.s"
-	@echo "... src/dynamics/ParticleParticleCollision.o"
-	@echo "... src/dynamics/ParticleParticleCollision.i"
-	@echo "... src/dynamics/ParticleParticleCollision.s"
-	@echo "... src/dynamics/ParticlePlaneCollision.o"
-	@echo "... src/dynamics/ParticlePlaneCollision.i"
-	@echo "... src/dynamics/ParticlePlaneCollision.s"
-	@echo "... src/dynamics/ParticleRenderable.o"
-	@echo "... src/dynamics/ParticleRenderable.i"
-	@echo "... src/dynamics/ParticleRenderable.s"
-	@echo "... src/dynamics/Solver.o"
-	@echo "... src/dynamics/Solver.i"
-	@echo "... src/dynamics/Solver.s"
-	@echo "... src/dynamics/SpringForceField.o"
-	@echo "... src/dynamics/SpringForceField.i"
-	@echo "... src/dynamics/SpringForceField.s"
-	@echo "... src/dynamics/SpringForceFieldRenderable.o"
-	@echo "... src/dynamics/SpringForceFieldRenderable.i"
-	@echo "... src/dynamics/SpringForceFieldRenderable.s"
-	@echo "... src/dynamics/SpringListRenderable.o"
-	@echo "... src/dynamics/SpringListRenderable.i"
-	@echo "... src/dynamics/SpringListRenderable.s"
 	@echo "... src/gl_helper.o"
 	@echo "... src/gl_helper.i"
 	@echo "... src/gl_helper.s"
-	@echo "... src/lighting/DirectionalLightRenderable.o"
-	@echo "... src/lighting/DirectionalLightRenderable.i"
-	@echo "... src/lighting/DirectionalLightRenderable.s"
 	@echo "... src/lighting/Light.o"
 	@echo "... src/lighting/Light.i"
 	@echo "... src/lighting/Light.s"
-	@echo "... src/lighting/LightedCubeRenderable.o"
-	@echo "... src/lighting/LightedCubeRenderable.i"
-	@echo "... src/lighting/LightedCubeRenderable.s"
-	@echo "... src/lighting/LightedCylinderRenderable.o"
-	@echo "... src/lighting/LightedCylinderRenderable.i"
-	@echo "... src/lighting/LightedCylinderRenderable.s"
 	@echo "... src/lighting/LightedMeshRenderable.o"
 	@echo "... src/lighting/LightedMeshRenderable.i"
 	@echo "... src/lighting/LightedMeshRenderable.s"
 	@echo "... src/lighting/Material.o"
 	@echo "... src/lighting/Material.i"
 	@echo "... src/lighting/Material.s"
-	@echo "... src/lighting/PointLightRenderable.o"
-	@echo "... src/lighting/PointLightRenderable.i"
-	@echo "... src/lighting/PointLightRenderable.s"
-	@echo "... src/lighting/SpotLightRenderable.o"
-	@echo "... src/lighting/SpotLightRenderable.i"
-	@echo "... src/lighting/SpotLightRenderable.s"
 	@echo "... src/lighting/TexturedMeshPointLightRenderable.o"
 	@echo "... src/lighting/TexturedMeshPointLightRenderable.i"
 	@echo "... src/lighting/TexturedMeshPointLightRenderable.s"
@@ -1935,33 +786,12 @@ help:
 	@echo "... src/texturing/AsteroidRenderable.o"
 	@echo "... src/texturing/AsteroidRenderable.i"
 	@echo "... src/texturing/AsteroidRenderable.s"
-	@echo "... src/texturing/BillBoardPlaneRenderable.o"
-	@echo "... src/texturing/BillBoardPlaneRenderable.i"
-	@echo "... src/texturing/BillBoardPlaneRenderable.s"
 	@echo "... src/texturing/KeyFramedTexturedLightedMeshRenderable.o"
 	@echo "... src/texturing/KeyFramedTexturedLightedMeshRenderable.i"
 	@echo "... src/texturing/KeyFramedTexturedLightedMeshRenderable.s"
-	@echo "... src/texturing/MipMapCubeRenderable.o"
-	@echo "... src/texturing/MipMapCubeRenderable.i"
-	@echo "... src/texturing/MipMapCubeRenderable.s"
-	@echo "... src/texturing/MultiTexturedCubeRenderable.o"
-	@echo "... src/texturing/MultiTexturedCubeRenderable.i"
-	@echo "... src/texturing/MultiTexturedCubeRenderable.s"
 	@echo "... src/texturing/SkyBox.o"
 	@echo "... src/texturing/SkyBox.i"
 	@echo "... src/texturing/SkyBox.s"
-	@echo "... src/texturing/TexturedCubeRenderable.o"
-	@echo "... src/texturing/TexturedCubeRenderable.i"
-	@echo "... src/texturing/TexturedCubeRenderable.s"
-	@echo "... src/texturing/TexturedLightedMeshRenderable.o"
-	@echo "... src/texturing/TexturedLightedMeshRenderable.i"
-	@echo "... src/texturing/TexturedLightedMeshRenderable.s"
-	@echo "... src/texturing/TexturedPlaneRenderable.o"
-	@echo "... src/texturing/TexturedPlaneRenderable.i"
-	@echo "... src/texturing/TexturedPlaneRenderable.s"
-	@echo "... src/texturing/TexturedTriangleRenderable.o"
-	@echo "... src/texturing/TexturedTriangleRenderable.i"
-	@echo "... src/texturing/TexturedTriangleRenderable.s"
 .PHONY : help
 
 

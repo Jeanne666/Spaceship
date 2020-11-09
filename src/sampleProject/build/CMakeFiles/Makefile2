@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = "/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceshi
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/main.dir/all
+all: CMakeFiles/star_warz.dir/all
 
 .PHONY : all
 
@@ -63,36 +63,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/main.dir/clean
+clean: CMakeFiles/star_warz.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/main.dir
+# Target rules for target CMakeFiles/star_warz.dir
 
 # All Build rule for target.
-CMakeFiles/main.dir/all:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sampleProject/build/CMakeFiles" --progress-num=1,2 "Built target main"
-.PHONY : CMakeFiles/main.dir/all
+CMakeFiles/star_warz.dir/all:
+	$(MAKE) -f CMakeFiles/star_warz.dir/build.make CMakeFiles/star_warz.dir/depend
+	$(MAKE) -f CMakeFiles/star_warz.dir/build.make CMakeFiles/star_warz.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sampleProject/build/CMakeFiles" --progress-num=1,2 "Built target star_warz"
+.PHONY : CMakeFiles/star_warz.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/main.dir/rule: cmake_check_build_system
+CMakeFiles/star_warz.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sampleProject/build/CMakeFiles" 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/star_warz.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/cdufourg/Bureau/cours_INSA/INFO 4A/IG/project-spaceship/src/sampleProject/build/CMakeFiles" 0
-.PHONY : CMakeFiles/main.dir/rule
+.PHONY : CMakeFiles/star_warz.dir/rule
 
 # Convenience name for target.
-main: CMakeFiles/main.dir/rule
+star_warz: CMakeFiles/star_warz.dir/rule
 
-.PHONY : main
+.PHONY : star_warz
 
 # clean rule for target.
-CMakeFiles/main.dir/clean:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
-.PHONY : CMakeFiles/main.dir/clean
+CMakeFiles/star_warz.dir/clean:
+	$(MAKE) -f CMakeFiles/star_warz.dir/build.make CMakeFiles/star_warz.dir/clean
+.PHONY : CMakeFiles/star_warz.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
