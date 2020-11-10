@@ -445,7 +445,7 @@ int main()
     
     sf::Sound soundPassingShip;
 	sf::SoundBuffer bufferPassingShip;
-	if (!bufferPassingShip.loadFromFile("../../../music/passing_ship3.ogg"))
+	if (!bufferPassingShip.loadFromFile("../../../music/passing_ship4.ogg"))
         return -1;
     soundPassingShip.setBuffer(bufferPassingShip);
 	
@@ -721,21 +721,6 @@ int shuttleAnimation(KeyFramedTexturedLightedMeshRenderablePtr& shuttle, Viewer&
     gtShuttle.push_back(GeometricTransformation(glm::vec3{111,6,0},
     											glm::angleAxis(glm::radians(0.f), glm::vec3(1, 0, 0)),
     											glm::vec3{1,1,1}));
-    /*gtShuttle.push_back(GeometricTransformation(glm::vec3{115,4,0},
-    											glm::angleAxis(glm::radians(-240.f), glm::vec3(1, 0, 0)),
-    											glm::vec3{1,1,1}));
-    gtShuttle.push_back(GeometricTransformation(glm::vec3{119,2,0},
-    											glm::angleAxis(glm::radians(-120.f), glm::vec3(1, 0, 0)),
-    											glm::vec3{1,1,1}));
-    gtShuttle.push_back(GeometricTransformation(glm::vec3{123,0,0},
-    											glm::angleAxis(glm::radians(0.f), glm::vec3(1, 0, 0)),
-    											glm::vec3{1,1,1}));
-    gtShuttle.push_back(GeometricTransformation(glm::vec3{127,0,0},
-    											glm::angleAxis(glm::radians(0.f), glm::vec3(1, 0, 0)),
-    											glm::vec3{1,1,1}));
-    gtShuttle.push_back(GeometricTransformation(glm::vec3{130,0,0},
-    											glm::angleAxis(glm::radians(0.f), glm::vec3(1, 0, 0)),
-    											glm::vec3{1,1,1}));*/
     
     for(auto it=gtShuttle.begin() ; it<gtShuttle.end() ; ++it){
     	shuttle->addParentTransformKeyframe(*it,t);
@@ -757,7 +742,6 @@ int shuttleAnimation(KeyFramedTexturedLightedMeshRenderablePtr& shuttle, Viewer&
     											glm::vec3{0.1,0.1,0.1}));
     for(auto it=gtShuttle.begin() ; it<gtShuttle.end() ; ++it){
     	shuttle->addParentTransformKeyframe(*it,t);
-    	//viewer.getCamera().addKeyframe((*it).getTranslation()+glm::vec3(-10,-(*it).getTranslation()[1],5),(*it).getTranslation()+glm::vec3(0,-(*it).getTranslation()[1],0),t);
     	t+=0.1;
     }
     
