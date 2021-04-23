@@ -1,4 +1,2 @@
-Projet d'infographie sur le thème "Vaisseau spatial"
-Réalisé par Dufourg Corentin et Hecquard Jeanne (4INFO INSA Rennes)
-
-Notice utilisateur à la fin du rapport
+Computer Graphics project on the theme "Spaceship"
+Created by Dufourg Corentin and Hecquard Jeanne (INSA Rennes, Computer Science, Media and Interaction, 4th Year)
